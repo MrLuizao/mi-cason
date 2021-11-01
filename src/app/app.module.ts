@@ -3,10 +3,36 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { FinderPortraitComponent } from './components/finder-portrait/finder-portrait.component';
+import { PromoBannerComponent } from './components/promo-banner/promo-banner.component';
+import { SlidePromoComponent } from './components/slide-promo/slide-promo.component';
+import { TrendsSectionComponent } from './components/trends-section/trends-section.component';
+import { SlideGaleryComponent } from './components/slide-galery/slide-galery.component';
+import { PackagesSectionComponent } from './components/packages-section/packages-section.component';
+import { SlideActivitiesComponent } from './components/slide-activities/slide-activities.component';
+import { BestPromosComponent } from './components/best-promos/best-promos.component';
+import { RatingSectionComponent } from './components/rating-section/rating-section.component';
+import { PricesSectionComponent } from './components/prices-section/prices-section.component';
+import { GetAppComponent } from './components/get-app/get-app.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBarComponent,
+    FinderPortraitComponent,
+    PromoBannerComponent,
+    SlidePromoComponent,
+    TrendsSectionComponent,
+    SlideGaleryComponent,
+    PackagesSectionComponent,
+    SlideActivitiesComponent,
+    BestPromosComponent,
+    RatingSectionComponent,
+    PricesSectionComponent,
+    GetAppComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
