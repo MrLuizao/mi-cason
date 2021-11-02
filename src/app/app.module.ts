@@ -16,6 +16,9 @@ import { RatingSectionComponent } from './components/rating-section/rating-secti
 import { PricesSectionComponent } from './components/prices-section/prices-section.component';
 import { GetAppComponent } from './components/get-app/get-app.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogContactComponent } from './components/material-components/dialog-contact/dialog-contact.component'
 
 @NgModule({
   declarations: [
@@ -32,11 +35,14 @@ import { FooterComponent } from './components/footer/footer.component';
     RatingSectionComponent,
     PricesSectionComponent,
     GetAppComponent,
-    FooterComponent
+    FooterComponent,
+    DialogContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
