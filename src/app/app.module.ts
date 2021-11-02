@@ -19,6 +19,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DialogContactComponent } from './components/material-components/dialog-contact/dialog-contact.component'
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { DialogContactComponent } from './components/material-components/dialog-
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     NoopAnimationsModule,
     MatDialogModule
   ],
