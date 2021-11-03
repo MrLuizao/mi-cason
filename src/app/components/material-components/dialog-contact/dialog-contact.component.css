@@ -1,8 +1,13 @@
 
-.item-center{
-    height: 2em; 
-    padding-left: 3em; 
-    padding-right: 3em;
+@media(min-width: 720px){
+    .item-center{
+        height: 2em; 
+        padding-left: 10em; 
+        padding-right: 10em;
+    }
+    .pad-text{
+        padding: 2em;
+    }
 }
 
 .txt-title{
