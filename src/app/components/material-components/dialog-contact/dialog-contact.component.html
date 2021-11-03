@@ -8,15 +8,15 @@
         </div>
 
         <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-home-tab">
-            <form class="row g-4" style="text-align: center;">
+            <form #form="ngForm" (ngSubmit)="sendContactForm(form)" class="row g-4" style="text-align: center;">
                 <div class="col-12 col-xl-12 col-lg-12 d-grid mt-6 item-center">
-                    <input type="text" id="name" name="name" required minlength="4" placeholder="Nombre completo">
+                    <input [(ngModel)]="contactFormModel.name" type="text" id="name" name="name" required minlength="4" placeholder="Nombre completo">
                 </div>
                 <div class="col-12 col-xl-12 col-lg-12 d-grid mt-4 item-center">
-                    <input type="email" id="email" name="email" required placeholder="Correo electrónico">
+                    <input [(ngModel)]="contactFormModel.email" type="email" id="email" name="email" required placeholder="Correo electrónico">
                 </div>
                 <div class="col-12 col-xl-12 col-lg-12 d-grid mt-4 item-center">
-                    <input type="number" id="phone" name="phone" required minlength="10" placeholder="Número telefónico">
+                    <input [(ngModel)]="contactFormModel.phone" type="number" id="phone" name="phone" required minlength="10" placeholder="Número telefónico">
                 </div>
                 <div class="col-12 col-xl-12 col-lg-12 d-grid mt-4 item-center">
                     <button class="btn btn-secondary" type="submit">Enviar</button>
