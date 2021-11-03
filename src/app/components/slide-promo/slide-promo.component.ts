@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MockDataService } from 'src/app/services/mock-data.service';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 @Component({
   selector: 'app-slide-promo',
@@ -12,7 +13,12 @@ export class SlidePromoComponent implements OnInit {
   arraySecond: any;
   arrayThird: any;
 
-  constructor( private mockSrv: MockDataService ) { }
+  constructor( private mockSrv: MockDataService, private firestore: AngularFirestore) { 
+    // this.firestore.collection('testLvr').add({
+    //   "id": 'test',
+    //   "name": 'example'
+    // });
+  }
 
   ngOnInit( ) {
 

@@ -102,6 +102,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "mi-cason:build:production",
+            "firebaseProject": "micasonweb-2876c",
+            "firebaseHostingSite": "micasonweb-2876c"
+          }
         }
       }
     }

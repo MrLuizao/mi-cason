@@ -1,5 +1,14 @@
 {
   "projects": {
-    "default": "mi-cason"
+    "default": "micasonweb-2876c"
+  },
+  "targets": {
+    "micasonweb-2876c": {
+      "hosting": {
+        "mi-cason": [
+          "micasonweb-2876c"
+        ]
+      }
+    }
   }
 }
