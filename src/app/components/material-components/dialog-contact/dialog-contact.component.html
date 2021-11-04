@@ -18,9 +18,14 @@
                 <div class="col-12 col-xl-12 col-lg-12 d-grid mt-4 item-center">
                     <input [(ngModel)]="contactFormModel.phone" type="number" id="phone" name="phone" required minlength="10" placeholder="Número telefónico">
                 </div>
-                <div class="col-12 col-xl-12 col-lg-12 d-grid mt-4 item-center">
+
+                <div *ngIf="!isLoading" class="col-12 col-xl-12 col-lg-12 d-grid mt-4 item-center">
                     <button class="btn btn-secondary" type="submit">Enviar</button>
-                </div>            
+                </div>  
+                <div *ngIf="isLoading" class="col-12 col-xl-12 col-lg-12 d-grid mt-4 item-center">
+                    <app-loading style="height: 3em;"></app-loading>
+                </div>  
+
             </form>
         </div>
     

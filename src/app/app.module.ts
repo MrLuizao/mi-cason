@@ -26,7 +26,11 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { FormsModule } from '@angular/forms';
-
+import { LoadingComponent } from './components/re-use/loading/loading.component';
+import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { IncompleteSnackComponent } from './components/re-use/incomplete-snack/incomplete-snack.component';
+import { ErrorSnackComponent } from './components/re-use/error-snack/error-snack.component';
+import { CompleteSnackComponent } from './components/re-use/complete-snack/complete-snack.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +48,11 @@ import { FormsModule } from '@angular/forms';
     PricesSectionComponent,
     GetAppComponent,
     FooterComponent,
-    DialogContactComponent
+    DialogContactComponent,
+    LoadingComponent,
+    IncompleteSnackComponent,
+    ErrorSnackComponent,
+    CompleteSnackComponent
   ],
   imports: [
     BrowserModule,
@@ -53,6 +61,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     NoopAnimationsModule,
     MatDialogModule,
+    MatSnackBarModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),

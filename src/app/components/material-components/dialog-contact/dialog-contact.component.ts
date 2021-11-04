@@ -1,7 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { ContactFormModel } from 'src/app/models/contact-form.model';
 import { FirestoreService } from 'src/app/services/firestore.service';
+import { CompleteSnackComponent } from '../../re-use/complete-snack/complete-snack.component';
+import { ErrorSnackComponent } from '../../re-use/error-snack/error-snack.component';
+import { IncompleteSnackComponent } from '../../re-use/incomplete-snack/incomplete-snack.component';
 
 @Component({
   selector: 'app-dialog-contact',
@@ -11,22 +16,68 @@ import { FirestoreService } from 'src/app/services/firestore.service';
 export class DialogContactComponent implements OnInit {
 
   contactFormModel: ContactFormModel = new ContactFormModel();
+  isLoading: boolean = false;
+  typeAlert: string = '';
+  durationInSeconds = 3;
 
-  constructor( private fireService: FirestoreService) { }
+  constructor(  private fireService: FirestoreService,
+                private _snackBar: MatSnackBar,
+                public dialog: MatDialog ) { }
 
   ngOnInit(): void {
   }
 
-  sendContactForm(form: NgForm){   
-    if(form.invalid){ return }
-    // console.log('form', form);
-    // console.log('contactForm', this.contactFormModel);
+  sendContactForm(form: NgForm){ 
+    if(form.invalid){ 
+      this.typeAlert = 'incomplete' 
+      this.openSnackAlert(this.typeAlert);
+      return 
+    }
+
+    this.isLoading = true;
 
     this.fireService.createDataContactForm(this.contactFormModel).then( (resp)=>{
-      console.log('resp',resp);    
+      this.typeAlert = 'correct' 
+      this.isLoading = false;  
+      this.openSnackAlert(this.typeAlert);
+      this.dialog.closeAll();
+
     }).catch( (error) =>{
-      console.log('error:', error);
+      console.error('error:', error);
+      this.typeAlert = 'error' 
+      this.isLoading = false;  
+      this.openSnackAlert(this.typeAlert);
+      
     });
   }
+
+  openSnackAlert( paramSnack: string){
+    
+    switch(paramSnack) {
+
+      case 'incomplete' :
+        this._snackBar.openFromComponent(IncompleteSnackComponent, {
+          verticalPosition: 'top',
+          duration: this.durationInSeconds * 1000
+        });
+      break;
+
+      case 'correct' :
+        this._snackBar.openFromComponent(CompleteSnackComponent, {
+          verticalPosition: 'top',
+          duration: this.durationInSeconds * 1000
+        });
+      break;
+
+      case 'error' :
+        this._snackBar.openFromComponent(ErrorSnackComponent, {
+          verticalPosition: 'top',
+          duration: this.durationInSeconds * 1000
+        });
+      break;
+
+    }
+  }
+
 
 }

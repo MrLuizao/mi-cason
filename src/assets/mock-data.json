@@ -8,7 +8,8 @@
       "name": "Bakeira Condado Del Valle",
       "location": "Toluca",
       "costPrev": "2,100,000",
-      "costNew": "1,700,000"
+      "costNew": "1,700,000",
+      "contactPhone": "7225595400"
     },
     {
       "id": "2",
@@ -18,7 +19,8 @@
       "name": "Casa Carrara Plus",
       "location": "CDMX",
       "costPrev": "2,100,000",
-      "costNew": "1,700,000"
+      "costNew": "1,700,000",
+      "contactPhone": "7225595400"
     },
     {
       "id": "3",
@@ -28,7 +30,8 @@
       "name": "La Asuncion Metepec",
       "location": "Edo. de México",
       "costPrev": "2,100,000",
-      "costNew": "1,700,000"
+      "costNew": "1,700,000",
+      "contactPhone": "7225595400"
     }
   ],
   "secondGroup": [
