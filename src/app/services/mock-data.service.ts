@@ -11,4 +11,7 @@ export class MockDataService {
   getMockData(){
     return this.httpClient.get('assets/mock-data.json');
   }
+  getMockMeanPromo(){
+    return this.httpClient.get('assets/mock-home-detail.json');
+  }
 }

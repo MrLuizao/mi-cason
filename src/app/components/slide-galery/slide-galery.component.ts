@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MockDataService } from 'src/app/services/mock-data.service';
 
 @Component({
   selector: 'app-slide-galery',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlideGaleryComponent implements OnInit {
 
-  constructor() { }
+  arrayOne: any;
+  arrayTwo: any;
+  arrayThree: any;
 
-  ngOnInit(): void {
+  constructor( private mockSrv: MockDataService ) { }
+
+  ngOnInit( ) {
+
+    this.mockSrv.getMockMeanPromo().subscribe( (resp: any) =>{
+      console.log(resp);
+      
+      this.arrayOne = resp.slideOne
+      this.arrayTwo = resp.slideTwo
+      this.arrayThree = resp.slideThree
+
+    });
+  }
+
+  contactAsesor(param: string){
+    alert('phone' +' '+ param)
   }
 
 }

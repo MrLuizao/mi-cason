@@ -1,0 +1,41 @@
+{
+    "slideOne": [
+        {
+            "id": "1",
+            "image": "https://i.ibb.co/F3ChRy0/mean-home-3.jpg",
+            "title": "¡Estrena hoy!",
+            "description": "Cómodos departamentos de 61 m2, cuentan con jardín o roof garden, 2 recámaras con opción a 3 y amplia área de lavado.",
+            "name": "Bakeira Condado Del Valle",
+            "location": "Toluca",
+            "minPrice": "765,000",
+            "maxPrice": "819,400",
+            "contactPhone": "5522542000 "
+        }
+    ],
+    "slideTwo": [
+        {
+            "id": "2",
+            "image": "https://i.ibb.co/y41WwFM/mean-home-1.jpg",
+            "description": "A unos minutos del Lago de Tequesquitengo, en el Estado de Morelos",
+            "title": "¡Gran ubicación!",
+            "name": "Casa Carrara Plus",
+            "location": "CDMX",
+            "minPrice": "765,000",
+            "maxPrice": "819,400",
+            "contactPhone": "5522542000 "
+        }
+    ],
+    "slideThree": [
+        {
+            "id": "3",
+            "image": "https://i.ibb.co/SwLys2t/mean-home-4.jpg",
+            "title": "Amenidades",
+            "description": "Alberca en cada privada y Aquazona",
+            "name": "La Asuncion Metepec",
+            "location": "Edo. de México",
+            "minPrice": "765,000",
+            "maxPrice": "819,400",
+            "contactPhone": "5522542000"
+        }
+    ]
+}
