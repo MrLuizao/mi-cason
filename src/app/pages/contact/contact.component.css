@@ -1,0 +1,17 @@
+.top-space{
+    margin-top: 2em;
+}
+@media(min-width: 720px){
+    .item-center{
+        height: 2em; 
+        padding-left: 10em; 
+        padding-right: 10em;
+    }
+    .pad-text{
+        padding: 2em;
+    }
+}
+.txt-title{
+    margin-top: 2em;
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+<main class="main" id="top">
+    <app-nav-bar></app-nav-bar>
+    
+    <section class="top-space">
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="txt-title">
+                    <h3 class="display-5 text-1000 fw-normal">
+                        Déjanos tus datos y nos pondremos en contacto contigo
+                    </h3>
+                </div>
+        
+                <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <form #form="ngForm" (ngSubmit)="sendContactForm(form)" class="row g-4" style="text-align: center;">
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid mt-6 item-center">
+                            <input [(ngModel)]="contactFormModel.name" type="text" id="name" name="name" required minlength="4" placeholder="Nombre completo">
+                        </div>
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid mt-4 item-center">
+                            <input [(ngModel)]="contactFormModel.email" type="email" id="email" name="email" required placeholder="Correo electrónico">
+                        </div>
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid mt-4 item-center">
+                            <input [(ngModel)]="contactFormModel.phone" type="number" id="phone" name="phone" required minlength="10" placeholder="Número telefónico">
+                        </div>
+        
+                        <div *ngIf="!isLoading" class="col-12 col-xl-12 col-lg-12 d-grid mt-4 item-center">
+                            <button class="btn btn-secondary" type="submit">Enviar</button>
+                        </div>  
+                        <div *ngIf="isLoading" class="col-12 col-xl-12 col-lg-12 d-grid mt-4 item-center">
+                            <app-loading style="height: 3em;"></app-loading>
+                        </div>  
+        
+                    </form>
+                </div>
+            
+                <div class="txt-title pad-text">
+                    <h6 class="display-6 text-1000 fw-normal"> si lo prefieres:</h6>
+                    <a class="display-6 text-primary fw-bold" href="https://api.whatsapp.com/send?phone=+527225595400" target="_blank">
+                        Envíanos un mensaje de WhatsApp &nbsp; <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <app-footer></app-footer>  
+</main>

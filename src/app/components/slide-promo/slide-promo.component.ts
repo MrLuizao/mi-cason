@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
+import { DataBehaviorService } from 'src/app/services/data-behavior.service';
 import { MockDataService } from 'src/app/services/mock-data.service';
+import { DialogDescriptionComponent } from '../material-components/dialog-contact/dialog-description.component';
 
 @Component({
   selector: 'app-slide-promo',
@@ -12,24 +16,27 @@ export class SlidePromoComponent implements OnInit {
   arraySecond: any;
   arrayThird: any;
 
-  constructor( private mockSrv: MockDataService) { }
+  constructor(  private mockSrv: MockDataService,
+                private behaviorSrv: DataBehaviorService,
+                public dialog: MatDialog,
+                private route: Router) { }
 
   ngOnInit( ) {
 
     this.mockSrv.getMockData().subscribe( (resp: any) =>{
       console.log(resp);
       
-      this.arrayFirst = resp.firstGroup
-      this.arraySecond = resp.secondGroup
-      this.arrayThird = resp.thirdGroup
+      this.arrayFirst = resp.data.firstGroup
+      this.arraySecond = resp.data.secondGroup
+      this.arrayThird = resp.data.thirdGroup
     });
   }
 
-  tapToDescription(id: any){
-    alert('este es el id ' + id)
+  tapToDescription(args: any){    
+    this.behaviorSrv.bindingObjectData(args)
+    this.route.navigateByUrl('detail')
+    // this.dialog.open(DialogDescriptionComponent);
   }
-
-
 
 
 }

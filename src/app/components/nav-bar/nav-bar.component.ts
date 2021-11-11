@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 import { DialogContactComponent } from '../material-components/dialog-contact/dialog-contact.component';
 
 @Component({
@@ -9,14 +10,16 @@ import { DialogContactComponent } from '../material-components/dialog-contact/di
 })
 export class NavBarComponent implements OnInit {
 
-  constructor( public dialog: MatDialog ) { }
+  constructor(  public dialog: MatDialog,
+                private route: Router ) { }
 
   ngOnInit(): void {
   }
 
 
   openDialog() {
-    this.dialog.open(DialogContactComponent);
+    // this.dialog.open(DialogContactComponent);
+    this.route.navigateByUrl('contact')
   }
   
 }

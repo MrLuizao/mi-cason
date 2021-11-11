@@ -31,6 +31,10 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { IncompleteSnackComponent } from './components/re-use/incomplete-snack/incomplete-snack.component';
 import { ErrorSnackComponent } from './components/re-use/error-snack/error-snack.component';
 import { CompleteSnackComponent } from './components/re-use/complete-snack/complete-snack.component';
+import { DialogDescriptionComponent } from './components/material-components/dialog-contact/dialog-description.component';
+import { HomeComponent } from './pages/home/home.component';
+import { DetailComponent } from './pages/detail/detail.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +56,11 @@ import { CompleteSnackComponent } from './components/re-use/complete-snack/compl
     LoadingComponent,
     IncompleteSnackComponent,
     ErrorSnackComponent,
-    CompleteSnackComponent
+    CompleteSnackComponent,
+    DialogDescriptionComponent,
+    HomeComponent,
+    DetailComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

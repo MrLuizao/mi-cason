@@ -9,7 +9,7 @@
                 <div class="row h-100 align-items-center g-2">
                   <div class="col-md-4 mb-3 mb-md-0 h-100" *ngFor="let item of arrayFirst;">
                     <div  class="card card-span h-100 text-white"
-                          (click)="tapToDescription(item.id)" style="cursor:pointer"> 
+                          (click)="tapToDescription(item)" style="cursor:pointer"> 
                       <img class="img-fluid h-100" src={{item.image}} alt="..." />
                       <div class="card-img-overlay ps-0">
                         <span class="badge bg-primary ms-3 me-1 p-2" *ngIf="item.isNew">
@@ -48,7 +48,7 @@
                 <div class="row h-100 align-items-center g-2">
                   <div class="col-md-4 mb-3 mb-md-0 h-100" *ngFor="let item of arraySecond;">
                     <div  class="card card-span h-100 text-white"
-                          (click)="tapToDescription(item.id)" style="cursor:pointer"> 
+                          (click)="tapToDescription(item)" style="cursor:pointer"> 
                       <img class="img-fluid h-100" src={{item.image}} alt="..." />
                       <div class="card-img-overlay ps-0">
                         <span class="badge bg-primary ms-3 me-1 p-2" *ngIf="item.isNew">
@@ -87,7 +87,7 @@
                 <div class="row h-100 align-items-center g-2">
                   <div class="col-md-4 mb-3 mb-md-0 h-100" *ngFor="let item of arrayThird;">
                     <div  class="card card-span h-100 text-white"
-                          (click)="tapToDescription(item.id)" style="cursor:pointer"> 
+                          (click)="tapToDescription(item)" style="cursor:pointer"> 
                       <img class="img-fluid h-100" src={{item.image}} alt="..." />
                       <div class="card-img-overlay ps-0">
                         <span class="badge bg-primary ms-3 me-1 p-2" *ngIf="item.isNew">
