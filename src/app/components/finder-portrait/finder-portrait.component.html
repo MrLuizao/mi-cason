@@ -6,14 +6,19 @@
         <h1 class="display-3 text-primary fw-bold">¿Dónde te interesa comprar?</h1>
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-            <form class="row g-4">
               <div class="col-12 col-xl-10 col-lg-12 d-grid mt-6" style="height: 4em;">
-                <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" >
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" placeholder="TEST"
+                        [(ngModel)]="dataInput" (ngModelChange)="dataChanged($event)" name="dataInput">
+                  <option selected>{{dataInput}}</option>
+                  <option value="CDMX">CDMX</option>
+                  <option value="Edo. de México">Edo. de México</option>
+                  <option value="Morelos">Morelos</option>
+                  <option value="Toluca">Toluca</option>
+                </select>
               </div>
               <div class="col-12 col-xl-10 col-lg-12 d-grid mt-4">
-                <button class="btn btn-secondary" type="submit">Buscar opciones</button>
+                <button class="btn btn-secondary" (click)="testFindItem()">Buscar opciones</button>
               </div>            
-            </form>
           </div>
         </div>
       </div>

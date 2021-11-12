@@ -35,6 +35,7 @@ import { DialogDescriptionComponent } from './components/material-components/dia
 import { HomeComponent } from './pages/home/home.component';
 import { DetailComponent } from './pages/detail/detail.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ResultsComponent } from './pages/results/results.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     DialogDescriptionComponent,
     HomeComponent,
     DetailComponent,
-    ContactComponent
+    ContactComponent,
+    ResultsComponent
   ],
   imports: [
     BrowserModule,
