@@ -11,6 +11,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .img-portrait{
     background-image:url(assets/img/map-unity.jpeg);
-    background-position:top;
+    background-position: center;
     filter: brightness(1.2);
 }

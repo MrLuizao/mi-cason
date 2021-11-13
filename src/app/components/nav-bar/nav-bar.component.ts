@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
-import { DialogContactComponent } from '../material-components/dialog-contact/dialog-contact.component';
 
 @Component({
   selector: 'app-nav-bar',
@@ -18,8 +17,11 @@ export class NavBarComponent implements OnInit {
 
 
   openDialog() {
-    // this.dialog.open(DialogContactComponent);
     this.route.navigateByUrl('contact')
+  }
+
+  navigatePop(){
+    this.route.navigateByUrl('home');
   }
   
 }

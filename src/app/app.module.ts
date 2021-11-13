@@ -36,6 +36,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { DetailComponent } from './pages/detail/detail.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ResultsComponent } from './pages/results/results.component';
+import { SelectErrorSnackComponent } from './components/re-use/select-error-snack/select-error-snack.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { ResultsComponent } from './pages/results/results.component';
     HomeComponent,
     DetailComponent,
     ContactComponent,
-    ResultsComponent
+    ResultsComponent,
+    SelectErrorSnackComponent
   ],
   imports: [
     BrowserModule,
