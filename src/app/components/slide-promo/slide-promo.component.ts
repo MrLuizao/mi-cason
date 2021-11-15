@@ -20,6 +20,7 @@ export class SlidePromoComponent implements OnInit {
   arrayThird: any;
 
   constructor(  private mockSrv: MockDataService,
+                private bindService: DataBehaviorService,
                 public platform: Platform,
                 private behaviorSrv: DataBehaviorService,
                 public dialog: MatDialog,
@@ -27,14 +28,12 @@ export class SlidePromoComponent implements OnInit {
                 private fireService: FirestoreService) { }
 
   ngOnInit( ) {
-    console.log('SE ESTÁ EJECUTANDO EN:',this.platform);
-
+    
     if(this.platform.ANDROID || this.platform.IOS){
       this.isMobile = true;
     }
     
     this.fireService.getDataByGroups('data-by-groups').subscribe( (resp:any) => {
-      console.log('getDataByGroups', resp[0]);
       this.arrayFirst = resp[0].data.firstGroup
       this.arraySecond = resp[0].data.secondGroup
       this.arrayThird = resp[0].data.thirdGroup

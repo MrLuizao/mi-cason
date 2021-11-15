@@ -16,27 +16,39 @@
         <div class="col-sm-6 col-lg-4">
           <div class="row g-2">
             <div class="col-12">
-              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/moon-house-hotel.png" height="375" alt="..." />
-                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-therichpost-gradient">
+              <div class="card card-span h-100 text-white">
+                <img class="img-fluid h-100 w-100" src={{completeArray[3].image3}} height="375" alt="..." />
+                <div  class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-therichpost-gradient"
+                      (click)="viewDetails(completeArray[3])">
                   <div class="mt-auto px-4">
-                    <h3 class="fs-1 fs-md-2 text-white">Moon House Hotel</h3>
-                    <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-md-3">Soi Petchburi 19, Bankok</span></div>
-                    <p class="mb-0 mt-3">Starts from </p>
-                    <h1 class="mb-2 text-light fw-bolder fs-2 fs-md-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
+                    <h3 class="fs-1 fs-md-2 text-white">{{completeArray[3].title}}</h3>
+                    <div class="d-flex align-items-center justify-content-start">
+                      <span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span>
+                      <span class="text-light me-md-3">{{completeArray[3].zone}}</span></div>
+                    <!-- <p class="mb-0 mt-3">Starts from </p> -->
+                    <h1 class="mb-2 text-light fw-bolder fs-2 fs-md-4">
+                      <span>${{completeArray[3].costNew}}</span>
+                      <span class="text-light fs--1 fw-normal">/MXN</span></h1>
                   </div>
-                </div><a class="stretched-link" href="#!"> </a>
+                </div>
               </div>
             </div>
             <div class="col-12">
-              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/blue-mosque-hotel.png" height="375" alt="..." />
-                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-therichpost-gradient">
+              <div class="card card-span h-100 text-white">
+                <img class="img-fluid h-100 w-100" src={{completeArray[6].image3}} height="375" alt="..." />
+                <div  class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-therichpost-gradient"
+                      (click)="viewDetails(completeArray[6])">
                   <div class="mt-auto px-4">
-                    <h3 class="fs-1 fs-md-2 text-white">Blue Mosque Hotel</h3>
-                    <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-md-3">Dismesi Sokak, Istanbul</span></div>
-                    <p class="mb-0 mt-3">Starts from </p>
-                    <h1 class="mb-2 text-light fw-bolder fs-2 fs-md-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
+                    <h3 class="fs-1 fs-md-2 text-white">{{completeArray[6].title}}</h3>
+                    <div class="d-flex align-items-center justify-content-start">
+                      <span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span>
+                      <span class="text-light me-md-3">{{completeArray[6].zone}}</span></div>
+                    <!-- <p class="mb-0 mt-3">Starts from </p> -->
+                    <h1 class="mb-2 text-light fw-bolder fs-2 fs-md-4">
+                      <span>${{completeArray[6].costNew}}</span>
+                      <span class="text-light fs--1 fw-normal">/MXN</span></h1>
                   </div>
-                </div><a class="stretched-link" href="#!"> </a>
+                </div>
               </div>
             </div>
           </div>
@@ -44,27 +56,39 @@
         <div class="col-sm-6 col-lg-4">
           <div class="row g-2">
             <div class="col-12">
-              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/hotel-royal.png" height="375" alt="..." />
-                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-therichpost-gradient">
+              <div class="card card-span h-100 text-white">
+                <img class="img-fluid h-100 w-100" src={{completeArray[5].image2}} height="375" alt="..." />
+                <div  class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-therichpost-gradient"
+                      (click)="viewDetails(completeArray[5])">
                   <div class="mt-auto px-4">
-                    <h3 class="fs-1 fs-md-2 text-white">Hotel Royal</h3>
-                    <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-md-3">Kedewatan, Bali</span></div>
-                    <p class="mb-0 mt-3">Starts from </p>
-                    <h1 class="mb-2 text-light fw-bolder fs-2 fs-md-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
+                    <h3 class="fs-1 fs-md-2 text-white">{{completeArray[5].title}}</h3>
+                    <div class="d-flex align-items-center justify-content-start">
+                      <span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span>
+                      <span class="text-light me-md-3">{{completeArray[5].zone}}</span></div>
+                    <!-- <p class="mb-0 mt-3">Starts from </p> -->
+                    <h1 class="mb-2 text-light fw-bolder fs-2 fs-md-4">
+                      <span>${{completeArray[5].costNew}}</span>
+                      <span class="text-light fs--1 fw-normal">/MXN</span></h1>
                   </div>
-                </div><a class="stretched-link" href="#!"> </a>
+                </div>
               </div>
             </div>
             <div class="col-12">
-              <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/boutique-hotel.png" height="375" alt="..." />
-                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-therichpost-gradient">
+              <div class="card card-span h-100 text-white">
+                <img class="img-fluid h-100 w-100" src={{completeArray[2].image2}} height="375" alt="..." />
+                <div  class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-therichpost-gradient"
+                      (click)="viewDetails(completeArray[2])">
                   <div class="mt-auto px-4">
-                    <h3 class="fs-1 fs-md-2 text-white">The Rin Boutique Hotel</h3>
-                    <div class="d-flex align-items-center justify-content-start"><span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span><span class="text-light me-md-3">Bang Lamung, Pattaya</span></div>
-                    <p class="mb-0 mt-3">Starts from </p>
-                    <h1 class="mb-2 text-light fw-bolder fs-2 fs-md-4"><span>$175</span><span class="text-light fs--1 fw-normal">/Per person</span></h1>
+                    <h3 class="fs-1 fs-md-2 text-white">{{completeArray[2].name}}</h3>
+                    <div class="d-flex align-items-center justify-content-start">
+                      <span class="text-light fs--1 me-1"><i class="fas fa-map-marker-alt"></i></span>
+                      <span class="text-light me-md-3">{{completeArray[2].zone}}</span></div>
+                    <!-- <p class="mb-0 mt-3">Precios desde:</p> -->
+                    <h1 class="mb-2 text-light fw-bolder fs-2 fs-md-4">
+                      <span>${{completeArray[2].costNew}}</span>
+                      <span class="text-light fs--1 fw-normal">/MXN</span></h1>
                   </div>
-                </div><a class="stretched-link" href="#!"> </a>
+                </div>
               </div>
             </div>
           </div>
@@ -74,11 +98,19 @@
             <div class="text-light py-6">
               <div class="row">
                 <div class="col-12 col-xl-6">
-                  <p class="fs-1 px-5">In our offers, we have more hotels. Just to make your stay easy for your best interests.</p>
+                  <p class="fs-1 px-5">Envianos un mensaje y un asesor personalizado te atenderá.</p>
                 </div>
-                <div class="col-12 col-xl-6 text-end"><a class="btn btn-lg text-light fs-1 fs-sm--1 fs-md-1 px-5" href="#!" role="button">Click to view more<svg class="bi bi-arrow-right-circle ms-3" xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
-                    </svg></a></div>
+                <div class="col-12 col-xl-6 text-end">
+                  <a class="btn btn-lg text-light fs-1 fs-sm--1 fs-md-1 px-5" (click)="goContactDialog()">
+                    Contáctanos
+                    <svg class="bi bi-arrow-right-circle ms-3" xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                    </svg>
+                  </a>
+                  <!-- <a class="btn btn-lg text-light fs-1 fs-sm--1 fs-md-1 px-5" (click)="goContactDialog()">
+                    ¡Envíanos un mensaje directo! &nbsp; <i class="fab fa-whatsapp"></i>
+                  </a> -->
+                </div>
               </div>
             </div>
           </div>

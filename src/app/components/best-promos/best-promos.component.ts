@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DataBehaviorService } from 'src/app/services/data-behavior.service';
+import { FirestoreService } from 'src/app/services/firestore.service';
 
 @Component({
   selector: 'app-best-promos',
@@ -7,9 +10,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BestPromosComponent implements OnInit {
 
-  constructor() { }
+  completeArray: any;
+
+  constructor(  private fireService: FirestoreService,
+                private behaviorSrv: DataBehaviorService,
+                private route: Router ) { }
 
   ngOnInit(): void {
+    this.fireService.getDataByGroups('data-complete').subscribe( (resp:any) => {
+      this.completeArray = resp[0].data;
+      console.log('completeArray:', this.completeArray);
+    })
+  }
+
+  viewDetails(args:any){
+    this.behaviorSrv.bindingObjectData(args)
+    this.route.navigateByUrl('detail')
+  }
+
+  goContactDialog() {
+    this.route.navigateByUrl('contact')
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataBehaviorService } from 'src/app/services/data-behavior.service';
 import { MockDataService } from 'src/app/services/mock-data.service';
 
 @Component({
@@ -12,7 +13,9 @@ export class SlideGaleryComponent implements OnInit {
   arrayTwo: any;
   arrayThree: any;
 
-  constructor( private mockSrv: MockDataService ) { }
+  linkWhats!: string;
+  constructor(  private mockSrv: MockDataService,
+                private behaviorSrv: DataBehaviorService ) { }
 
   ngOnInit( ) {
 
@@ -22,12 +25,14 @@ export class SlideGaleryComponent implements OnInit {
       this.arrayOne = resp.slideOne
       this.arrayTwo = resp.slideTwo
       this.arrayThree = resp.slideThree
-
+      
     });
+ 
   }
 
-  contactAsesor(param: string){
-    alert('phone' +' '+ param)
+  contactAsesor(param: any){
+    let message = 'Hola, me gustaría conocer más detalles del desarrollo'+' '+param.name;
+    this.linkWhats =`https://api.whatsapp.com/send?phone=+52${param.contactPhone}&text=${message}` ;
   }
 
 }

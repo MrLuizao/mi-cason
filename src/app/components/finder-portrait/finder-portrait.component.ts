@@ -1,4 +1,3 @@
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
@@ -28,7 +27,6 @@ export class FinderPortraitComponent implements OnInit {
 
   dataChanged(param:any) {
     this.dataInput = param;
-    console.log('this.dataInput', this.dataInput); 
   }
 
   searchItem(){
@@ -43,6 +41,7 @@ export class FinderPortraitComponent implements OnInit {
 
     this.fireService.getDataByGroups('data-complete').subscribe( (resp:any) => {
       this.arrayData = resp[0].data;
+      // this.bindService.bindingCompleteData(this.arrayData);
 
       this.foundItem = this.arrayData.filter( (item:any) => item.zone === this.dataInput);
 

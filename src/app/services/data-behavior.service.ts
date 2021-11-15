@@ -12,6 +12,9 @@ export class DataBehaviorService {
   findSource = new BehaviorSubject<{}>({});
   public $getFindSource = this.findSource.asObservable();
 
+  dataComplete = new BehaviorSubject<{}>({});
+  public $getDataComplete = this.dataComplete.asObservable();
+
   constructor() { }
 
   bindingObjectData(data:any){
@@ -20,5 +23,9 @@ export class DataBehaviorService {
 
   bindingDataFind(data:any){
     this.findSource.next(data);
+  }
+
+  bindingCompleteData(data:any){
+    this.dataComplete.next(data);
   }
 }

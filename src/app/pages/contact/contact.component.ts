@@ -22,7 +22,7 @@ export class ContactComponent implements OnInit {
   
   constructor(  private fireService: FirestoreService,
                 private _snackBar: MatSnackBar,
-                public dialog: MatDialog ) { }
+                public dialog: MatDialog ) { window.scrollTo(0,0) }
 
   ngOnInit(): void {
   }
