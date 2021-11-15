@@ -12,14 +12,13 @@ export class DetailComponent implements OnInit {
   linkWhats!: string;
   message: string = '';
 
-  constructor( private behaviorSrv: DataBehaviorService ) { }
+  constructor( private behaviorSrv: DataBehaviorService ) {window.scrollTo(0,0)}
 
   ngOnInit(): void {
-
     this.behaviorSrv.$getObjectSource.subscribe( (resp: any) =>{
       this.modalArray = resp
       console.log('modalArray:', this.modalArray);
-      this.message = 'Hola, quiero me gustaría conocer más detalles del desarrollo de'+' '+this.modalArray.name;
+      this.message = 'Hola, me gustaría conocer más detalles del desarrollo de'+' '+this.modalArray.name;
       this.linkWhats = `https://api.whatsapp.com/send?phone=+52${this.modalArray.contactPhone}&text=${this.message}` ;
 
     }).unsubscribe();

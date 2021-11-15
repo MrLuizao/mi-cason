@@ -1,3 +1,4 @@
+import { Platform } from '@angular/cdk/platform';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
@@ -12,26 +13,26 @@ import { MockDataService } from 'src/app/services/mock-data.service';
 })
 export class SlidePromoComponent implements OnInit {
 
+  // browserPc!: boolean;
+  isMobile: boolean = false;
   arrayFirst: any;
   arraySecond: any;
   arrayThird: any;
 
   constructor(  private mockSrv: MockDataService,
+                public platform: Platform,
                 private behaviorSrv: DataBehaviorService,
                 public dialog: MatDialog,
                 private route: Router,
                 private fireService: FirestoreService) { }
 
   ngOnInit( ) {
+    console.log('SE ESTÁ EJECUTANDO EN:',this.platform);
 
-    // this.mockSrv.getMockData().subscribe( (resp: any) =>{
-    //   console.log(resp);
-      
-    //   this.arrayFirst = resp.data.firstGroup
-    //   this.arraySecond = resp.data.secondGroup
-    //   this.arrayThird = resp.data.thirdGroup
-    // });
-
+    if(this.platform.ANDROID || this.platform.IOS){
+      this.isMobile = true;
+    }
+    
     this.fireService.getDataByGroups('data-by-groups').subscribe( (resp:any) => {
       console.log('getDataByGroups', resp[0]);
       this.arrayFirst = resp[0].data.firstGroup
