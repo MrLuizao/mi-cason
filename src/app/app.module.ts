@@ -18,7 +18,6 @@ import { GetAppComponent } from './components/get-app/get-app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
-import { DialogContactComponent } from './components/material-components/dialog-contact/dialog-contact.component'
 import { HttpClientModule } from '@angular/common/http';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
@@ -31,12 +30,14 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { IncompleteSnackComponent } from './components/re-use/incomplete-snack/incomplete-snack.component';
 import { ErrorSnackComponent } from './components/re-use/error-snack/error-snack.component';
 import { CompleteSnackComponent } from './components/re-use/complete-snack/complete-snack.component';
-import { DialogDescriptionComponent } from './components/material-components/dialog-contact/dialog-description.component';
+import { DialogDescriptionComponent } from './components/material-components/dialogs/description/dialog-description.component';
 import { HomeComponent } from './pages/home/home.component';
 import { DetailComponent } from './pages/detail/detail.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ResultsComponent } from './pages/results/results.component';
 import { SelectErrorSnackComponent } from './components/re-use/select-error-snack/select-error-snack.component';
+import { AboutUsComponent } from './components/material-components/dialogs/about-us/about-us.component';
+import { DialogContactComponent } from './components/material-components/dialogs/dialog-contact/dialog-contact.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { SelectErrorSnackComponent } from './components/re-use/select-error-snac
     DetailComponent,
     ContactComponent,
     ResultsComponent,
-    SelectErrorSnackComponent
+    SelectErrorSnackComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

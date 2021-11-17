@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { CompleteSnackComponent } from 'src/app/components/re-use/complete-snack/complete-snack.component';
+import { ErrorSnackComponent } from 'src/app/components/re-use/error-snack/error-snack.component';
+import { IncompleteSnackComponent } from 'src/app/components/re-use/incomplete-snack/incomplete-snack.component';
 import { ContactFormModel } from 'src/app/models/contact-form.model';
 import { FirestoreService } from 'src/app/services/firestore.service';
-import { CompleteSnackComponent } from '../../re-use/complete-snack/complete-snack.component';
-import { ErrorSnackComponent } from '../../re-use/error-snack/error-snack.component';
-import { IncompleteSnackComponent } from '../../re-use/incomplete-snack/incomplete-snack.component';
 
 @Component({
   selector: 'app-dialog-contact',
