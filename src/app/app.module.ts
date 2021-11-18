@@ -38,6 +38,7 @@ import { ResultsComponent } from './pages/results/results.component';
 import { SelectErrorSnackComponent } from './components/re-use/select-error-snack/select-error-snack.component';
 import { AboutUsComponent } from './components/material-components/dialogs/about-us/about-us.component';
 import { DialogContactComponent } from './components/material-components/dialogs/dialog-contact/dialog-contact.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @NgModule({
   declarations: [
@@ -76,6 +77,7 @@ import { DialogContactComponent } from './components/material-components/dialogs
     NoopAnimationsModule,
     MatDialogModule,
     MatSnackBarModule,
+    PdfViewerModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
