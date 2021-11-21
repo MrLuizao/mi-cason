@@ -33,7 +33,7 @@ export class SlidePromoComponent implements OnInit {
       this.isMobile = true;
     }
     
-    this.fireService.getDataByGroups('data-by-groups').subscribe( (resp:any) => {
+    this.fireService.getDataByGroups('data-by-groups').subscribe( (resp:any) => {      
       this.arrayFirst = resp[0].data.firstGroup
       this.arraySecond = resp[0].data.secondGroup
       this.arrayThird = resp[0].data.thirdGroup

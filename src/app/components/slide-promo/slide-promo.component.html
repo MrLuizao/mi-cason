@@ -11,17 +11,18 @@
                         (click)="tapToDescription(item)" style="cursor:pointer"> 
                     <img class="img-fluid h-100" src={{item.image}} alt="..." />
                     <div class="card-img-overlay ps-0">
-                      <span class="badge bg-primary ms-3 me-1 p-2" *ngIf="item.isNew">
-                        <i class="fas fa-clock me-1"></i>
-                        <span>Nuevo desarrollo</span>
+                      <span class="badge bg-primary ms-3 me-1 p-2">
+                        <i class="fas fa-home me-1"></i>
+                        <span>{{item.mtsInmueble}} mts²</span>
                       </span>
-                      <span class="badge bg-secondary ms-3 me-1 p-2" *ngIf="item.isReady">
-                        <i class="fas fa-house-user me-1"></i>
-                        <span>Listo para habitar</span>
+                      <span class="badge bg-primary ms-3 me-1 p-2">
+                        <i class="fas fa-bed me-1"></i>
+                        <span>{{item.bedrooms}} Habitaciones</span>
                       </span>
                     </div>
                     <div class="card-body ps-0">
                       <h5 class="fw-bold text-1000 mb-4 text-truncate">{{item.name}}</h5>
+                      <h6 class="text-800 mb-4 text-truncate">{{item.cardSubtitle}}</h6>
                       <div class="d-flex align-items-center justify-content-start">
                         <span class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span>
                         <span class="text-900 me-3">{{item.zone}}</span>
@@ -50,17 +51,18 @@
                         (click)="tapToDescription(item)" style="cursor:pointer"> 
                     <img class="img-fluid h-100" src={{item.image}} alt="..." />
                     <div class="card-img-overlay ps-0">
-                      <span class="badge bg-primary ms-3 me-1 p-2" *ngIf="item.isNew">
-                        <i class="fas fa-clock me-1"></i>
-                        <span>Nuevo desarrollo</span>
+                      <span class="badge bg-primary ms-3 me-1 p-2">
+                        <i class="fas fa-home me-1"></i>
+                        <span>{{item.mtsInmueble}} mts²</span>
                       </span>
-                      <span class="badge bg-secondary ms-3 me-1 p-2" *ngIf="item.isReady">
-                        <i class="fas fa-house-user me-1"></i>
-                        <span>Listo para habitar</span>
+                      <span class="badge bg-primary ms-3 me-1 p-2">
+                        <i class="fas fa-bed me-1"></i>
+                        <span>{{item.bedrooms}} Habitaciones</span>
                       </span>
                     </div>
                     <div class="card-body ps-0">
                       <h5 class="fw-bold text-1000 mb-4 text-truncate">{{item.name}}</h5>
+                      <h6 class="text-800 mb-4 text-truncate">{{item.cardSubtitle}}</h6>
                       <div class="d-flex align-items-center justify-content-start">
                         <span class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span>
                         <span class="text-900 me-3">{{item.zone}}</span>
@@ -89,17 +91,18 @@
                         (click)="tapToDescription(item)" style="cursor:pointer"> 
                     <img class="img-fluid h-100" src={{item.image}} alt="..." />
                     <div class="card-img-overlay ps-0">
-                      <span class="badge bg-primary ms-3 me-1 p-2" *ngIf="item.isNew">
-                        <i class="fas fa-clock me-1"></i>
-                        <span>Nuevo desarrollo</span>
+                      <span class="badge bg-primary ms-3 me-1 p-2">
+                        <i class="fas fa-home me-1"></i>
+                        <span>{{item.mtsInmueble}} mts²</span>
                       </span>
-                      <span class="badge bg-secondary ms-3 me-1 p-2" *ngIf="item.isReady">
-                        <i class="fas fa-house-user me-1"></i>
-                        <span>Listo para habitar</span>
+                      <span class="badge bg-primary ms-3 me-1 p-2">
+                        <i class="fas fa-bed me-1"></i>
+                        <span>{{item.bedrooms}} Habitaciones</span>
                       </span>
                     </div>
                     <div class="card-body ps-0">
                       <h5 class="fw-bold text-1000 mb-4 text-truncate">{{item.name}}</h5>
+                      <h6 class="text-800 mb-4 text-truncate">{{item.cardSubtitle}}</h6>
                       <div class="d-flex align-items-center justify-content-start">
                         <span class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span>
                         <span class="text-900 me-3">{{item.zone}}</span>
