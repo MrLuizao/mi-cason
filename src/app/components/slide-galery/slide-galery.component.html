@@ -1,9 +1,9 @@
 <section class="py-0 my-7">
-    <div  class="bg-holder w-40 bg-left  d-none d-lg-block img-portrait" ></div>
+    <!-- <div  class=" "  style="height: 50%; background-color: red;"></div> -->
     <div class="container">
       <div class="row g-0">
-        <div class="col-lg-4 order-1 order-lg-0"> </div>
-        <div class="col-lg-8 bg-white">
+        <!-- <div class="col-lg-4 order-1 order-lg-0"> </div> -->
+        <div class="col-lg-12 bg-white">
           <div class="carousel slide" id="carouselShare" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="5000" *ngFor="let item of arrayOne;">
@@ -11,65 +11,79 @@
                   <div class="col-12">
                     <img class="w-100" src={{item.image}} alt="..." />
                     <div class="pt-5 ps-sm-7">
-                      <h4 class="mb-2 text-1000"> Desde ${{item.minPrice}} - Hasta ${{item.maxPrice}}</h4>
-                      <h2 class="mb-3 text-primary fs-3 fs-md-6">{{item.title}}</h2>
-                      <p class="fw-normal mb-0">{{item.description}}</p>
+                      <h4 class="mb-2 text-1000">{{item.name}}</h4>
+                      <h4 class="mb-2 text-primary"> Desde ${{item.minPrice}} - Hasta ${{item.maxPrice}}</h4>
+                      <h2 class="mb-3 text-1000 fs-3 fs-md-6">{{item.title}}</h2>
+                      <div class="d-flex align-items-center justify-content-start">
+                        <span class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span>
+                        <span class="text-900 me-3">{{item.location}}</span>
+                      </div>
+                      <p class="fw-normal mb-0">{{item.description | titlecase }}</p>
                     </div>
                   </div>
                 </div>
-                <div class="row ps-sm-7 align-items-end">
+                <div class="row align-items-end mb-5">
                   <div class="position-relative z-index-2 text-end" (click)="contactAsesor(item)">
-                    <a class="btn btn-lg text-secondary" href={{linkWhats}} target="_blank" >
-                      Contacta a un asesor  &nbsp; <i class="fab fa-whatsapp"></i>
+                    <a class="btn btn-lg text-secondary" href={{linkWhats}} target="_blank" style="font-size: larger;">
+                        Contacta a un asesor  &nbsp; <i class="fab fa-whatsapp"></i>
                     </a>
                   </div>
-                </div>
+                </div> 
               </div>
               <div class="carousel-item" data-bs-interval="4000" *ngFor="let item of arrayTwo;">
                 <div class="row h-100">
                   <div class="col-12">
                     <img class="w-100" src={{item.image}} alt="..." />
                     <div class="pt-5 ps-sm-7">
-                      <h4 class="mb-2 text-1000"> Desde ${{item.minPrice}} - Hasta ${{item.maxPrice}}</h4>
-                      <h2 class="mb-3 text-primary fs-3 fs-md-6">{{item.title}}</h2>
-                      <p class="fw-normal mb-0">{{item.description}}</p>
-                    </div>
-                  </div>
-                  <div class="row ps-sm-7 align-items-end">
-                    <div class="position-relative z-index-2 text-end" (click)="contactAsesor(item)">
-                      <a class="btn btn-lg text-secondary" href={{linkWhats}} target="_blank" >
-                        Contacta a un asesor  &nbsp; <i class="fab fa-whatsapp"></i>
-                      </a>
+                      <h4 class="mb-2 text-1000">{{item.name}}</h4>
+                      <h4 class="mb-2 text-primary"> Desde ${{item.minPrice}} - Hasta ${{item.maxPrice}}</h4>
+                      <h2 class="mb-3 text-1000 fs-3 fs-md-6">{{item.title}}</h2>
+                      <div class="d-flex align-items-center justify-content-start">
+                        <span class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span>
+                        <span class="text-900 me-3">{{item.location}}</span>
+                      </div>
+                      <p class="fw-normal mb-0">{{item.description | titlecase }}</p>
                     </div>
                   </div>
                 </div>
+                <div class="row align-items-end mb-5">
+                  <div class="position-relative z-index-2 text-end" (click)="contactAsesor(item)">
+                    <a class="btn btn-lg text-secondary" href={{linkWhats}} target="_blank" style="font-size: larger;">
+                        Contacta a un asesor  &nbsp; <i class="fab fa-whatsapp"></i>
+                    </a>
+                  </div>
+                </div> 
               </div>
               <div class="carousel-item" data-bs-interval="4000" *ngFor="let item of arrayThree;">
                 <div class="row h-100">
                   <div class="col-12">
                     <img class="w-100" src={{item.image}} alt="..." />
                     <div class="pt-5 ps-sm-7">
-                      <h4 class="mb-2 text-1000"> Desde ${{item.minPrice}} - Hasta ${{item.maxPrice}}</h4>
-                      <h2 class="mb-3 text-primary fs-3 fs-md-6">{{item.title}}</h2>
-                      <p class="fw-normal mb-0">{{item.description}}</p>
+                      <h4 class="mb-2 text-1000">{{item.name}}</h4>
+                      <h4 class="mb-2 text-primary"> Desde ${{item.minPrice}} - Hasta ${{item.maxPrice}}</h4>
+                      <h2 class="mb-3 text-1000 fs-3 fs-md-6">{{item.title}}</h2>
+                      <div class="d-flex align-items-center justify-content-start">
+                        <span class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span>
+                        <span class="text-900 me-3">{{item.location}}</span>
+                      </div>
+                      <p class="fw-normal mb-0">{{item.description | titlecase }}</p>
                     </div>
                   </div>
                 </div>
-                <div class="row ps-sm-7 align-items-end">
+                <div class="row align-items-end mb-5">
                   <div class="position-relative z-index-2 text-end" (click)="contactAsesor(item)">
-                    <a class="btn btn-lg text-secondary" href={{linkWhats}} target="_blank" >
-                      Contacta a un asesor  &nbsp; <i class="fab fa-whatsapp"></i>
+                    <a class="btn btn-lg text-secondary" href={{linkWhats}} target="_blank" style="font-size: larger;">
+                        Contacta a un asesor  &nbsp; <i class="fab fa-whatsapp"></i>
                     </a>
                   </div>
-                </div>        
-              </div>  
-
+                </div> 
+              </div>
               <div class="row">
-                <button style="margin-bottom: 5em;" class="carousel-control-prev" type="button" data-bs-target="#carouselShare" data-bs-slide="prev">
+                <button style="margin-top: -20em;" class="carousel-control-prev" type="button" data-bs-target="#carouselShare" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button style="margin-bottom: 5em;" class="carousel-control-next" type="button" data-bs-target="#carouselShare" data-bs-slide="next">
+                <button style="margin-top: -20em;" class="carousel-control-next" type="button" data-bs-target="#carouselShare" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>

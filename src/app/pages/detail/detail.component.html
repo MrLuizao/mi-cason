@@ -2,14 +2,12 @@
     <app-nav-bar></app-nav-bar>
 
     <section class="py-0 my-7">
-        <div  class="bg-holder w-40 bg-left  d-none d-lg-block img-portrait" ></div>
-        
-        
+        <!-- <div  class="bg-holder w-40 bg-left  d-none d-lg-block img-portrait" ></div> -->
         <!-- bg-secondary-gradient{background:-webkit-gradient(linear, left top, right top, from(#febe15), to(#fe7a15)); -->
         <div class="container">
           <div class="row g-0">
-            <div class="col-lg-4 order-1 order-lg-0"> </div>
-            <div class="col-lg-8 bg-white">
+            <!-- <div class="col-lg-4 order-1 order-lg-0"> </div> -->
+            <div class="col-lg-12 bg-white">
               <div class="carousel slide" id="carouselShare" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="5000" >
@@ -17,19 +15,61 @@
                       <div class="col-12">
                         <img class="w-100" src={{modalArray.image2}} alt="..." />
                         <div class="pt-5 ps-sm-7">
-                          <h4 class="mb-2 text-1000">{{modalArray.title}}</h4>
+                          <h4 class="mb-2 text-1000">{{modalArray.name}}</h4>
                           <h2 class="mb-3 text-primary fs-3 fs-md-6"> $ {{modalArray.costNew}}</h2>
-                          <p class="fw-normal mb-0">{{modalArray.description}}</p>
+                          <p class="fw-normal mb-0">{{modalArray.title }}</p>
                         </div>
                       </div>
                       <div class="col-12 pt-5 ps-sm-7">
                         <p class="text-900 me-3">Amenidades:</p>
-                          <span class="badge bg-primary ms-3 me-1 p-2" style="margin-bottom: 1em;">
-                            <span>luis test</span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="alberca">
+                            <span>Alberca</span>
                           </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="quazona">
+                            <span>Aquazona</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="asadores">
+                            <span>Asadores</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="cafeteria">
+                            <span>Cafetería</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="cancha">
+                            <span>Cancha</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="gimnasio">
+                            <span>Gimnasio</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="gymexterior">
+                            <span>Gym exterior</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="ludoteca">
+                            <span>Lúdoteca</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="palapa">
+                            <span>Palapa</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="petZone">
+                            <span>Pet zone</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="jogging">
+                            <span>Pista de Jogging</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="vigilancia">
+                            <span>Vigilancia</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="lounge">
+                            <span>Zona Lounge</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="infantil">
+                            <span>Área infantil</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="areasVerde">
+                            <span>Áreas verdes</span>
+                          </span>      
                       </div>
                     </div>
-                    <div class="row ps-sm-7 align-items-end mb-5">
+                    <div class="row align-items-end mb-5">
                       <div class="position-relative z-index-2 text-end" >
                         <a class="btn btn-lg text-secondary" href={{linkWhats}} target="_blank" style="font-size: larger;">
                             Contacta a un asesor  &nbsp; <i class="fab fa-whatsapp"></i>
@@ -37,24 +77,66 @@
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item" data-bs-interval="4000" >
+                  <div class="carousel-item" data-bs-interval="4000">
                     <div class="row h-100">
                       <div class="col-12">
                         <img class="w-100" src={{modalArray.image3}} alt="..." />
                         <div class="pt-5 ps-sm-7">
-                          <h4 class="mb-2 text-1000">{{modalArray.title}}</h4>
+                          <h4 class="mb-2 text-1000">{{modalArray.name}}</h4>
                           <h2 class="mb-3 text-primary fs-3 fs-md-6"> $ {{modalArray.costNew}}</h2>
-                          <p class="fw-normal mb-0">{{modalArray.description}}</p>
+                          <p class="fw-normal mb-0">{{modalArray.title}}</p>
                         </div>
                       </div>
                       <div class="col-12 pt-5 ps-sm-7">
                         <p class="text-900 me-3">Amenidades:</p>
-                          <span class="badge bg-primary ms-3 me-1 p-2" style="margin-bottom: 1em;">
-                            <span>luis test</span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="alberca">
+                            <span>Alberca</span>
                           </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="quazona">
+                            <span>Aquazona</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="asadores">
+                            <span>Asadores</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="cafeteria">
+                            <span>Cafetería</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="cancha">
+                            <span>Cancha</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="gimnasio">
+                            <span>Gimnasio</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="gymexterior">
+                            <span>Gym exterior</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="ludoteca">
+                            <span>Lúdoteca</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="palapa">
+                            <span>Palapa</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="petZone">
+                            <span>Pet zone</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="jogging">
+                            <span>Pista de Jogging</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="vigilancia">
+                            <span>Vigilancia</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="lounge">
+                            <span>Zona Lounge</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="infantil">
+                            <span>Área infantil</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="areasVerde">
+                            <span>Áreas verdes</span>
+                          </span>      
                       </div>
                     </div>
-                    <div class="row ps-sm-7 align-items-end">
+                    <div class="row align-items-end">
                       <div class="position-relative z-index-2 text-end" >
                         <a class="btn btn-lg text-secondary" href={{linkWhats}} target="_blank">
                             Contacta a un asesor  &nbsp; <i class="fab fa-whatsapp"></i>
@@ -62,24 +144,66 @@
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item" data-bs-interval="4000" >
+                  <div class="carousel-item" data-bs-interval="4000">
                     <div class="row h-100">
                       <div class="col-12">
                         <img class="w-100" src={{modalArray.image4}} alt="..." />
                         <div class="pt-5 ps-sm-7">
-                          <h4 class="mb-2 text-1000">{{modalArray.title}}</h4>
+                          <h4 class="mb-2 text-1000">{{modalArray.name}}</h4>
                           <h2 class="mb-3 text-primary fs-3 fs-md-6"> $ {{modalArray.costNew}}</h2>
-                          <p class="fw-normal mb-0">{{modalArray.description}}</p>
+                          <p class="fw-normal mb-0">{{modalArray.title}}</p>
                         </div>
                       </div>
                       <div class="col-12 pt-5 ps-sm-7">
                         <p class="text-900 me-3">Amenidades:</p>
-                          <span class="badge bg-primary ms-3 me-1 p-2" style="margin-bottom: 1em;">
-                            <span>luis test</span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="alberca">
+                            <span>Alberca</span>
                           </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="quazona">
+                            <span>Aquazona</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="asadores">
+                            <span>Asadores</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="cafeteria">
+                            <span>Cafetería</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="cancha">
+                            <span>Cancha</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="gimnasio">
+                            <span>Gimnasio</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="gymexterior">
+                            <span>Gym exterior</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="ludoteca">
+                            <span>Lúdoteca</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="palapa">
+                            <span>Palapa</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="petZone">
+                            <span>Pet zone</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="jogging">
+                            <span>Pista de Jogging</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="vigilancia">
+                            <span>Vigilancia</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="lounge">
+                            <span>Zona Lounge</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="infantil">
+                            <span>Área infantil</span>
+                          </span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="areasVerde">
+                            <span>Áreas verdes</span>
+                          </span>      
                       </div>
                     </div>
-                    <div class="row ps-sm-7 align-items-end">
+                    <div class="row align-items-end">
                       <div class="position-relative z-index-2 text-end" >
                         <a class="btn btn-lg text-secondary" href={{linkWhats}} target="_blank">
                             Contacta a un asesor  &nbsp; <i class="fab fa-whatsapp"></i>
@@ -89,11 +213,11 @@
                   </div>
 
                   <div class="row">
-                    <button style="margin-bottom: 10em;" class="carousel-control-prev" type="button" data-bs-target="#carouselShare" data-bs-slide="prev">
+                    <button style="margin-top: -20em;" class="carousel-control-prev" type="button" data-bs-target="#carouselShare" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button style="margin-bottom: 10em;" class="carousel-control-next" type="button" data-bs-target="#carouselShare" data-bs-slide="next">
+                    <button style="margin-top: -20em;" class="carousel-control-next" type="button" data-bs-target="#carouselShare" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>

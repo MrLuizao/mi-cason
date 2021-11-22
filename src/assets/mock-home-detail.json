@@ -2,40 +2,42 @@
     "slideOne": [
         {
             "id": "1",
-            "image": "https://i.ibb.co/F3ChRy0/mean-home-3.jpg",
-            "title": "¡Estrena hoy!",
-            "description": "Cómodos departamentos de 61 m2, cuentan con jardín o roof garden, 2 recámaras con opción a 3 y amplia área de lavado.",
-            "name": "Bakeira Condado Del Valle",
-            "location": "Toluca",
-            "minPrice": "765,000",
-            "maxPrice": "819,400",
-            "contactPhone": "5522542000 "
+            "image": "https://i.ibb.co/dPb4TNj/image-4.jpg",
+            "title": "SKY PARK con exclusivas amenidades.",
+            "description": "DEPARTAMENTOS DE  2 Y 3 RECÁMARAS.",
+            "name": "Terraverde Tarango",
+            "location": "CDMX",
+            "minPrice": "3,291,000",
+            "maxPrice": "4,071,000",
+            "contactPhone": "5574189420 "
         }
     ],
     "slideTwo": [
         {
             "id": "2",
-            "image": "https://i.ibb.co/y41WwFM/mean-home-1.jpg",
-            "description": "A unos minutos del Lago de Tequesquitengo, en el Estado de Morelos",
-            "title": "¡Gran ubicación!",
-            "name": "Casa Carrara Plus",
+            "image": "https://i.ibb.co/MSLmKPG/terra-Two-portrait-original.jpg",
+            "description": "¡SE ENTREGAN TOTALMENTE EQUIPADOS!",
+            "title": "Un gran concepto e innovación",
+            "name": "Terraverde Tarango",
             "location": "CDMX",
-            "minPrice": "765,000",
-            "maxPrice": "819,400",
-            "contactPhone": "5522542000 "
+            "minPrice": "3,291,000",
+            "maxPrice": "4,071,000",
+            "contactPhone": "5574189420 "
         }
     ],
     "slideThree": [
         {
             "id": "3",
-            "image": "https://i.ibb.co/SwLys2t/mean-home-4.jpg",
-            "title": "Amenidades",
-            "description": "Alberca en cada privada y Aquazona",
-            "name": "La Asuncion Metepec",
-            "location": "Edo. de México",
-            "minPrice": "765,000",
-            "maxPrice": "819,400",
-            "contactPhone": "5522542000"
+            "image": "https://i.ibb.co/bBrR3hK/IMG-7971.jpg",
+            "title": "Una extraordinaria arquitectura.",
+            "description": "¡Una oportunidad perfecta!",
+            "name": "Terraverde Tarango",
+            "location": "CDMX",
+            "minPrice": "3,291,000",
+            "maxPrice": "4,071,000",
+            "contactPhone": "5574189420"
         }
     ]
 }
+
+

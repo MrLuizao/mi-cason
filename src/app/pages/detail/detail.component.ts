@@ -12,6 +12,23 @@ export class DetailComponent implements OnInit {
   linkWhats!: string;
   message: string = '';
 
+  alberca: boolean = false;
+  quazona: boolean = false;
+  asadores: boolean = false;
+  cafeteria: boolean = false;
+  cancha: boolean = false;
+  gimnasio: boolean = false;
+  gymexterior: boolean = false;
+  ludoteca: boolean = false;
+  palapa: boolean = false;
+  petZone: boolean = false;
+  jogging: boolean = false;
+  vigilancia: boolean = false;
+  lounge: boolean = false;
+  infantil: boolean = false;
+  areasVerde: boolean = false;
+
+
   constructor( private behaviorSrv: DataBehaviorService ) {window.scrollTo(0,0)}
 
   ngOnInit(): void {
@@ -21,7 +38,31 @@ export class DetailComponent implements OnInit {
       this.message = 'Hola, me gustaría conocer más detalles del desarrollo de'+' '+this.modalArray.name;
       this.linkWhats = `https://api.whatsapp.com/send?phone=+52${this.modalArray.contactPhone}&text=${this.message}` ;
 
+      this.findAmenities();
     }).unsubscribe();
+
+  }
+
+  findAmenities(){
+
+    let amenities = this.modalArray.amenities;
+
+    this.alberca = amenities.Alberca;
+    this.quazona = amenities.Aquazona;
+    this.asadores = amenities.Asadores;
+    this.cafeteria = amenities.Cafetería;
+    this.cancha = amenities.Cancha;
+    this.gimnasio = amenities.Gimnasio;
+    this.gymexterior = amenities['Gym exterior'];
+    this.ludoteca = amenities.Lúdoteca;
+    this.palapa = amenities.Palapa;
+    this.petZone = amenities['Pet zone'];
+    this.jogging = amenities['Pista de Jogging'];
+    this.vigilancia = amenities.Vigilancia;
+    this.lounge = amenities['Zona Lounge'];
+    this.infantil = amenities['Área infantil'];
+    this.areasVerde = amenities['Áreas verdes'];
+
   }
 
 }
