@@ -10,6 +10,7 @@ import { DataBehaviorService } from 'src/app/services/data-behavior.service';
 export class ResultsComponent implements OnInit {
 
   arrayResult: any;
+  nameCity: any;
 
   constructor(  private bindService: DataBehaviorService,
                 private route: Router ) { }
@@ -18,6 +19,7 @@ export class ResultsComponent implements OnInit {
     this.bindService.$getFindSource.subscribe( (res:any) =>{
       console.log('$getFindSource',res);
       this.arrayResult = res;
+      this.nameCity = this.arrayResult[0].zone;
     })
   }
 

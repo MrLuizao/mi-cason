@@ -1,27 +1,29 @@
 <main class="main" id="top">
     <app-nav-bar></app-nav-bar>
 
+    
     <section class="py-0" style="margin-top: 6em;">
         <div class="container">
-          <div class="row h-100 g-2 justify-content-center">
-
-            <div class="col-sm-9 col-md-4 mb-3 mb-md-0 h-100" *ngFor="let item of arrayResult">
-                <div class="card card-span text-white h-100">
-                    <img class="img-card h-100" src={{item.image}} alt="..." />
-                    <div class="card-body px-xl-5 px-md-3 pt-0 pb-7">
-                        <h3 class="fw-bold text-black mt-5 text-truncate">{{item.name}}</h3>
-                        <p class="text-900 mt-3">{{item.description | titlecase}}</p>
-                        <a class="btn btn-lg text-secondary fs-1 px-0 hvr-icon-forward" (click)="tapToDetails(item)">
-                            Más detalles
-                            <svg class="bi bi-arrow-right-short hover-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"> </path>
-                            </svg>
-                        </a>
+            <div class="row h-100 g-2 justify-content-center">
+                <div style="text-align: center; padding: 3em;">
+                    <h1 class="text-primary fw-bold">{{nameCity}}</h1>
+                </div>
+                <div class="col-sm-9 col-md-4 mb-3 mb-md-0 h-100" *ngFor="let item of arrayResult">
+                    <div class="card card-span text-white h-100">
+                        <img class="img-card h-100" src={{item.image}} alt="..." />
+                        <div class="card-body px-xl-5 px-md-3 pt-0 pb-7">
+                            <h3 class="fw-bold text-black mt-5 text-truncate">{{item.name}}</h3>
+                            <p class="text-900 mt-3">{{item.description | titlecase}}</p>
+                            <a class="btn btn-lg text-secondary fs-1 px-0 hvr-icon-forward" (click)="tapToDetails(item)">
+                                Más detalles
+                                <svg class="bi bi-arrow-right-short hover-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"> </path>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-          </div>
         </div>
     </section>
 
