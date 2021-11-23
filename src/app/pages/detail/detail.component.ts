@@ -1,3 +1,4 @@
+import { Platform } from '@angular/cdk/platform';
 import { Component, OnInit } from '@angular/core';
 import { DataBehaviorService } from 'src/app/services/data-behavior.service';
 
@@ -7,6 +8,8 @@ import { DataBehaviorService } from 'src/app/services/data-behavior.service';
   styleUrls: ['./detail.component.css']
 })
 export class DetailComponent implements OnInit {
+
+  isMobile: boolean = false;
 
   modalArray: any;
   linkWhats!: string;
@@ -29,9 +32,13 @@ export class DetailComponent implements OnInit {
   areasVerde: boolean = false;
 
 
-  constructor( private behaviorSrv: DataBehaviorService ) {window.scrollTo(0,0)}
+  constructor( private behaviorSrv: DataBehaviorService, public platform: Platform, ) {window.scrollTo(0,0)}
 
   ngOnInit(): void {
+    if(this.platform.ANDROID || this.platform.IOS){
+      this.isMobile = true;
+    }
+
     this.behaviorSrv.$getObjectSource.subscribe( (resp: any) =>{
       this.modalArray = resp
       console.log('modalArray:', this.modalArray);

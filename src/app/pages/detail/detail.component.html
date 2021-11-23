@@ -13,13 +13,18 @@
                   <div class="carousel-item active" data-bs-interval="5000" >
                     <div class="row h-100">
                       <div class="col-12">
-                        <img class="w-100" src={{modalArray.image2}} alt="..." />
-                        <div class="card-img-overlay" style="margin-top: 2em;">
-                          <span class="badge bg-secondary ms-3 me-1 p-2">
+                        <img class="w-100" src={{modalArray.image2}} alt="..." *ngIf="isMobile"/>
+                        <div style="display: flex;"  *ngIf="!isMobile">
+                          <span style="flex: 1 1"></span>
+                          <img class="w-50" src={{modalArray.image2}} alt="..." />
+                          <span style="flex: 1 1"></span>
+                        </div>
+                        <div class="card-img-overlay" style="margin-top: 2em; text-align: center;">
+                          <span class="badge bg-primary ms-3 me-1 p-2">
                             <i class="fas fa-home me-1"></i>
                             <span>{{modalArray.mtsInmueble}} mts²</span>
                           </span>
-                          <span class="badge bg-secondary ms-3 me-1 p-2">
+                          <span class="badge bg-primary ms-3 me-1 p-2">
                             <i class="fas fa-bed me-1"></i>
                             <span>{{modalArray.bedrooms}} Habitaciones</span>
                           </span>
@@ -96,13 +101,18 @@
                   <div class="carousel-item" data-bs-interval="4000">
                     <div class="row h-100">
                       <div class="col-12">
-                        <img class="w-100" src={{modalArray.image3}} alt="..." />
-                        <div class="card-img-overlay" style="margin-top: 2em;">
-                          <span class="badge bg-secondary ms-3 me-1 p-2">
+                        <img class="w-100" src={{modalArray.image3}} alt="..." *ngIf="isMobile"/>
+                        <div style="display: flex;" *ngIf="!isMobile">
+                          <span style="flex: 1 1"></span>
+                          <img class="w-50" src={{modalArray.image3}} alt="..." />
+                          <span style="flex: 1 1"></span>
+                        </div>
+                        <div class="card-img-overlay" style="margin-top: 2em; text-align: center;">
+                          <span class="badge bg-primary ms-3 me-1 p-2">
                             <i class="fas fa-home me-1"></i>
                             <span>{{modalArray.mtsInmueble}} mts²</span>
                           </span>
-                          <span class="badge bg-secondary ms-3 me-1 p-2">
+                          <span class="badge bg-primary ms-3 me-1 p-2">
                             <i class="fas fa-bed me-1"></i>
                             <span>{{modalArray.bedrooms}} Habitaciones</span>
                           </span>
@@ -179,13 +189,18 @@
                   <div class="carousel-item" data-bs-interval="4000">
                     <div class="row h-100">
                       <div class="col-12">
-                        <img class="w-100" src={{modalArray.image4}} alt="..." />
-                        <div class="card-img-overlay" style="margin-top: 2em;">
-                          <span class="badge bg-secondary ms-3 me-1 p-2">
+                        <img class="w-100" src={{modalArray.image4}} alt="..." *ngIf="isMobile"/>
+                        <div style="display: flex;" *ngIf="!isMobile">
+                          <span style="flex: 1 1"></span>
+                          <img class="w-50" src={{modalArray.image4}} alt="..." />
+                          <span style="flex: 1 1"></span>
+                        </div>
+                        <div class="card-img-overlay" style="margin-top: 2em; text-align: center;">
+                          <span class="badge bg-primary ms-3 me-1 p-2">
                             <i class="fas fa-home me-1"></i>
                             <span>{{modalArray.mtsInmueble}} mts²</span>
                           </span>
-                          <span class="badge bg-secondary ms-3 me-1 p-2">
+                          <span class="badge bg-primary ms-3 me-1 p-2">
                             <i class="fas fa-bed me-1"></i>
                             <span>{{modalArray.bedrooms}} Habitaciones</span>
                           </span>
@@ -262,11 +277,13 @@
 
                   <div class="row">
                     <button style="margin-top: -20em;" class="carousel-control-prev" type="button" data-bs-target="#carouselShare" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="carousel-control-prev-icon btn-secondary" aria-hidden="true" *ngIf="!isMobile"></span>
+                      <span class="carousel-control-prev-icon" aria-hidden="true" *ngIf="isMobile"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
                     <button style="margin-top: -20em;" class="carousel-control-next" type="button" data-bs-target="#carouselShare" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="carousel-control-next-icon btn-secondary" aria-hidden="true" *ngIf="!isMobile"></span>
+                      <span class="carousel-control-next-icon" aria-hidden="true" *ngIf="isMobile"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>

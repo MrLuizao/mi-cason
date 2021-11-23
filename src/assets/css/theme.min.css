@@ -3914,6 +3914,11 @@ fieldset:disabled .btn {
     background-color: #fcb73d;
     border-color: #fcb73d
 }
+.btn-arrows {
+    color: #000;
+    background-color: transparent;
+    border-color: #fcb73d
+}
 
 .btn-secondary:hover {
     color: #FFFEFE;
