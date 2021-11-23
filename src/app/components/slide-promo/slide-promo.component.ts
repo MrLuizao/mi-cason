@@ -13,7 +13,8 @@ import { MockDataService } from 'src/app/services/mock-data.service';
 })
 export class SlidePromoComponent implements OnInit {
 
-  // browserPc!: boolean;
+  listArray: any;
+
   isMobile: boolean = false;
   arrayFirst: any;
   arraySecond: any;
@@ -33,12 +34,15 @@ export class SlidePromoComponent implements OnInit {
       this.isMobile = true;
     }
     
-    this.fireService.getDataByGroups('data-by-groups').subscribe( (resp:any) => {    
-      console.log('data-by-groups', resp[0].data);
-        
-      this.arrayFirst = resp[0].data.firstGroup
-      this.arraySecond = resp[0].data.secondGroup
-      this.arrayThird = resp[0].data.thirdGroup
+    // this.fireService.getDataByGroups('data-by-groups').subscribe( (resp:any) => {            
+    //   this.arrayFirst = resp[0].data.firstGroup
+    //   this.arraySecond = resp[0].data.secondGroup
+    //   this.arrayThird = resp[0].data.thirdGroup
+    // })
+
+    this.fireService.getDataByGroups('data-complete').subscribe( (resp:any) => {    
+      this.listArray = resp[0].data;
+      console.log('this.listArray:', this.listArray);
     })
   }
 
