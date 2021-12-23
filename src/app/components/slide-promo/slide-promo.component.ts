@@ -51,5 +51,9 @@ export class SlidePromoComponent implements OnInit {
     this.route.navigateByUrl('detail')
   }
 
+  testAlert(){
+    alert('funciona el click en la imagen')
+  }
+
 
 }

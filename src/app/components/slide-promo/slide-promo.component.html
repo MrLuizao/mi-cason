@@ -7,10 +7,9 @@
             <div class="carousel-item active">
               <div class="row h-100 align-items-center g-2">
                 <div class="col-md-4 mb-3 mb-md-0 h-100" *ngFor="let item of listArray;">
-                  <div  class="card card-span h-100 text-white"
-                        (click)="tapToDescription(item)" style="cursor:pointer"> 
-                    <img class="img-fluid h-100" src={{item.image}} alt="..." />
-                    <div class="card-img-overlay ps-0">
+                  <div class="card card-span h-100 text-white separate-card"> 
+                    <img class="img-fluid h-100" src={{item.image}} alt="..."/>
+                    <div class="card-img-overlay">
                       <span class="badge bg-primary ms-3 me-1 p-2">
                         <i class="fas fa-home me-1"></i>
                         <span>{{item.mtsInmueble}} mts²</span>
@@ -20,7 +19,7 @@
                         <span>{{item.bedrooms}} Habitaciones</span>
                       </span>
                     </div>
-                    <div class="card-body ps-0">
+                    <div class="card-body">
                       <h5 class="fw-bold text-1000 mb-4 text-truncate">{{item.name}}</h5>
                       <h6 class="text-800 mb-4 text-truncate">{{item.cardSubtitle}}</h6>
                       <div class="d-flex align-items-center justify-content-start">
@@ -32,6 +31,21 @@
                           <span>${{item.costNew}}</span> &nbsp;
                           <span class="text-900 fs--1 fw-normal">MXN</span>
                         </h1>
+
+                      <div class="text-center mb-3" style="margin-top: 2em;">
+                        <button class="btn btn-secondary">
+                          Contacta a un asesor <i class="fab fa-whatsapp"></i>
+                        </button>
+                      </div>
+
+                      <div class="row align-items-end" style="margin-top: 2em;">
+                        <div class="position-relative z-index-2 text-end" (click)="tapToDescription(item)">
+                          <span class="fw-bold fw-normal text-1000 text-truncate" style="font-size: x-large;">
+                            Ver detalles &nbsp; <i class="fas fa-chevron-right text-1000 fw-bold"></i>
+                          </span>
+                        </div>
+                      </div>
+                        
                     </div>
                   </div>
                 </div>
