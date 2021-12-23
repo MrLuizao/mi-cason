@@ -34,12 +34,6 @@ export class SlidePromoComponent implements OnInit {
       this.isMobile = true;
     }
     
-    // this.fireService.getDataByGroups('data-by-groups').subscribe( (resp:any) => {            
-    //   this.arrayFirst = resp[0].data.firstGroup
-    //   this.arraySecond = resp[0].data.secondGroup
-    //   this.arrayThird = resp[0].data.thirdGroup
-    // })
-
     this.fireService.getDataByGroups('data-complete').subscribe( (resp:any) => {    
       this.listArray = resp[0].data;
       console.log('this.listArray:', this.listArray);
@@ -51,9 +45,10 @@ export class SlidePromoComponent implements OnInit {
     this.route.navigateByUrl('detail')
   }
 
-  testAlert(){
-    alert('funciona el click en la imagen')
+  openLinkWhats(indexParam: any){
+    console.log(indexParam);
+    let message = 'Hola, me gustaría conocer más detalles del desarrollo de'+' '+indexParam.name;
+    window.open(`https://api.whatsapp.com/send?phone=+52${indexParam.contactPhone}&text=${message}`, '_blank');
   }
-
 
 }
