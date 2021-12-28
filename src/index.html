@@ -31,6 +31,33 @@
 
     gtag('config', 'G-1ZFFBB605V');
   </script>
+
+  <!-- Global site tag (gtag.js) - Google Ads: 10814926178 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10814926178"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-10814926178');
+  </script>
+
+
+  <!-- Event snippet for Contacto desde la página web conversion page
+  In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-10814926178/EBTJCNLQ_4wDEOLa-qQo',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
   
 </head>
 <body>
