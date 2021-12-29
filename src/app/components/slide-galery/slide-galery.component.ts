@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataBehaviorService } from 'src/app/services/data-behavior.service';
 import { MockDataService } from 'src/app/services/mock-data.service';
+import { SeoService } from 'src/app/services/seo.service';
 
 @Component({
   selector: 'app-slide-galery',
@@ -15,7 +16,7 @@ export class SlideGaleryComponent implements OnInit {
 
   linkWhats!: string;
   constructor(  private mockSrv: MockDataService,
-                private behaviorSrv: DataBehaviorService ) { }
+                public seoService: SeoService ) { }
 
   ngOnInit( ) {
 
@@ -31,6 +32,8 @@ export class SlideGaleryComponent implements OnInit {
   }
 
   contactAsesor(param: any){
+    this.seoService.gtagReportConversion('home')
+
     let message = 'Hola, me gustaría conocer más detalles del desarrollo'+' '+param.name;
     this.linkWhats =`https://api.whatsapp.com/send?phone=+52${param.contactPhone}&text=${message}` ;
   }

@@ -4,7 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { DataBehaviorService } from 'src/app/services/data-behavior.service';
 import { FirestoreService } from 'src/app/services/firestore.service';
-import { MockDataService } from 'src/app/services/mock-data.service';
+import { SeoService } from 'src/app/services/seo.service';
 
 @Component({
   selector: 'app-slide-promo',
@@ -20,12 +20,11 @@ export class SlidePromoComponent implements OnInit {
   arraySecond: any;
   arrayThird: any;
 
-  constructor(  private mockSrv: MockDataService,
-                private bindService: DataBehaviorService,
-                public platform: Platform,
+  constructor(  public platform: Platform,
                 private behaviorSrv: DataBehaviorService,
                 public dialog: MatDialog,
                 private route: Router,
+                public seoService: SeoService,
                 private fireService: FirestoreService) { }
 
   ngOnInit( ) {
@@ -47,6 +46,7 @@ export class SlidePromoComponent implements OnInit {
 
   openLinkWhats(indexParam: any){
     console.log(indexParam);
+    this.seoService.gtagReportConversion('promoCards');
     let message = 'Hola, me gustaría conocer más detalles del desarrollo de'+' '+indexParam.name;
     window.open(`https://api.whatsapp.com/send?phone=+52${indexParam.contactPhone}&text=${message}`, '_blank');
   }

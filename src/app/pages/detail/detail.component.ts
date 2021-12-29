@@ -1,6 +1,7 @@
 import { Platform } from '@angular/cdk/platform';
 import { Component, OnInit } from '@angular/core';
 import { DataBehaviorService } from 'src/app/services/data-behavior.service';
+import { SeoService } from 'src/app/services/seo.service';
 
 @Component({
   selector: 'app-detail',
@@ -32,7 +33,9 @@ export class DetailComponent implements OnInit {
   areasVerde: boolean = false;
 
 
-  constructor( private behaviorSrv: DataBehaviorService, public platform: Platform, ) {window.scrollTo(0,0)}
+  constructor(  private behaviorSrv: DataBehaviorService, 
+                public seoService: SeoService,
+                public platform: Platform, ) {window.scrollTo(0,0)}
 
   ngOnInit(): void {
     if(this.platform.ANDROID || this.platform.IOS){
@@ -70,6 +73,10 @@ export class DetailComponent implements OnInit {
     this.infantil = amenities['Área infantil'];
     this.areasVerde = amenities['Áreas verdes'];
 
+  }
+
+  gtagEvent(){
+    this.seoService.gtagReportConversion('detailPage')
   }
 
 }

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
+declare let gtag: Function;
 
 @Injectable({
   providedIn: 'root'
@@ -35,4 +36,14 @@ export class SeoService {
     this.meta.updateTag({name: 'image', content:config.image})
 
   }
+
+  gtagReportConversion( url: string){   
+    console.log(url);
+    gtag('event', 'conversion', {
+      'send_to': 'AW-10814926178/EBTJCNLQ_4wDEOLa-qQo',
+      'event_callback': url
+    });
+
+  }
+
 }
