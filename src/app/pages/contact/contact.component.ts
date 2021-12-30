@@ -33,7 +33,7 @@ export class ContactComponent implements OnInit {
 
   sendContactForm(form: NgForm){ 
 
-    this.seoService.gtagReportConversion('contactPage')
+    this.sendDataToSeo();
 
     if(form.invalid){ 
       this.typeAlert = 'incomplete' 
@@ -493,6 +493,10 @@ export class ContactComponent implements OnInit {
     }).catch( (error) =>{
       console.error('error:', error);      
     });
+  }
+
+  sendDataToSeo(){
+    this.seoService.gtagReportConversion('contactPage')
   }
 
 }

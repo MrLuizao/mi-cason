@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { SeoService } from 'src/app/services/seo.service';
 import { AboutUsComponent } from '../material-components/dialogs/about-us/about-us.component';
 
 @Component({
@@ -10,7 +11,9 @@ import { AboutUsComponent } from '../material-components/dialogs/about-us/about-
 })
 export class FooterComponent implements OnInit {
 
-  constructor( public dialog: MatDialog, private route: Router) { }
+  constructor(  public dialog: MatDialog, 
+                public seoService: SeoService,
+                private route: Router) { }
 
   ngOnInit(): void {
   }
@@ -25,6 +28,10 @@ export class FooterComponent implements OnInit {
 
   goToPrivacyNotice(){
     window.open('assets/pdf/privacy-notice.pdf');
+  }
+
+  triggerSeoService(){
+    this.seoService.gtagReportConversion('footerPage')
   }
 
 }
