@@ -19,6 +19,8 @@ export class SlidePromoComponent implements OnInit {
   arrayFirst: any;
   arraySecond: any;
   arrayThird: any;
+  linkWhats: any;
+  messageWhats: any;
 
   constructor(  public platform: Platform,
                 private behaviorSrv: DataBehaviorService,
@@ -28,6 +30,8 @@ export class SlidePromoComponent implements OnInit {
                 private fireService: FirestoreService) { }
 
   ngOnInit( ) {
+    this.messageWhats = 'Hola, me gustaría conocer más acerca de los desarrollos'
+    this.linkWhats = `https://api.whatsapp.com/send?phone=+525633212320&text=${this.messageWhats}`;
     
     if(this.platform.ANDROID || this.platform.IOS){
       this.isMobile = true;
