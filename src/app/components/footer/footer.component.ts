@@ -34,4 +34,8 @@ export class FooterComponent implements OnInit {
     this.seoService.gtagReportConversion('footerPage')
   }
 
+  goToBlogPage(){
+    this.route.navigateByUrl('blog')
+  }
+
 }
