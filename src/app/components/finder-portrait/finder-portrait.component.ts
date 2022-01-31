@@ -33,7 +33,7 @@ export class FinderPortraitComponent implements OnInit {
 
     if(this.dataInput === 'Selecciona una opción'){
       this._snackBar.openFromComponent(SelectErrorSnackComponent, {
-        verticalPosition: 'bottom',
+        verticalPosition: 'top',
         duration: this.durationInSeconds * 1000
       });
       return

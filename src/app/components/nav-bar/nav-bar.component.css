@@ -1,0 +1,20 @@
+a{
+    color: #FFF !important;
+}
+.contain-float{
+    background-color: #25d366;
+    border-radius: 50px;
+    bottom: 0.5em;
+    box-shadow: 0 3px 8px 0 rgb(0 0 0 / 32%);
+    display: flex;
+    font-size: xx-large;
+    flex-direction: column;
+    height: 65px;
+    justify-content: center;
+    left: 0.3em;
+    position: fixed;
+    text-align: center;
+    width: 65px;
+    z-index: 1030;
+}
+
