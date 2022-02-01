@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { SeoService } from 'src/app/services/seo.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -10,6 +11,7 @@ import { Router } from '@angular/router';
 export class NavBarComponent implements OnInit {
 
   constructor(  public dialog: MatDialog,
+                public seoService: SeoService,
                 private route: Router ) { }
 
   ngOnInit(): void {
@@ -23,5 +25,8 @@ export class NavBarComponent implements OnInit {
   navigatePop(){
     this.route.navigateByUrl('home');
   }
-  
+
+  saveClickToSeo(){
+    this.seoService.gtagReportConversion('whatsApp-btn')
+  }
 }

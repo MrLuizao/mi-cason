@@ -55,4 +55,8 @@ export class SlidePromoComponent implements OnInit {
     window.open(`https://api.whatsapp.com/send?phone=+52${indexParam.contactPhone}&text=${message}`, '_blank');
   }
 
+  eventListenSeo(){
+    this.seoService.gtagReportConversion('promoBanner')
+  }
+
 }
