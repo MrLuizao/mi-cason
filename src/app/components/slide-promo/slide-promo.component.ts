@@ -40,7 +40,11 @@ export class SlidePromoComponent implements OnInit {
     this.fireService.getDataByGroups('data-complete').subscribe( (resp:any) => {    
       this.listArray = resp[0].data;
       console.log('this.listArray:', this.listArray);
-    })
+    });
+
+    // setTimeout( ()=>{
+    //   this.sortOrderByPrice();
+    // }, 3000);
   }
 
   tapToDescription(args: any){    
@@ -57,6 +61,12 @@ export class SlidePromoComponent implements OnInit {
 
   eventListenSeo(){
     this.seoService.gtagReportConversion('promoBanner')
+  }
+
+  sortOrderByPrice(){
+
+    this.listArray.sort((a:any,b:any) => (a.costNew > b.costNew) ? 1 : -1);
+    console.log(this.listArray);
   }
 
 }
