@@ -19,7 +19,6 @@ export class BestPromosComponent implements OnInit {
   ngOnInit(): void {
     this.fireService.getDataByGroups('data-complete').subscribe( (resp:any) => {
       this.completeArray = resp[0].data;
-      console.log('completeArray:', this.completeArray);
     })
   }
 

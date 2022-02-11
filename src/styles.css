@@ -4,7 +4,8 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .mat-snack-bar-container {
-    margin-top: 3em !important;
+    /* margin-top: 3em !important; */
+    margin-top: 10em !important;
     background: #FE7A15;
     z-index: 10;
 }
@@ -28,3 +29,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding: 0 !important;
 }
 
+.separate-card{
+    border-color: #fcb73d;
+    border-width: 1px;
+    border-radius: 0;
+    border-style: solid;
+    cursor:pointer;
+    margin-bottom: 1em;
+}

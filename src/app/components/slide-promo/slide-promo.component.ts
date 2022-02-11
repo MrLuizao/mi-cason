@@ -19,6 +19,8 @@ export class SlidePromoComponent implements OnInit {
   arrayFirst: any;
   arraySecond: any;
   arrayThird: any;
+  linkWhats: any;
+  messageWhats: any;
 
   constructor(  public platform: Platform,
                 private behaviorSrv: DataBehaviorService,
@@ -28,6 +30,8 @@ export class SlidePromoComponent implements OnInit {
                 private fireService: FirestoreService) { }
 
   ngOnInit( ) {
+    this.messageWhats = 'Hola, me gustaría conocer más acerca de los desarrollos'
+    this.linkWhats = `https://api.whatsapp.com/send?phone=+525633212320&text=${this.messageWhats}`;
     
     if(this.platform.ANDROID || this.platform.IOS){
       this.isMobile = true;
@@ -36,7 +40,11 @@ export class SlidePromoComponent implements OnInit {
     this.fireService.getDataByGroups('data-complete').subscribe( (resp:any) => {    
       this.listArray = resp[0].data;
       console.log('this.listArray:', this.listArray);
-    })
+    });
+
+    // setTimeout( ()=>{
+    //   this.sortOrderByPrice();
+    // }, 3000);
   }
 
   tapToDescription(args: any){    
@@ -49,6 +57,16 @@ export class SlidePromoComponent implements OnInit {
     this.seoService.gtagReportConversion('promoCards');
     let message = 'Hola, me gustaría conocer más detalles del desarrollo de'+' '+indexParam.name;
     window.open(`https://api.whatsapp.com/send?phone=+52${indexParam.contactPhone}&text=${message}`, '_blank');
+  }
+
+  eventListenSeo(){
+    this.seoService.gtagReportConversion('promoBanner')
+  }
+
+  sortOrderByPrice(){
+
+    this.listArray.sort((a:any,b:any) => (a.costNew > b.costNew) ? 1 : -1);
+    console.log(this.listArray);
   }
 
 }
