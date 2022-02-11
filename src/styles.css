@@ -28,3 +28,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     max-height: inherit;
     padding: 0 !important;
 }
+
+.separate-card{
+    border-color: #fcb73d;
+    border-width: 1px;
+    border-radius: 0;
+    border-style: solid;
+    cursor:pointer;
+    margin-bottom: 1em;
+}

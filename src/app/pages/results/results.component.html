@@ -9,11 +9,18 @@
                     <h1 class="text-primary fw-bold">{{nameCity}}</h1>
                 </div>
                 <div class="col-sm-9 col-md-4 mb-3 mb-md-0 h-100" *ngFor="let item of arrayResult">
-                    <div class="card card-span text-white h-100">
+                    <div class="card card-span text-white h-100 separate-card">
                         <img class="img-card h-100" src={{item.image}} alt="..." />
-                        <div class="card-body px-xl-5 px-md-3 pt-0 pb-7">
+                        <div class="card-body px-xl-5 px-md-3 pt-0 ">
                             <h3 class="fw-bold text-black mt-5 text-truncate">{{item.name}}</h3>
-                            <p class="text-900 mt-3">{{item.description | titlecase}}</p>
+                            <!-- <p class="text-900 mt-3">{{item.description | titlecase}}</p> -->
+                            <p class="text-900 mt-3">{{item.title}}</p>
+
+                            <h1 class="mb-3 text-primary fw-bolder fs-4">
+                                <span>${{item.costNew}}</span> &nbsp;
+                                <span class="text-900 fs--1 fw-normal">MXN</span>
+                            </h1>
+
                             <a class="btn btn-lg text-secondary fs-1 px-0 hvr-icon-forward" (click)="tapToDetails(item)">
                                 Más detalles
                                 <svg class="bi bi-arrow-right-short hover-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
