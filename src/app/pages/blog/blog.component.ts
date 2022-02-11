@@ -15,13 +15,28 @@ export class BlogComponent implements OnInit {
   ngOnInit(): void {
     this.blogList = [
       {
-        author: 'Luis'
+        title: '',
+        subtitle: '',
+        textBody: '',
+        image:'',
+        author: '',
+        link:''
       },
       {
-        author: 'Luis 2'
+        title: '',
+        subtitle: '',
+        textBody: '',
+        image:'',
+        author: '',
+        link:''
       },
       {
-        author: 'Luis 3'
+        title: '',
+        subtitle: '',
+        textBody: '',
+        image:'',
+        author: '',
+        link:''
       }
     ]
   }
