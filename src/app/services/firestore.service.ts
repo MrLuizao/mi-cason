@@ -23,15 +23,12 @@ export class FirestoreService {
 
   }
 
-
   manuallyUpload( object: any){
 
     const OBJECT_UPLOAD = {...object};  
     
     return this.firestore.collection('data-complete').add( OBJECT_UPLOAD )
-    // return this.firestore.collection('data-by-groups').add( OBJECT_UPLOAD )
 
   }
-
 
 }
