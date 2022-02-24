@@ -31,7 +31,13 @@ export class DetailComponent implements OnInit {
   lounge: boolean = false;
   infantil: boolean = false;
   areasVerde: boolean = false;
+  ciclovia: boolean = false;
+  zonaPet: boolean = false;
+  terraza: boolean = false;
 
+  kitchen: boolean = false;
+  bedroom: boolean = false;
+  laundry: boolean = false;
 
   constructor(  private behaviorSrv: DataBehaviorService, 
                 public seoService: SeoService,
@@ -56,7 +62,7 @@ export class DetailComponent implements OnInit {
   findAmenities(){
 
     let amenities = this.modalArray.amenities;
-
+    
     this.alberca = amenities.Alberca;
     this.quazona = amenities.Aquazona;
     this.asadores = amenities.Asadores;
@@ -67,11 +73,17 @@ export class DetailComponent implements OnInit {
     this.ludoteca = amenities.Lúdoteca;
     this.palapa = amenities.Palapa;
     this.petZone = amenities['Pet zone'];
-    this.jogging = amenities['Pista de Jogging'];
-    this.vigilancia = amenities.Vigilancia;
+    this.jogging = amenities['Pista de Jogging'] || amenities['Pista de jogging'];
+    this.vigilancia = amenities.Vigilancia || amenities['Caseta de vigilancia'] || amenities['Caseta de Vigilancia'];
     this.lounge = amenities['Zona Lounge'];
-    this.infantil = amenities['Área infantil'];
-    this.areasVerde = amenities['Áreas verdes'];
+    this.infantil = amenities['Área infantil'] || amenities['Área Infantil'];
+    this.areasVerde = amenities['Áreas verdes'] || amenities['Áreas Verdes'];
+    this.ciclovia = amenities['Ciclovías'];
+    this.zonaPet = amenities['Zona Pet'];
+    this.terraza = amenities['Terraza'];
+    this.kitchen = amenities['Cocina Integral'];
+    this.bedroom = amenities['Recámara con Terraza'];
+    this.laundry = amenities['Área de Lavado'];
 
   }
 
