@@ -23,11 +23,11 @@ export class FooterComponent implements OnInit {
   }
 
   goToConditionsTerms(){
-    window.open('assets/pdf/terms-and-conditions.pdf');
+    this.route.navigateByUrl('terms-conditions')
   }
 
   goToPrivacyNotice(){
-    window.open('assets/pdf/privacy-notice.pdf');
+    this.route.navigateByUrl('privacy-notice')
   }
 
   triggerSeoService(){

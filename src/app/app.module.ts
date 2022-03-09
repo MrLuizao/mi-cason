@@ -39,6 +39,8 @@ import { SelectErrorSnackComponent } from './components/re-use/select-error-snac
 import { AboutUsComponent } from './components/material-components/dialogs/about-us/about-us.component';
 import { DialogContactComponent } from './components/material-components/dialogs/dialog-contact/dialog-contact.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { PrivacyNoticeComponent } from './pages/privacy-notice/privacy-notice.component';
+import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditions.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +69,9 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     ContactComponent,
     ResultsComponent,
     SelectErrorSnackComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    PrivacyNoticeComponent,
+    TermsConditionsComponent
   ],
   imports: [
     BrowserModule,

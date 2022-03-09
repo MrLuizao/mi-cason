@@ -21,7 +21,7 @@
               <div class="row h-100 align-items-center g-2">
                 <div class="col-md-4 mb-3 mb-md-0 h-100" *ngFor="let item of listArray;">
                   <div class="card card-span h-100 text-white separate-card"> 
-                    <img class="img-fluid h-100" src={{item.image}} alt="..."/>
+                    <img class="img-fluid h-100" src={{item.image}} alt="..." (click)="tapToDescription(item)"/>
                     <div class="card-img-overlay-custom">
                       <span class="badge bg-primary ms-3 me-1 p-2">
                         <i class="fas fa-home me-1"></i>
@@ -39,8 +39,9 @@
                         <span class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span>
                         <span class="text-900 me-3">{{item.ubication}} - {{item.zone}}</span>
                       </div>
-                        <p class="text-decoration-line-through text-900 mt-3 mb-0">${{item.costPrev}}</p>
+                        <p class="text-decoration-line-through text-900 mt-3 mb-0"> Precio anterior: ${{item.costPrev}}</p>
                         <h1 class="mb-3 text-primary fw-bolder fs-4">
+                          <h5 class="fw-bold text-black text-truncate">Ahora desde:</h5>
                           <span>{{item.costNew | currency }}</span> &nbsp;
                           <span class="text-900 fs--1 fw-normal">MXN</span>
                         </h1>
