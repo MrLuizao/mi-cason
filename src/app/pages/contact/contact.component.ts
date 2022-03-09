@@ -314,50 +314,6 @@ export class ContactComponent implements OnInit {
             "ubication": "Tlahuac"
         },
         {
-            "name": "Terraverde Tarango",
-            "image2": "https://i.ibb.co/JzyzP9P/image-4.jpg",
-            "bedrooms": "3",
-            "minPrice": "3,291,000",
-            "mtsGround": "VERTICAL",
-            "closets": false,
-            "zone": "CDMX",
-            "description": "DEPARTAMENTO DE  3 RECÁMARAS CON 2  BAÑOS COMPLETOS, SE ENTREGAN EQUIPADOS, EL DESARROLLO CUENTA CON AMENIDADES.",
-            "image3": "https://i.ibb.co/6rdW9gP/portrait-terraverde.jpg",
-            "ubication": "Álvaro Obregón",
-            "image4": "https://i.ibb.co/2PL0bpJ/image-2.jpg",
-            "costPrev": "3,949,200",
-            "maxPrice": "4,071,000",
-            "isNew": true,
-            "costNew": 3291000,
-            "price": "4,071,000",
-            "isReady": true,
-            "modelName": "Modelo 3 recamaras",
-            "image": "https://i.ibb.co/yFPPY3N/terra-Two-portrait.jpg",
-            "kitchen": true,
-            "mtsInmueble": "119.7",
-            "contactPhone": "5574189420",
-            "amenities": {
-                "Pista de Jogging": false,
-                "Cafetería": false,
-                "Cancha": false,
-                "Aquazona": false,
-                "Lúdoteca": true,
-                "Área infantil": true,
-                "Palapa": false,
-                "Áreas verdes": false,
-                "Zona Lounge": true,
-                "Gimnasio": false,
-                "Pet zone": true,
-                "Vigilancia": true,
-                "Gym exterior": true,
-                "Alberca": false,
-                "Asadores": false
-            },
-            "id": "1",
-            "cardSubtitle": "SKY PARK con exclusivas amenidades.",
-            "title": "Modelo 3 recamaras"
-        },
-        {
             "title": "Clima siempre cálido",
             "image": "https://i.ibb.co/8X1PXTx/gardenia-portrait.jpg",
             "name": "Los Huertos / Mod. Gardenia",
@@ -766,10 +722,44 @@ export class ContactComponent implements OnInit {
           "ubication": " Tlayecac",
           "zone": "Morelos",
         },
+
+        {
+          "amenities": {
+            "Terraza": true,
+            "Caseta de vigilancia": true,            
+            "Áreas Verdes": true,
+            "Zona Pet": true,
+            "Gimnasio": true,
+            "CCTV": true,
+            "Área comercial": true,
+            "Salón de fiestas": true,
+            "Ecotecnologías": true
+          },
+          "bedrooms": "2",
+          "cardSubtitle": "Exclusividad, Calidad y Ubicación.",
+          "contactPhone": "5633201453",
+          "costNew": 3286099,
+          "costPrev": "3,943,319",
+          "description": "Departamentos de 2 recámaras con 2 baños, con opción a roof garden privado.",
+          "id": "79501",
+          "image": "https://i.ibb.co/bLcs8kr/Aquasol-portrait.png",
+          "image2": "https://i.ibb.co/WKjxgTs/Aquasol-2.png",
+          "image3": "https://i.ibb.co/Q8WmMZh/Aquasol-3.png",
+          "image4": "https://i.ibb.co/6vFdRh0/Aquasol-4.png",
+          "maxPrice": "1,089,600",
+          "minPrice": "3,286,099",
+          "mtsGround": "65",
+          "mtsInmueble": "100",
+          "name": "Torre Lago",
+          "title": "El desarrollo cuenta con lobby y areas comunes al aire libre con jardin y pet zone.",
+          "ubication": "Alcaldía Miguel Hidalgo",
+          "zone": "CDMX",
+        }
       ]
     }
 
     this.fireService.manuallyUpload(sendObject).then( (resp)=>{
+    // this.fireService.singleManuallyUpdate().then( (resp)=>{
       console.log('resp', resp);   
     }).catch( (error) =>{
       console.error('error:', error);      

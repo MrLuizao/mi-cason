@@ -31,4 +31,29 @@ export class FirestoreService {
 
   }
 
+  singleManuallyUpdate(){
+    // const OBJECT_UPLOAD = {...object};  
+    return this.firestore.collection('data-complete').doc('cvHXRhQZoiNa0kcnaDNL').update(
+      
+        {
+          "amenities": {
+      
+            "Terraza": true,
+            "Caseta de vigilancia": true,            
+            "Áreas Verdes": true,
+            "Alberca": true,
+            "Palapa": true,
+            "Cancha": true,
+            "Área Infantil": true,
+            "Aquazona": true,
+            "Gym Exterior": true,
+            "Asadores": true,
+            "Zona Pet": true,
+            "Ciclovías": true
+          }
+        }
+      
+    )
+  }
+
 }

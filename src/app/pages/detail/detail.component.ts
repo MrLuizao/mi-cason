@@ -39,6 +39,11 @@ export class DetailComponent implements OnInit {
   bedroom: boolean = false;
   laundry: boolean = false;
 
+  cctv: boolean = false;
+  comercial: boolean = false;
+  salon: boolean = false;
+  eco: boolean = false;
+
   constructor(  private behaviorSrv: DataBehaviorService, 
                 public seoService: SeoService,
                 public platform: Platform, ) {window.scrollTo(0,0)}
@@ -62,6 +67,7 @@ export class DetailComponent implements OnInit {
   findAmenities(){
 
     let amenities = this.modalArray.amenities;
+    console.log('amenities',amenities);
     
     this.alberca = amenities.Alberca;
     this.quazona = amenities.Aquazona;
@@ -84,6 +90,11 @@ export class DetailComponent implements OnInit {
     this.kitchen = amenities['Cocina Integral'];
     this.bedroom = amenities['Recámara con Terraza'];
     this.laundry = amenities['Área de Lavado'];
+
+    this.cctv = amenities['CCTV'];
+    this.comercial = amenities['Área comercial'];
+    this.salon = amenities['Salón de fiestas'];
+    this.eco = amenities['Ecotecnologías'];
 
   }
 
