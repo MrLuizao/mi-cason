@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrivacyNoticeComponent implements OnInit {
 
-  constructor() { }
+  constructor() { window.scrollTo(0,0) }
 
   ngOnInit(): void {
   }
