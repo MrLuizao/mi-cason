@@ -680,15 +680,6 @@ export class ContactComponent implements OnInit {
         },
         {
           "amenities": {
-            // "Caseta de vigilancia": true,
-            // "Área infantil": true,
-            // "Ciclovías": true
-            // "Ciclovías": true,
-            // "Recámara con Terraza": true,
-            // "Cocina Integral": true,
-            // "Área de Lavado": true,
-            // "Caseta de Vigilancia": true,
-            // "Pista de jogging": true,
             "Terraza": true,
             "Caseta de vigilancia": true,            
             "Áreas Verdes": true,
@@ -722,7 +713,6 @@ export class ContactComponent implements OnInit {
           "ubication": " Tlayecac",
           "zone": "Morelos",
         },
-
         {
           "amenities": {
             "Terraza": true,
@@ -742,10 +732,10 @@ export class ContactComponent implements OnInit {
           "costPrev": "3,943,319",
           "description": "Departamentos de 2 recámaras con 2 baños, con opción a roof garden privado.",
           "id": "79501",
-          "image": "https://i.ibb.co/bLcs8kr/Aquasol-portrait.png",
-          "image2": "https://i.ibb.co/WKjxgTs/Aquasol-2.png",
-          "image3": "https://i.ibb.co/Q8WmMZh/Aquasol-3.png",
-          "image4": "https://i.ibb.co/6vFdRh0/Aquasol-4.png",
+          "image": "https://i.ibb.co/BLL8WFf/lago-portrait.jpg",
+          "image2": "https://i.ibb.co/NFDC9KH/cadu-lago-2.jpg",
+          "image3": "https://i.ibb.co/fGj3Vsg/cadu-lago-3.jpg",
+          "image4": "https://i.ibb.co/K5wKHDd/Cadu-lago-4.jpg",
           "maxPrice": "1,089,600",
           "minPrice": "3,286,099",
           "mtsGround": "65",
@@ -754,6 +744,39 @@ export class ContactComponent implements OnInit {
           "title": "El desarrollo cuenta con lobby y areas comunes al aire libre con jardin y pet zone.",
           "ubication": "Alcaldía Miguel Hidalgo",
           "zone": "CDMX",
+        },
+
+        {
+          "amenities": {
+            "Terraza": true,
+            "Caseta de vigilancia": true,            
+            "Áreas Verdes": true,
+            "Palapa": true,
+            "Cancha": true,
+            "Área Infantil": true,
+            "Asadores": true,
+            "Ciclovías": true,
+            "Ecotecnologías": true
+          },
+          "bedrooms": "2",
+          "cardSubtitle": "Diseño integral para un mejor estilo de vida.",
+          "contactPhone": "5633201453",
+          "costNew": 445100,
+          "costPrev": "534,120",
+          "description": "Vive en un pueblito mágico dentro de una comunidad sostenible. ",
+          "id": "798781",
+          "image": "https://i.ibb.co/hdGfnFB/Portrait-zumpango.jpg",
+          "image2": "https://i.ibb.co/cDjW52y/Zumpango-2.jpg",
+          "image3": "https://i.ibb.co/P1rvNb8/zumpango-3.jpg",
+          "image4": "https://i.ibb.co/4jt2DBb/Zumpango-4.jpg",
+          "maxPrice": "534,120",
+          "minPrice": "445,100",
+          "mtsGround": " - ",
+          "mtsInmueble": " - ",
+          "name": "Privadas del Parque",
+          "title": "¡Tu eliges!  Departamento, casa duplex o unifamiliar.  ",
+          "ubication": "Zumpango",
+          "zone": "Estado de México",
         }
       ]
     }
