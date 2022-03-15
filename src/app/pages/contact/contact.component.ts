@@ -745,7 +745,6 @@ export class ContactComponent implements OnInit {
           "ubication": "Alcaldía Miguel Hidalgo",
           "zone": "CDMX",
         },
-
         {
           "amenities": {
             "Terraza": true,
@@ -777,7 +776,87 @@ export class ContactComponent implements OnInit {
           "title": "¡Tu eliges!  Departamento, casa duplex o unifamiliar.  ",
           "ubication": "Zumpango",
           "zone": "Estado de México",
+        },
+
+        ///LA PAZ TORREON////
+        {
+          "amenities": {
+            "Área infantil": true,
+          },
+          "bedrooms": "2",
+          "cardSubtitle": "Bienestar y comodidad de tu familia.",
+          "contactPhone": "5633201453",
+          "costNew": 357000,
+          "costPrev": "428,400",
+          "description": "Casas de un nivel con 2 recámaras, estancia, baño, cocina y estacionamiento",
+          "id": "798781",
+          "image": "https://i.ibb.co/tc6ZKzm/Portrait-LA-PAZ.png",
+          "image2": "https://i.ibb.co/XCkv8GM/LA-PAZ-2.jpg",
+          "image3": "https://i.ibb.co/hRMQFcY/LA-PAZ-3.jpg",
+          "image4": "https://i.ibb.co/gSvrspj/LA-PAZ-4.jpg",
+          "maxPrice": "428,400",
+          "minPrice": "357,000",
+          "mtsGround": "43",
+          "mtsInmueble": "105",
+          "name": "La Paz",
+          "title": "Ubicado a 5 minutos de la zona industrial de Torreón",
+          "ubication": "Blvd. Manuel de Jesús Clouthier, Torreon",
+          "zone": "Coahuila",
+        },
+        ///AREZZO TORREON////
+        {
+          "amenities": {
+            "Área infantil": true,
+            "Asadores": true
+          },
+          "bedrooms": "3",
+          "cardSubtitle": "El lugar ideal para el nacimiento de tu hogar.",
+          "contactPhone": "5633201453",
+          "costNew": 935000,
+          "costPrev": "1,122,000",
+          "description": "Casas de dos niveles con 3 recámaras, estancia, baños, cocina con equipamiento y estacionamiento. (3 MODELOS)",
+          "id": "23481",
+          "image": "https://i.ibb.co/h2MXHkg/Arezzo-portrait.jpg",
+          "image2": "https://i.ibb.co/QM12V8w/Arezzo-2.jpg",
+          "image3": "https://i.ibb.co/rsVw9Kf/Arezzo-3.jpg",
+          "image4": "https://i.ibb.co/smPcFcm/Arezzo-4.jpg",
+          "maxPrice": "1,122,000",
+          "minPrice": "935,000",
+          "mtsGround": "86",
+          "mtsInmueble": "113",
+          "name": "Arezzo",
+          "title": "Déjate enamorar por  la armonía y diseño contemporáneo.",
+          "ubication": "Circuito Livorno, Torreon",
+          "zone": "Coahuila",
+        },
+        ///RINCON DEL MARQUES TORREON////
+        {
+          "amenities": {
+            "Área infantil": true,
+            "Asadores": true,
+            "Caseta de vigilancia": true           
+          },
+          "bedrooms": "3",
+          "cardSubtitle": "Excelente ubcación al norte de la ciudad.",
+          "contactPhone": "5633201453",
+          "costNew": 925000,
+          "costPrev": "1,110,000",
+          "description": "Casas de dos niveles con 3 recámaras, estancia, baños, cocina con equipamiento y estacionamiento.",
+          "id": "15322906",
+          "image": "https://i.ibb.co/hXjW2v0/Marques-portrait.jpg",
+          "image2": "https://i.ibb.co/kBhXpXH/marques-2.jpg",
+          "image3": "https://i.ibb.co/vDbfYqv/marques-3.jpg",
+          "image4": "https://i.ibb.co/QJdzX4K/marques-4.jpg",
+          "maxPrice": "1,110,000",
+          "minPrice": "925,000",
+          "mtsGround": "86",
+          "mtsInmueble": "144",
+          "name": "Rincón del Marqués",
+          "title": "Concepto en forma de circuitos, para fomentar la convivencia y confianza entre vecinos. ",
+          "ubication": "Calle Bordolesa, Torreon",
+          "zone": "Coahuila"
         }
+
       ]
     }
 
