@@ -777,8 +777,6 @@ export class ContactComponent implements OnInit {
           "ubication": "Zumpango",
           "zone": "Estado de México",
         },
-
-        ///LA PAZ TORREON////
         {
           "amenities": {
             "Área infantil": true,
@@ -803,7 +801,6 @@ export class ContactComponent implements OnInit {
           "ubication": "Blvd. Manuel de Jesús Clouthier, Torreon",
           "zone": "Coahuila",
         },
-        ///AREZZO TORREON////
         {
           "amenities": {
             "Área infantil": true,
@@ -829,7 +826,6 @@ export class ContactComponent implements OnInit {
           "ubication": "Circuito Livorno, Torreon",
           "zone": "Coahuila",
         },
-        ///RINCON DEL MARQUES TORREON////
         {
           "amenities": {
             "Área infantil": true,
@@ -855,6 +851,39 @@ export class ContactComponent implements OnInit {
           "title": "Concepto en forma de circuitos, para fomentar la convivencia y confianza entre vecinos. ",
           "ubication": "Calle Bordolesa, Torreon",
           "zone": "Coahuila"
+        },
+
+        ///IXTAPALUCA///
+        {
+          "amenities": {
+            "gymExterior": true,
+            "Áreas Verdes": true,
+            "Palapa": true,
+            "Área Infantil": true,
+            "Ciclovías": true,         
+            "Asadores": true,
+            "Caseta de vigilancia": true,            
+            "Ecotecnologías": true     
+          },
+          "bedrooms": "3",
+          "cardSubtitle": "Un mejor estilo de vida.",
+          "contactPhone": "5633201453",
+          "costNew": 1110000,
+          "costPrev": "1,332,000",
+          "description": "Viviendas de 3 recámaras, 2 baño completo, cocina, estancia y un lugar de estacionamiento.",
+          "id": "1922911",
+          "image": "https://i.ibb.co/FhGTJ0d/Arboleda-portrait.jpg",
+          "image2": "https://i.ibb.co/JzsZNnw/arboleda-2.png",
+          "image3": "https://i.ibb.co/dbY6ct2/arboleda-3.png",
+          "image4": "https://i.ibb.co/vQR2TXr/arboleda-4.jpg",
+          "maxPrice": "1,332,000",
+          "minPrice": "1,110,000",
+          "mtsGround": "70",
+          "mtsInmueble": " - ",
+          "name": "Arboleda Ixtapaluca",
+          "title": "En cada condominio área de juegos,  asador y aparatos de ejercicio.",
+          "ubication": "Santa Barbara, Ixtapaluca",
+          "zone": "Estado de México"
         }
 
       ]
