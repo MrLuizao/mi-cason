@@ -852,8 +852,6 @@ export class ContactComponent implements OnInit {
           "ubication": "Calle Bordolesa, Torreon",
           "zone": "Coahuila"
         },
-
-        ///IXTAPALUCA///
         {
           "amenities": {
             "gymExterior": true,
@@ -882,6 +880,38 @@ export class ContactComponent implements OnInit {
           "mtsInmueble": " - ",
           "name": "Arboleda Ixtapaluca",
           "title": "En cada condominio área de juegos,  asador y aparatos de ejercicio.",
+          "ubication": "Santa Barbara, Ixtapaluca",
+          "zone": "Estado de México"
+        },
+
+        ///LAS TORRES///
+        {
+          "amenities": {
+            "Caseta de vigilancia": true,            
+            "Ecotecnologías": true,     
+            "Áreas Verdes": true,
+            "Cancha": true,
+            "Área Infantil": true,
+            "Pista de Jogging": true,
+            "gymExterior": true,
+          },
+          "bedrooms": "2",
+          "cardSubtitle": "Departamentos con ubicación privilegiada.",
+          "contactPhone": "5633201453",
+          "costNew": 840000,
+          "costPrev": "1,008,000",
+          "description": "Departamentos de 2 ó 3 recámaras, cocina, estancia, baño y un lugar de estacionamiento.",
+          "id": "992782993",
+          "image": "https://i.ibb.co/LJHR9rq/Las-torres-portrait.jpg",
+          "image2": "https://i.ibb.co/5LNtq75/Las-torres-2.jpg",
+          "image3": "https://i.ibb.co/hW6cgRN/Las-torres-3.jpg",
+          "image4": "https://i.ibb.co/XSWLH9V/Las-torres-4.jpg",
+          "maxPrice": "1,008,000",
+          "minPrice": "840,000",
+          "mtsGround": "51",
+          "mtsInmueble": " - ",
+          "name": "Arboleda Ixtapaluca",
+          "title": "Sustentabilidad en cada una de las viviendas.",
           "ubication": "Santa Barbara, Ixtapaluca",
           "zone": "Estado de México"
         }
