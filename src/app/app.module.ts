@@ -41,6 +41,7 @@ import { DialogContactComponent } from './components/material-components/dialogs
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { PrivacyNoticeComponent } from './pages/privacy-notice/privacy-notice.component';
 import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditions.component';
+import { ArcoRightsComponent } from './pages/arco-rights/arco-rights.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditi
     SelectErrorSnackComponent,
     AboutUsComponent,
     PrivacyNoticeComponent,
-    TermsConditionsComponent
+    TermsConditionsComponent,
+    ArcoRightsComponent
   ],
   imports: [
     BrowserModule,

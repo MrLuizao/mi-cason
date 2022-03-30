@@ -188,7 +188,7 @@ export class ContactComponent implements OnInit {
             "cardSubtitle": "Deja de buscar, el lugar que siempre has soñado llegó.",
             "zone": "Morelos",
             "ubication": "Tlayacapan",
-            "minPrice": "1,150,00",
+            "minPrice": "1,200,00",
             "costPrev": "1,320,000",
             "amenities": {
                 "Alberca": true,

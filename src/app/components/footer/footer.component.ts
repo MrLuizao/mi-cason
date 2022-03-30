@@ -34,4 +34,7 @@ export class FooterComponent implements OnInit {
     this.seoService.gtagReportConversion('footerPage')
   }
 
+  goToArcoRights(){
+    this.route.navigateByUrl('arco-rights')
+  }
 }
