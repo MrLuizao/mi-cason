@@ -883,8 +883,6 @@ export class ContactComponent implements OnInit {
           "ubication": "Santa Barbara, Ixtapaluca",
           "zone": "Estado de México"
         },
-
-        ///LAS TORRES///
         {
           "amenities": {
             "Caseta de vigilancia": true,            
@@ -914,13 +912,167 @@ export class ContactComponent implements OnInit {
           "title": "Sustentabilidad en cada una de las viviendas.",
           "ubication": "Santa Barbara, Ixtapaluca",
           "zone": "Estado de México"
+        },
+
+        //PRIV MOLLAR
+        {
+          "amenities": {
+            "Caseta de vigilancia": true,            
+            "Áreas Verdes": true,
+            "Área Infantil": true,
+            "Cancha": true,
+            "Ecotecnologías": true,
+            "Alberca": true,
+          },
+          "bedrooms": "3",
+          "cardSubtitle": "Ubicación privilegiada con vialidades rápidas.",
+          "contactPhone": "5633201453",
+          "costNew": 1569000,
+          "costPrev": "1,882,800",
+          "description": "Departamentos de 3 recámaras, cocina, estancia, 2 1/2 baños y estacionamiento.",
+          "id": new Date().getDate(),
+          "image": "https://i.ibb.co/Y3TyZH6/PRIVADA-MOLLAR-FACHADA.jpg",
+          "image2": "https://i.ibb.co/2dWrNsR/PRIVADA-MOLLAR-ESTANCIA.jpg",
+          "image3": "https://i.ibb.co/RYf64cY/PRIVADA-MOLLAR-AMENIDADES.jpg",
+          "image4": "https://i.ibb.co/Y3TyZH6/PRIVADA-MOLLAR-FACHADA.jpg",
+          "maxPrice": "1,882,800",
+          "minPrice": "1,569,000",
+          "mtsGround": "104",
+          "mtsInmueble": "126",
+          "name": "Privada Mollar",
+          "title": "Sustentabilidad en cada una de las viviendas.",
+          "ubication": "Fracc. Valle de los Almendros, Torreon",
+          "zone": "Coahuila"
+        },
+        //PUEBLA TEXTIL
+        {
+          "amenities": {
+            "Ecotecnologías": true,
+            // "Caseta de vigilancia": true,            
+            // "Áreas Verdes": true,
+            // "Área Infantil": true,
+            // "Cancha": true,
+            // "Alberca": true,
+          },
+          "bedrooms": "3",
+          "cardSubtitle": "Ideal para tu familia",
+          "contactPhone": "5633201453",
+          "costNew": 1550000,
+          "costPrev": "1,860,000",
+          "description": "Casas de 3 recámaras con closet, cocina, estancia, 1 1/2 baños y patio de servicio.",
+          "id": new Date().getTime(),
+          "image": "https://i.ibb.co/6bM3N5S/PUEBLA-TEXTIL-FACHADA.jpg",
+          "image2": "https://i.ibb.co/7CDQbXP/PUEBLA-TEXTIL-ESTANCIA.jpg",
+          "image3": "https://i.ibb.co/3ztCBXC/PUEBLA-TEXTIL-RECAMARA.jpg",
+          "image4": "https://i.ibb.co/B2ffzJz/PUEBLA-TEXTIL-COCINA.jpg",
+          "maxPrice": "1,860,000",
+          "minPrice": "1,550,000",
+          "mtsGround": "112",
+          "mtsInmueble": "117",
+          "name": "Puebla Textil",
+          "title": "Cerca de CU ",
+          "ubication": "Blvd de las Torres, Puebla",
+          "zone": "Puebla"
+        },
+        //PRIV SAN JOSE
+        {
+          "amenities": {
+            // "Ecotecnologías": true,
+            "Caseta de vigilancia": true,            
+            "Áreas Verdes": true,
+            // "Área Infantil": true,
+            // "Cancha": true,
+            // "Alberca": true,
+          },
+          "bedrooms": "3",
+          "cardSubtitle": "Ubicación cercana a Plaza San Diego",
+          "contactPhone": "5633201453",
+          "costNew": 1700000,
+          "costPrev": "2,040,000",
+          "description": "Casas de 3 recámaras, cocina, estancia, 2 1/2 baños y estacionamiento.",
+          "id": new Date().getTime(),
+          "image": "https://i.ibb.co/ypJfBxF/pue-priv-san-jose-fachada.jpg",
+          "image2": "https://i.ibb.co/Yj5jpZt/pue-priv-san-jose-estancia.jpg",
+          "image3": "https://i.ibb.co/NVPBY3Z/pue-priv-san-jose-ban-o.jpg",
+          "image4": "https://i.ibb.co/0B4nVV4/pue-priv-san-jose-cocina.jpg",
+          "maxPrice": "2,040,000",
+          "minPrice": "1,700,000",
+          "mtsGround": "95",
+          "mtsInmueble": "117",
+          "name": "Privada San José",
+          "title": "A 2 min. de Hacienda El Molino",
+          "ubication": "Col. San José del Puente",
+          "zone": "Puebla"
+        },
+        //VILLAS DE STA JULIA
+        {
+          "amenities": {
+            // "Ecotecnologías": true,
+            // "Área Infantil": true,
+            // "Cancha": true,
+            "Caseta de vigilancia": true,            
+            "Áreas Verdes": true,
+            "Alberca": true,
+            "Palapa": true,
+          },
+          "bedrooms": "3",
+          "cardSubtitle": "¡Tu casa con alberca!",
+          "contactPhone": "5633201453",
+          "costNew": 1645000,
+          "costPrev": "1,974,000",
+          "description": "Casas de 3 recámaras con closet, cocina, estancia, 1 1/2 baños y estacionamiento.",
+          "id": new Date().getTime(),
+          "image": "https://i.ibb.co/f052HrH/villas-de-santa-julia-folleto-1.jpg",
+          "image2": "https://i.ibb.co/XFkty1D/villas-de-santa-julia-cocina-y-comedor.jpg",
+          "image3": "https://i.ibb.co/rvkSLYN/villas-de-santa-julia-closet.jpg",
+          "image4": "https://i.ibb.co/sFKSDFV/villas-de-santa-julia-ban-o.jpg",
+          "maxPrice": "1,974,000",
+          "minPrice": "1,645,000",
+          "mtsGround": "150",
+          "mtsInmueble": "105",
+          "name": "Villas Sta. Julia",
+          "title": "Comfort y descanso.",
+          "ubication": "Camino a Tizayuca, Atlixco",
+          "zone": "Puebla"
+        },
+        //REAL GRANADA
+        {
+          "amenities": {
+            // "Ecotecnologías": true,
+            // "Alberca": true,
+            // "Palapa": true,
+            "Caseta de vigilancia": true,            
+            "Área Infantil": true,
+            "Cancha": true,
+            "Áreas Verdes": true,
+          },
+          "bedrooms": "2",
+          "cardSubtitle": "A 10 Min del nuevo aeropueto (AIFA)",
+          "contactPhone": "5574189420",
+          "costNew": 768000,
+          "costPrev": "921,600",
+          "description": "Casas y departamentos con estancia, cocina, 1 1/2 baños y estacionamiento.",
+          "id": new Date().getTime(),
+          "image": "https://i.ibb.co/6RtKcX4/vinte-granada-estancia.jpg",
+          "image2": "https://i.ibb.co/R4ZfbHH/vinte-granada-cocina.jpg",
+          "image3": "https://i.ibb.co/6RtKcX4/vinte-granada-estancia.jpg",
+          "image4": "https://i.ibb.co/mt2ypCJ/vinte-granada-recamara.jpg",
+          "maxPrice": "921,600",
+          "minPrice": "768,000",
+          "mtsGround": "45",
+          "mtsInmueble": "53",
+          "name": "Real Granada",
+          "title": "6 Modelos disponibles, ¡tú eliges!",
+          "ubication": "Tecamac, Estado de México",
+          "zone": "Estado de México"
         }
 
       ]
     }
+    
 
     this.fireService.manuallyUpload(sendObject).then( (resp)=>{
-    // this.fireService.singleManuallyUpdate().then( (resp)=>{
+    // this.fireService.updateCollection(objectUpdate).then( (resp)=>{
       console.log('resp', resp);   
     }).catch( (error) =>{
       console.error('error:', error);      
