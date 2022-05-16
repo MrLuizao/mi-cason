@@ -913,8 +913,6 @@ export class ContactComponent implements OnInit {
           "ubication": "Santa Barbara, Ixtapaluca",
           "zone": "Estado de México"
         },
-
-        //PRIV MOLLAR
         {
           "amenities": {
             "Caseta de vigilancia": true,            
@@ -944,7 +942,6 @@ export class ContactComponent implements OnInit {
           "ubication": "Fracc. Valle de los Almendros, Torreon",
           "zone": "Coahuila"
         },
-        //PUEBLA TEXTIL
         {
           "amenities": {
             "Ecotecnologías": true,
@@ -974,7 +971,6 @@ export class ContactComponent implements OnInit {
           "ubication": "Blvd de las Torres, Puebla",
           "zone": "Puebla"
         },
-        //PRIV SAN JOSE
         {
           "amenities": {
             // "Ecotecnologías": true,
@@ -1004,7 +1000,6 @@ export class ContactComponent implements OnInit {
           "ubication": "Col. San José del Puente",
           "zone": "Puebla"
         },
-        //VILLAS DE STA JULIA
         {
           "amenities": {
             // "Ecotecnologías": true,
@@ -1035,7 +1030,6 @@ export class ContactComponent implements OnInit {
           "ubication": "Camino a Tizayuca, Atlixco",
           "zone": "Puebla"
         },
-        //REAL GRANADA
         {
           "amenities": {
             // "Ecotecnologías": true,
@@ -1065,6 +1059,38 @@ export class ContactComponent implements OnInit {
           "title": "6 Modelos disponibles, ¡tú eliges!",
           "ubication": "Tecamac, Estado de México",
           "zone": "Estado de México"
+        },
+
+        ///QUITAS MILO
+        {
+          "amenities": {
+            "Ecotecnologías": true,
+            "Áreas Verdes": true,
+            "Área Infantil": true
+            // "Alberca": true,
+            // "Palapa": true,
+            // "Caseta de vigilancia": true,            
+            // "Cancha": true,
+          },
+          "bedrooms": "3",
+          "cardSubtitle": "El hogar que siempre haz querido.",
+          "contactPhone": "5633201453",
+          "costNew": 846000,
+          "costPrev": "1,015,200",
+          "description": "Casas de 3 recamaras, cocina, estancia, 1 1/2 baños y estacionamiento.",
+          "id": new Date().getTime(),
+          "image": "https://i.ibb.co/HFR1Vp8/QUINTAS-MILO-ENTRADA.jpg",
+          "image2": "https://i.ibb.co/pRjLKFD/MILO-ESTANCIA.jpg",
+          "image3": "https://i.ibb.co/hLbsyMF/MILO-RECAMARA.jpg",
+          "image4": "https://i.ibb.co/ck598JF/MILO-FACHADA.jpg",
+          "maxPrice": "1,015,200",
+          "minPrice": "846,000",
+          "mtsGround": "83",
+          "mtsInmueble": "91",
+          "name": "Quintas Milo",
+          "title": "Ubicación ideal, al oriente de Torreón.",
+          "ubication": "Fracc. La Joya, Torreón",
+          "zone": "Coahuila"
         }
 
       ]
