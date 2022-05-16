@@ -37,4 +37,12 @@ export class FooterComponent implements OnInit {
   goToArcoRights(){
     this.route.navigateByUrl('arco-rights')
   }
+
+  goToBlogPage(){
+    this.route.navigateByUrl('blog')
+  }
+
+  navigateToSimulator(){
+    window.open('https://originacion.fovissste.com.mx/originacion/cgi-bin/predictamen/predictamen_gob.aspx', '_blank')
+  }
 }

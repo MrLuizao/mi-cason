@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ArcoRightsComponent } from './pages/arco-rights/arco-rights.component';
+import { BlogDetailComponent } from './pages/blog-detail/blog-detail.component';
+import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { DetailComponent } from './pages/detail/detail.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -16,6 +18,9 @@ const routes: Routes = [
   { path: 'privacy-notice', component: PrivacyNoticeComponent},
   { path: 'terms-conditions', component: TermsConditionsComponent},
   { path: 'arco-rights', component: ArcoRightsComponent},
+
+  { path: 'blog', component: BlogComponent},
+  { path: 'blog-detail', component: BlogDetailComponent},
 
   { path: '**', pathMatch: 'full', redirectTo: 'home'}
 
