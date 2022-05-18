@@ -1,4 +1,6 @@
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
+import { DataBehaviorService } from 'src/app/services/data-behavior.service';
 
 @Component({
   selector: 'app-blog-detail',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogDetailComponent implements OnInit {
 
-  constructor() { }
+  dataBlog: any;
+  constructor( private behaviourSrv: DataBehaviorService ) { }
 
   ngOnInit(): void {
+    this.behaviourSrv.$getDetailBlog.subscribe( (resp)=>{
+      console.log('$getDetailBlog',resp);
+      this.dataBlog = resp;
+    }).unsubscribe();
   }
 
 }

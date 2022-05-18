@@ -4,16 +4,17 @@
     <section class="py-0 pb-8" style="margin-top: 6em;">
         <div class="container-fluid container-lg">
           <div class="row h-100 g-2 justify-content-center">
-            <div style="text-align: center; padding: 3em; margin-bottom: 3em;" >
+            <div style="text-align: center; padding: 3em;">
                 <h1 class="text-primary fw-bold">Blogs recientes</h1>
             </div>
 
             <div class="col-sm-9 col-md-4 mb-3 mb-md-0 h-100" *ngFor="let item of blogList">
               <div class="card card-span text-white h-100">
-                  <!-- <img class="img-card h-100" src="assets/img/blog-1.png" alt="..." /> -->
+                <h3 class="fw-bold text-1000 text-truncate">{{item.title}}</h3>
+                <img class="img-card h-100" [src]="item.image"/>
                 <div class="card-body px-xl-5 px-md-3 pt-0 pb-7">
-                  <div class="d-flex justify-content-between align-items-center bg-100 mt-n5 me-auto">
-                      <!-- <img src="assets/img/author-1.png" width="60" alt="..." /> -->
+                  <!-- <div class="d-flex justify-content-between align-items-center bg-100 mt-n5 me-auto">
+                      <img src="assets/img/author-1.png" width="60" alt="..." />
                     <div class="d-flex flex-1 justify-content-around"> 
                         <span class="text-900 text-center">
                             <i class="fas fa-heart text-primary"></i>
@@ -28,11 +29,10 @@
                             <span class="text-900 ms-2">14</span>
                         </span>
                     </div>
-                  </div>
-                  <h5 class="text-900 mt-3">John Oliver. <span class="fw-normal">5 mins Read. </span></h5>
-                  <h3 class="fw-bold text-1000 mt-5 text-truncate">15 Best Day Trips from Portland Oregon</h3>
-                  <p class="text-900 mt-3">The structure of the trip blog is only a white canvas to highlight the atmospheric and immersive.</p>
-                    <a class="btn btn-lg text-900 fs-1 px-0 hvr-icon-forward" (click)="goDetailBlog()">Leer más
+                  </div> -->
+                  <h5 class="text-900 mt-3"> <span class="fw-normal">Autor:  &nbsp; </span> {{item.author}} </h5>
+                  <p class="text-900 mt-3" style="text-align: justify;">{{item.subtitle}}</p>
+                    <a class="btn btn-lg text-900 fs-1 px-0 hvr-icon-forward" (click)="goDetailBlog(item)">Leer más
                         <svg class="bi bi-arrow-right-short hover-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"> </path>
                         </svg>
