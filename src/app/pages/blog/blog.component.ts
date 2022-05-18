@@ -11,8 +11,8 @@ export class BlogComponent implements OnInit {
 
   blogList: any;
 
-  constructor(  private route: Router, private behaviourSrv: DataBehaviorService ) { }
-
+  constructor(  private route: Router, private behaviourSrv: DataBehaviorService ) { window.scrollTo(0,0) }
+  
   ngOnInit(): void {
     this.blogList = [
       {

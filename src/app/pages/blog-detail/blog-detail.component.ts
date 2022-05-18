@@ -10,7 +10,7 @@ import { DataBehaviorService } from 'src/app/services/data-behavior.service';
 export class BlogDetailComponent implements OnInit {
 
   dataBlog: any;
-  constructor( private behaviourSrv: DataBehaviorService ) { }
+  constructor( private behaviourSrv: DataBehaviorService ) {  window.scrollTo(0,0) }
 
   ngOnInit(): void {
     this.behaviourSrv.$getDetailBlog.subscribe( (resp)=>{
