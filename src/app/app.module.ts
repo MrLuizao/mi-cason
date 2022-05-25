@@ -42,6 +42,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { PrivacyNoticeComponent } from './pages/privacy-notice/privacy-notice.component';
 import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditions.component';
 import { ArcoRightsComponent } from './pages/arco-rights/arco-rights.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { BlogDetailComponent } from './pages/blog-detail/blog-detail.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +75,9 @@ import { ArcoRightsComponent } from './pages/arco-rights/arco-rights.component';
     AboutUsComponent,
     PrivacyNoticeComponent,
     TermsConditionsComponent,
-    ArcoRightsComponent
+    ArcoRightsComponent,
+    BlogComponent,
+    BlogDetailComponent
   ],
   imports: [
     BrowserModule,

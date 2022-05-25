@@ -15,6 +15,10 @@ export class DataBehaviorService {
   dataComplete = new BehaviorSubject<{}>({});
   public $getDataComplete = this.dataComplete.asObservable();
 
+  detailBlog = new BehaviorSubject<{}>({});
+  public $getDetailBlog= this.detailBlog.asObservable();
+
+
   constructor() { }
 
   bindingObjectData(data:any){
@@ -27,5 +31,9 @@ export class DataBehaviorService {
 
   bindingCompleteData(data:any){
     this.dataComplete.next(data);
+  }
+
+  setItemBlog(data:any){
+    this.detailBlog.next(data);
   }
 }
