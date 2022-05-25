@@ -1183,8 +1183,6 @@ export class ContactComponent implements OnInit {
           "ubication": "Benito Juárez, Quintana Roo",
           "zone": "Quintana Roo"
         },
-
-        ///LAS LOMAS 
         {
           "amenities": {
             // "Ecotecnologías": true,
@@ -1217,8 +1215,6 @@ export class ContactComponent implements OnInit {
           "ubication": "Sta. Ma. Atzompa",
           "zone": "Oaxaca"
         },
-
-        ///PRIVADAS CARANDAY
         {
           "amenities": {
             // "Ecotecnologías": true,
@@ -1256,8 +1252,6 @@ export class ContactComponent implements OnInit {
           "ubication": "Av. Atlántico S/N",
           "zone": "Aguascalientes"
         },
-
-        ///PASEOS DEL SUR
         {
           "amenities": {
             // "Ecotecnologías": true,
@@ -1294,8 +1288,6 @@ export class ContactComponent implements OnInit {
           "ubication": "Av. Atlántico S/N",
           "zone": "Aguascalientes"
         },
-
-        ///VILLA MONTAÑA (V.M. ETAPA IV)
         {
           "amenities": {
             // "Ecotecnologías": true,
@@ -1332,8 +1324,6 @@ export class ContactComponent implements OnInit {
           "ubication": "Col. Paseos del Sur",
           "zone": "Aguascalientes"
         },
-
-        ///ALBERI
         {
           "amenities": {
             // "Ecotecnologías": true,
@@ -1370,6 +1360,112 @@ export class ContactComponent implements OnInit {
           "title": "¡Tu casa con alberca!",
           "ubication": "Tlajomulco de Zuñiga",
           "zone": "Jalisco"
+        },
+
+        ///CUMBRE TULIPANES 
+        {
+          "amenities": {
+            // "Ecotecnologías": true,
+            "Palapa": true,
+            // "Gimnasio": true,
+            // "Asadores": true,
+            "Alberca": true,
+            // "Caseta de vigilancia": true,            
+            // "vigilance": true,
+            // "Gym exterio": true,
+            // "Gym exterior": true,
+            "Áreas Verdes": true,
+            // "Área Infantil": true,
+            // "Cancha": true,
+            "Asadores": true,
+
+            // "aquaZone": false,
+            // "courts": false,
+            // "gymExterior": false,
+            // "palapa": true,
+            // "steakhouse": false,
+            // "coffeBar": false,
+            // "Áreas verdes": true,
+            // "petZone": false,
+            // "gym": false,
+            // "childArea": true,
+            // "loungeBar": true,
+            // "playroom": false,
+            // "joggin": false
+          },
+
+          "bedrooms": "3",
+          "cardSubtitle": "Un mejor estilo de vida.",
+          "contactPhone": "5633201453",
+          "costNew": 1960000,
+          "costPrev": "2,352,000",
+          "description": "Casas con 3 recamaras, cocina, estancia, 3 baños y estacionamiento.",
+          "id": Math.random(),
+          "image": "https://i.ibb.co/XyvSSYr/cumbres-facade.jpg",
+          "image2": "https://i.ibb.co/ggwBRGt/cumbres-2.jpg",
+          "image3": "https://i.ibb.co/xDNXYh7/cumbres-3.jpg",
+          "image4": "https://i.ibb.co/tPdRfx0/cumbres-4.jpg",
+          "maxPrice": "2,352,000",
+          "minPrice": "1,960,000",
+          "mtsGround": "71.5",
+          "mtsInmueble": "100",
+          "name": "Cumbre Tulipanes",
+          "title": "¡Tu casa con el mejor clima!",
+          "ubication": "Xochitepec",
+          "zone": "Morelos"
+        },
+
+        ///RESIDENCIAL ARROYO 
+        {
+          "amenities": {
+            // "Ecotecnologías": true,
+            "Palapa": true,
+            // "Gimnasio": true,
+            // "Asadores": true,
+            "Alberca": true,
+            "Caseta de vigilancia": true,            
+            // "vigilance": true,
+            // "Gym exterio": true,
+            // "Gym exterior": true,
+            "Áreas Verdes": true,
+            // "Área Infantil": true,
+            // "Cancha": true,
+            "Asadores": true,
+
+            // "aquaZone": false,
+            // "courts": false,
+            // "gymExterior": false,
+            // "palapa": true,
+            // "steakhouse": false,
+            // "coffeBar": false,
+            // "Áreas verdes": true,
+            // "petZone": false,
+            // "gym": false,
+            // "childArea": true,
+            // "loungeBar": true,
+            // "playroom": false,
+            // "joggin": false
+          },
+
+          "bedrooms": "2",
+          "cardSubtitle": "Un mejor estilo de vida.",
+          "contactPhone": "5633201453",
+          "costNew": 755000,
+          "costPrev": "906,000",
+          "description": "Casas con 2 recamaras, cocina, estancia, baño y estacionamiento.",
+          "id": Math.random(),
+          "image": "https://i.ibb.co/xMDsQFZ/arroyo-facade.jpg",
+          "image2": "https://i.ibb.co/hKYtzKh/arroyo-2.jpg",
+          "image3": "https://i.ibb.co/F8bQB2j/arroyo-3.jpg",
+          "image4": "https://i.ibb.co/ZcgnMhr/arroyo-4.jpg",
+          "maxPrice": "906,000",
+          "minPrice": "755,000",
+          "mtsGround": "52",
+          "mtsInmueble": "52",
+          "name": "Residencial Arroyo",
+          "title": "Tú eliges, ¡casa o departamento!",
+          "ubication": "Xochitepec",
+          "zone": "Morelos"
         }
 
       ]
