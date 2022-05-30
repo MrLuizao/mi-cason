@@ -16,33 +16,7 @@ export class DetailComponent implements OnInit {
   linkWhats!: string;
   message: string = '';
 
-  alberca: boolean = false;
-  quazona: boolean = false;
-  asadores: boolean = false;
-  cafeteria: boolean = false;
-  cancha: boolean = false;
-  gimnasio: boolean = false;
-  gymexterior: boolean = false;
-  ludoteca: boolean = false;
-  palapa: boolean = false;
-  petZone: boolean = false;
-  jogging: boolean = false;
-  vigilancia: boolean = false;
-  lounge: boolean = false;
-  infantil: boolean = false;
-  areasVerde: boolean = false;
-  ciclovia: boolean = false;
-  zonaPet: boolean = false;
-  terraza: boolean = false;
-
-  kitchen: boolean = false;
-  bedroom: boolean = false;
-  laundry: boolean = false;
-
-  cctv: boolean = false;
-  comercial: boolean = false;
-  salon: boolean = false;
-  eco: boolean = false;
+  amenities: any;
 
   constructor(  private behaviorSrv: DataBehaviorService, 
                 public seoService: SeoService,
@@ -65,37 +39,8 @@ export class DetailComponent implements OnInit {
   }
 
   findAmenities(){
-
-    let amenities = this.modalArray.amenities;
-    console.log('amenities',amenities);
-    
-    this.alberca = amenities.Alberca;
-    this.quazona = amenities.Aquazona;
-    this.asadores = amenities.Asadores;
-    this.cafeteria = amenities.Cafetería;
-    this.cancha = amenities.Cancha;
-    this.gimnasio = amenities.Gimnasio;
-    this.gymexterior = amenities['Gym exterior'];
-    this.ludoteca = amenities.Lúdoteca;
-    this.palapa = amenities.Palapa;
-    this.petZone = amenities['Pet zone'];
-    this.jogging = amenities['Pista de Jogging'] || amenities['Pista de jogging'];
-    this.vigilancia = amenities.Vigilancia || amenities['Caseta de vigilancia'] || amenities['Caseta de Vigilancia'];
-    this.lounge = amenities['Zona Lounge'];
-    this.infantil = amenities['Área infantil'] || amenities['Área Infantil'];
-    this.areasVerde = amenities['Áreas verdes'] || amenities['Áreas Verdes'];
-    this.ciclovia = amenities['Ciclovías'];
-    this.zonaPet = amenities['Zona Pet'];
-    this.terraza = amenities['Terraza'];
-    this.kitchen = amenities['Cocina Integral'];
-    this.bedroom = amenities['Recámara con Terraza'];
-    this.laundry = amenities['Área de Lavado'];
-
-    this.cctv = amenities['CCTV'];
-    this.comercial = amenities['Área comercial'];
-    this.salon = amenities['Salón de fiestas'];
-    this.eco = amenities['Ecotecnologías'];
-
+    this.amenities = this.modalArray.amenities;
+    console.log('amenities', this.amenities);
   }
 
   gtagEvent(){

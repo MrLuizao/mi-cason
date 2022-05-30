@@ -104,23 +104,31 @@ export class ContactComponent implements OnInit {
           "title": "Concepto innovador de extraordinaria arquitectura.",
           "description": "DEPARTAMENTO DE  2 RECÁMARAS CON 2  BAÑOS COMPLETOS, SE ENTREGAN EQUIPADOS, EL DESARROLLO CUENTA CON AMENIDADES.",
           "bedrooms": "2",
-          "amenities": {
-              "Lúdoteca": true,
-              "Cafetería": false,
-              "Palapa": false,
-              "Alberca": false,
-              "Cancha": false,
-              "Áreas verdes": false,
-              "Gym exterior": true,
-              "Vigilancia": true,
-              "Área infantil": true,
-              "Pista de Jogging": false,
-              "Gimnasio": false,
-              "Zona Lounge": true,
-              "Asadores": false,
-              "Pet zone": true,
-              "Aquazona": false
-          },
+          "amenities": [
+            "Lúdoteca",
+            "Gym exterior",
+            "Vigilancia",
+            "Área infantil",
+            "Zona Lounge",
+            "Pet zone"
+          ],
+          // "amenities": {
+          //     "Lúdoteca": true,
+          //     "Cafetería": false,
+          //     "Palapa": false,
+          //     "Alberca": false,
+          //     "Cancha": false,
+          //     "Áreas verdes": false,
+          //     "Gym exterior": true,
+          //     "Vigilancia": true,
+          //     "Área infantil": true,
+          //     "Pista de Jogging": false,
+          //     "Gimnasio": false,
+          //     "Zona Lounge": true,
+          //     "Asadores": false,
+          //     "Pet zone": true,
+          //     "Aquazona": false
+          // },
           "name": "Terraverde Tarango",
           "costPrev": "3,949,200",
           "ubication": "Álvaro Obregón",
@@ -157,23 +165,28 @@ export class ContactComponent implements OnInit {
             "description": "Cómodos departamentos de 61 m2, cuentan con jardín o roof garden, 2 recámaras con opción a 3 y amplia área de lavado.",
             "isReady": false,
             "zone": "Morelos",
-            "amenities": {
-                "aquaZone": false,
-                "courts": false,
-                "gymExterior": false,
-                "palapa": true,
-                "steakhouse": false,
-                "coffeBar": false,
-                "Áreas verdes": true,
-                "Alberca": true,
-                "petZone": false,
-                "gym": false,
-                "childArea": true,
-                "loungeBar": true,
-                "vigilance": false,
-                "playroom": false,
-                "joggin": false
-            },
+            // "amenities": {
+            //     "aquaZone": false,
+            //     "courts": false,
+            //     "gymExterior": false,
+                
+            //     "steakhouse": false,
+            //     "coffeBar": false,
+            //     "Áreas verdes": true,
+                
+            //     "petZone": false,
+            //     "gym": false,
+               
+            //     "vigilance": false,
+            //     "playroom": false,
+            //     "joggin": false
+            // },
+            "amenities": [
+              "childArea",
+              "loungeBar",
+              "Alberca",
+              "palapa",
+            ],
             "image2": "https://i.ibb.co/F3ChRy0/mean-home-3.jpg",
             "name": "Villas Teques",
             "contactPhone": "5633201453",
@@ -190,23 +203,12 @@ export class ContactComponent implements OnInit {
             "ubication": "Tlayacapan",
             "minPrice": "1,200,00",
             "costPrev": "1,320,000",
-            "amenities": {
-                "Alberca": true,
-                "steakhouse": true,
-                "courts": false,
-                "coffeBar": false,
-                "vigilance": false,
-                "playroom": false,
-                "childArea": true,
-                "Áreas verdes": true,
-                "aquaZone": false,
-                "gymExterior": false,
-                "palapa": true,
-                "joggin": false,
-                "gym": false,
-                "loungeBar": false,
-                "petZone": false
-            },
+            "amenities": [
+              "childArea",
+              "Áreas verdes",
+              "Alberca",
+              "palapa",
+            ],
             "id": "3",
             "closets": false,
             "mtsGround": "48.5",
@@ -227,23 +229,16 @@ export class ContactComponent implements OnInit {
             "image4": "https://i.ibb.co/rygsKjh/LAS-FLORES-INT-COCINA.jpg"
         },
         {
-            "amenities": {
-                "Áreas verdes": true,
-                "Área infantil": true,
-                "Zona Lounge": false,
-                "Gym exterio": true,
-                "Lúdoteca": false,
-                "Pet zone": false,
-                "Vigilancia": true,
-                "Asadores": false,
-                "Cancha": true,
-                "Aquazona": false,
-                "Gimnasio": true,
-                "Alberca": true,
-                "Palapa": false,
-                "Pista de Jogging": true,
-                "Cafetería": true
-            },
+            "amenities": [
+              "Alberca",
+              "Áreas verdes",
+              "Pista de Jogging",
+              "Cafetería",
+              "Cancha",
+              "Gimnasio",
+              "Vigilancia",
+              "childArea"
+            ],
             "mtsInmueble": "88",
             "description": "CASAS DE 3 RECÁMARAS,2  BAÑOS, TERRAZA A CUBIERTO, CUARTO DE LAVADO, Y SALA DE TV . INCLUYE COCINA INTEGRAL Y PERSIANAS. ESTACIONAMIENTO PARA VISITAS Y MÚLTIPLES AMENIDADES",
             "maxPrice": "1,440,140",
@@ -283,23 +278,26 @@ export class ContactComponent implements OnInit {
             "image": "https://i.ibb.co/tp77WrW/xochicalli-portrait.jpg",
             "image3": "https://i.ibb.co/yFfL1Zb/image-3.jpg",
             "price": "819,400",
-            "amenities": {
-                "Asadores": false,
-                "Pista de Jogging": false,
-                "Lúdoteca": false,
-                "Cancha": false,
-                "Pet zone": false,
-                "Áreas verdes": false,
-                "Palapa": false,
-                "Vigilancia": true,
-                "Zona Lounge": false,
-                "Aquazona": false,
-                "Gym exterio": false,
-                "Cafetería": false,
-                "Gimnasio": false,
-                "Área infantil": false,
-                "Alberca": false
-            },
+            // "amenities": {
+            //     "Asadores": false,
+            //     "Pista de Jogging": false,
+            //     "Lúdoteca": false,
+            //     "Cancha": false,
+            //     "Pet zone": false,
+            //     "Áreas verdes": false,
+            //     "Palapa": false,
+            //     "Vigilancia": true,
+            //     "Zona Lounge": false,
+            //     "Aquazona": false,
+            //     "Gym exterio": false,
+            //     "Cafetería": false,
+            //     "Gimnasio": false,
+            //     "Área infantil": false,
+            //     "Alberca": false
+            // },
+            "amenities": [
+              "Vigilancia",
+            ],
             "costPrev": "1,500,000",
             "contactPhone": "5633194603",
             "zone": "CDMX",
@@ -335,23 +333,32 @@ export class ContactComponent implements OnInit {
             "isNew": true,
             "isReady": false,
             "ubication": "Yecapixtla",
-            "amenities": {
-                "Pista de Jogging": true,
-                "Alberca": true,
-                "Asadores": false,
-                "Pet zone": false,
-                "Lúdoteca": false,
-                "Palapa": false,
-                "Áreas verdes": true,
-                "Zona Lounge": false,
-                "Área infantil": true,
-                "Vigilancia": false,
-                "Cancha": true,
-                "Gym exterio": false,
-                "Gimnasio": true,
-                "Cafetería": true,
-                "Aquazona": false
-            },
+            // "amenities": {
+            //     "Pista de Jogging": true,
+            //     "Alberca": true,
+            //     "Asadores": false,
+            //     "Pet zone": false,
+            //     "Lúdoteca": false,
+            //     "Palapa": false,
+            //     "Áreas verdes": true,
+            //     "Zona Lounge": false,
+            //     "Área infantil": true,
+            //     "Vigilancia": false,
+            //     "Cancha": true,
+            //     "Gym exterio": false,
+            //     "Gimnasio": true,
+            //     "Cafetería": true,
+            //     "Aquazona": false
+            // },
+            "amenities": [
+              "Áreas verdes",
+              "Pista de Jogging",
+              "Cafetería",
+              "Cancha",
+              "Gimnasio",
+              "Vigilancia",
+              "childArea"
+            ],
             "kitchen": true,
             "bedrooms": "2",
             "modelName": "Modelo Gardenia",
@@ -374,23 +381,32 @@ export class ContactComponent implements OnInit {
             "id": "22",
             "isReady": true,
             "isNew": true,
-            "amenities": {
-                "Pet zone": false,
-                "Lúdoteca": false,
-                "Alberca": true,
-                "Zona Lounge": false,
-                "Vigilancia": true,
-                "Asadores": false,
-                "Gym exterio": true,
-                "Gimnasio": true,
-                "Área infantil": true,
-                "Pista de Jogging": true,
-                "Aquazona": false,
-                "Cancha": true,
-                "Áreas verdes": true,
-                "Palapa": false,
-                "Cafetería": true
-            },
+            // "amenities": {
+            //     "Pet zone": false,
+            //     "Lúdoteca": false,
+            //     "Alberca": true,
+            //     "Zona Lounge": false,
+            //     "Vigilancia": true,
+            //     "Asadores": false,
+            //     "Gym exterio": true,
+            //     "Gimnasio": true,
+            //     "Área infantil": true,
+            //     "Pista de Jogging": true,
+            //     "Aquazona": false,
+            //     "Cancha": true,
+            //     "Áreas verdes": true,
+            //     "Palapa": false,
+            //     "Cafetería": true
+            // },
+            "amenities": [
+              "Áreas verdes",
+              "Pista de Jogging",
+              "Cafetería",
+              "Cancha",
+              "Gimnasio",
+              "Vigilancia",
+              "childArea"
+            ],
             "image2": "https://i.ibb.co/mBMDqyd/PHOTO-2021-11-12-11-20-24.jpg",
             "image3": "https://i.ibb.co/BGt0PS2/PHOTO-2021-11-12-11-20-24-3.jpg",
             "mtsInmueble": "66.5",
@@ -406,23 +422,32 @@ export class ContactComponent implements OnInit {
             "image2": "https://i.ibb.co/7VxZ162/PHOTO-2021-11-12-11-16-32-2.jpg",
             "price": "819,400",
             "contactPhone": "5633201453",
-            "amenities": {
-                "Vigilancia": false,
-                "Cancha": true,
-                "Zona Lounge": false,
-                "Gimnasio": true,
-                "Asadores": false,
-                "Gym exterio": true,
-                "Pet zone": false,
-                "Lúdoteca": false,
-                "Áreas verdes": true,
-                "Área infantil": true,
-                "Pista de Jogging": true,
-                "Alberca": true,
-                "Aquazona": false,
-                "Cafetería": true,
-                "Palapa": false
-            },
+            "amenities": [
+              "Áreas verdes",
+              "Pista de Jogging",
+              "Cafetería",
+              "Cancha",
+              "Gimnasio",
+              "Vigilancia",
+              "childArea"
+            ],
+            // "amenities": {
+            //     "Vigilancia": false,
+            //     "Cancha": true,
+            //     "Zona Lounge": false,
+            //     "Gimnasio": true,
+            //     "Asadores": false,
+            //     "Gym exterio": true,
+            //     "Pet zone": false,
+            //     "Lúdoteca": false,
+            //     "Áreas verdes": true,
+            //     "Área infantil": true,
+            //     "Pista de Jogging": true,
+            //     "Alberca": true,
+            //     "Aquazona": false,
+            //     "Cafetería": true,
+            //     "Palapa": false
+            // },
             "description": "CASAS DE 2 RECÁMARAS, 1 Y 1/2  BAÑOS,CON MÚLTIPLES AMENIDADES.",
             "isReady": true,
             "mtsInmueble": "75.5",
@@ -446,23 +471,32 @@ export class ContactComponent implements OnInit {
             "image4": "https://i.ibb.co/z7Zb6tr/PHOTO-2021-11-12-11-16-33.jpg"
         },
         {
-          "amenities": {
-            "Áreas verdes": true,
-              "Vigilancia": false,
-              "Cancha": false,
-              "Zona Lounge": false,
-              "Gimnasio": false,
-              "Asadores": false,
-              "Gym exterio": false,
-              "Pet zone": false,
-              "Lúdoteca": false,
-              "Área infantil": false,
-              "Pista de Jogging": false,
-              "Alberca": false,
-              "Aquazona": false,
-              "Cafetería": false,
-              "Palapa": false
-          },
+          // "amenities": {
+          //   "Áreas verdes": true,
+          //     "Vigilancia": false,
+          //     "Cancha": false,
+          //     "Zona Lounge": false,
+          //     "Gimnasio": false,
+          //     "Asadores": false,
+          //     "Gym exterio": false,
+          //     "Pet zone": false,
+          //     "Lúdoteca": false,
+          //     "Área infantil": false,
+          //     "Pista de Jogging": false,
+          //     "Alberca": false,
+          //     "Aquazona": false,
+          //     "Cafetería": false,
+          //     "Palapa": false
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "3 y 1/2",
           "cardSubtitle": "Nunca había sido tan fácil adquirir una vivienda.",
           "contactPhone": "5633201453",
@@ -491,12 +525,21 @@ export class ContactComponent implements OnInit {
           "closets": null,
         },
         {
-          "amenities": {
-            "Recámara con Terraza": true,
-            "Cocina Integral": true,
-            "Área de Lavado": true,
-            "Caseta de Vigilancia": true
-          },
+          // "amenities": {
+          //   "Recámara con Terraza": true,
+          //   "Cocina Integral": true,
+          //   "Área de Lavado": true,
+          //   "Caseta de Vigilancia": true
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "2",
           "cardSubtitle": "Exclusivos Departamentos, Increíble Ubicación",
           "contactPhone": "5633201453",
@@ -525,19 +568,28 @@ export class ContactComponent implements OnInit {
           "closets": null,
         },
         {
-          "amenities": {
-            "Áreas Verdes": true,
-            "Alberca": true,
-            "Palapa": true,
-            "Cancha": true,
-            "Área Infantil": true,
-            "Ciclovías": true,
+          // "amenities": {
+          //   "Áreas Verdes": true,
+          //   "Alberca": true,
+          //   "Palapa": true,
+          //   "Cancha": true,
+          //   "Área Infantil": true,
+          //   "Ciclovías": true,
 
-            // "Recámara con Terraza": true,
-            // "Cocina Integral": true,
-            // "Área de Lavado": true,
-            // "Caseta de Vigilancia": true
-          },
+          //   // "Recámara con Terraza": true,
+          //   // "Cocina Integral": true,
+          //   // "Área de Lavado": true,
+          //   // "Caseta de Vigilancia": true
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "2",
           "cardSubtitle": "Plusvalía e Inversión segura",
           "contactPhone": "5633201453",
@@ -566,20 +618,29 @@ export class ContactComponent implements OnInit {
           // "closets": null,
         },
         {
-          "amenities": {
-            "Palapa": true,
-            "Áreas Verdes": true,
-            "Asadores": true,
+          // "amenities": {
+          //   "Palapa": true,
+          //   "Áreas Verdes": true,
+          //   "Asadores": true,
 
-            // "Alberca": true,
-            // "Cancha": true,
-            // "Área Infantil": true,
-            // "Ciclovías": true,
-            // "Recámara con Terraza": true,
-            // "Cocina Integral": true,
-            // "Área de Lavado": true,
-            // "Caseta de Vigilancia": true
-          },
+          //   // "Alberca": true,
+          //   // "Cancha": true,
+          //   // "Área Infantil": true,
+          //   // "Ciclovías": true,
+          //   // "Recámara con Terraza": true,
+          //   // "Cocina Integral": true,
+          //   // "Área de Lavado": true,
+          //   // "Caseta de Vigilancia": true
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "2",
           "cardSubtitle": "¡¡Entrega inmediata!!",
           "contactPhone": "5633201453",
@@ -601,23 +662,32 @@ export class ContactComponent implements OnInit {
           "zone": "Quintana Roo",
         },
         {
-          "amenities": {
-            // "Palapa": true,
-            // "Asadores": true,
-            // "Área Infantil": true,
-            // "Ciclovías": true,
-            // "Recámara con Terraza": true,
-            // "Cocina Integral": true,
-            // "Área de Lavado": true,
+          // "amenities": {
+          //   // "Palapa": true,
+          //   // "Asadores": true,
+          //   // "Área Infantil": true,
+          //   // "Ciclovías": true,
+          //   // "Recámara con Terraza": true,
+          //   // "Cocina Integral": true,
+          //   // "Área de Lavado": true,
 
-            "Áreas Verdes": true,
-            "Alberca": true,
-            "Cancha": true,
-            "Caseta de Vigilancia": true,
-            "Pista de jogging": true,
-            "Aquazona": true,
-            "Ciclovías": true
-          },
+          //   "Áreas Verdes": true,
+          //   "Alberca": true,
+          //   "Cancha": true,
+          //   "Caseta de Vigilancia": true,
+          //   "Pista de jogging": true,
+          //   "Aquazona": true,
+          //   "Ciclovías": true
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "2",
           "cardSubtitle": "Estrena vivienda con Alberca y Aquaparque",
           "contactPhone": "5633201453",
@@ -639,25 +709,34 @@ export class ContactComponent implements OnInit {
           "zone": "Quintana Roo",
         },
         {
-          "amenities": {
-            "Caseta de vigilancia": true,
-            "Áreas Verdes": true,
-            "Alberca": true,
-            "Palapa": true,
-            "Área infantil": true,
-            "Ciclovías": true
-            // "Asadores": true,
-            // "Área Infantil": true,
-            // "Ciclovías": true,
-            // "Recámara con Terraza": true,
-            // "Cocina Integral": true,
-            // "Área de Lavado": true,
-            // "Cancha": true,
-            // "Caseta de Vigilancia": true,
-            // "Pista de jogging": true,
-            // "Aquazona": true,
-            // "Ciclovías": true
-          },
+          // "amenities": {
+          //   "Caseta de vigilancia": true,
+          //   "Áreas Verdes": true,
+          //   "Alberca": true,
+          //   "Palapa": true,
+          //   "Área infantil": true,
+          //   "Ciclovías": true
+          //   // "Asadores": true,
+          //   // "Área Infantil": true,
+          //   // "Ciclovías": true,
+          //   // "Recámara con Terraza": true,
+          //   // "Cocina Integral": true,
+          //   // "Área de Lavado": true,
+          //   // "Cancha": true,
+          //   // "Caseta de Vigilancia": true,
+          //   // "Pista de jogging": true,
+          //   // "Aquazona": true,
+          //   // "Ciclovías": true
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "2",
           "cardSubtitle": "Vive en un pedacito de la Rivera Maya",
           "contactPhone": "5633201453",
@@ -679,20 +758,29 @@ export class ContactComponent implements OnInit {
           "zone": "Quintana Roo",
         },
         {
-          "amenities": {
-            "Terraza": true,
-            "Caseta de vigilancia": true,            
-            "Áreas Verdes": true,
-            "Alberca": true,
-            "Palapa": true,
-            "Cancha": true,
-            "Área Infantil": true,
-            "Aquazona": true,
-            "Gym Exterior": true,
-            "Asadores": true,
-            "Zona Pet": true,
-            "Ciclovías": true
-          },
+          // "amenities": {
+          //   "Terraza": true,
+          //   "Caseta de vigilancia": true,            
+          //   "Áreas Verdes": true,
+          //   "Alberca": true,
+          //   "Palapa": true,
+          //   "Cancha": true,
+          //   "Área Infantil": true,
+          //   "Aquazona": true,
+          //   "Gym Exterior": true,
+          //   "Asadores": true,
+          //   "Zona Pet": true,
+          //   "Ciclovías": true
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "2",
           "cardSubtitle": "Vacaciones inolvidables cada fin de semana",
           "contactPhone": "5633201453",
@@ -714,17 +802,26 @@ export class ContactComponent implements OnInit {
           "zone": "Morelos",
         },
         {
-          "amenities": {
-            "Terraza": true,
-            "Caseta de vigilancia": true,            
-            "Áreas Verdes": true,
-            "Zona Pet": true,
-            "Gimnasio": true,
-            "CCTV": true,
-            "Área comercial": true,
-            "Salón de fiestas": true,
-            "Ecotecnologías": true
-          },
+          // "amenities": {
+          //   "Terraza": true,
+          //   "Caseta de vigilancia": true,            
+          //   "Áreas Verdes": true,
+          //   "Zona Pet": true,
+          //   "Gimnasio": true,
+          //   "CCTV": true,
+          //   "Área comercial": true,
+          //   "Salón de fiestas": true,
+          //   "Ecotecnologías": true
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "2",
           "cardSubtitle": "Exclusividad, Calidad y Ubicación.",
           "contactPhone": "5633201453",
@@ -746,17 +843,26 @@ export class ContactComponent implements OnInit {
           "zone": "CDMX",
         },
         {
-          "amenities": {
-            "Terraza": true,
-            "Caseta de vigilancia": true,            
-            "Áreas Verdes": true,
-            "Palapa": true,
-            "Cancha": true,
-            "Área Infantil": true,
-            "Asadores": true,
-            "Ciclovías": true,
-            "Ecotecnologías": true
-          },
+          // "amenities": {
+          //   "Terraza": true,
+          //   "Caseta de vigilancia": true,            
+          //   "Áreas Verdes": true,
+          //   "Palapa": true,
+          //   "Cancha": true,
+          //   "Área Infantil": true,
+          //   "Asadores": true,
+          //   "Ciclovías": true,
+          //   "Ecotecnologías": true
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "2",
           "cardSubtitle": "Diseño integral para un mejor estilo de vida.",
           "contactPhone": "5633201453",
@@ -778,9 +884,12 @@ export class ContactComponent implements OnInit {
           "zone": "Estado de México",
         },
         {
-          "amenities": {
-            "Área infantil": true,
-          },
+          // "amenities": {
+          //   "Área infantil": true,
+          // },
+          "amenities": [
+            "childArea"
+          ],
           "bedrooms": "2",
           "cardSubtitle": "Bienestar y comodidad de tu familia.",
           "contactPhone": "5633201453",
@@ -802,10 +911,14 @@ export class ContactComponent implements OnInit {
           "zone": "Coahuila",
         },
         {
-          "amenities": {
-            "Área infantil": true,
-            "Asadores": true
-          },
+          // "amenities": {
+          //   "Área infantil": true,
+          //   "Asadores": true
+          // },
+          "amenities": [
+            "asadores",
+            "childArea"
+          ],
           "bedrooms": "3",
           "cardSubtitle": "El lugar ideal para el nacimiento de tu hogar.",
           "contactPhone": "5633201453",
@@ -827,11 +940,16 @@ export class ContactComponent implements OnInit {
           "zone": "Coahuila",
         },
         {
-          "amenities": {
-            "Área infantil": true,
-            "Asadores": true,
-            "Caseta de vigilancia": true           
-          },
+          // "amenities": {
+          //   "Área infantil": true,
+          //   "Asadores": true,
+          //   "Caseta de vigilancia": true           
+          // },
+          "amenities": [
+            "asadores",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "3",
           "cardSubtitle": "Excelente ubcación al norte de la ciudad.",
           "contactPhone": "5633201453",
@@ -853,16 +971,25 @@ export class ContactComponent implements OnInit {
           "zone": "Coahuila"
         },
         {
-          "amenities": {
-            "gymExterior": true,
-            "Áreas Verdes": true,
-            "Palapa": true,
-            "Área Infantil": true,
-            "Ciclovías": true,         
-            "Asadores": true,
-            "Caseta de vigilancia": true,            
-            "Ecotecnologías": true     
-          },
+          // "amenities": {
+          //   "gymExterior": true,
+          //   "Áreas Verdes": true,
+          //   "Palapa": true,
+          //   "Área Infantil": true,
+          //   "Ciclovías": true,         
+          //   "Asadores": true,
+          //   "Caseta de vigilancia": true,            
+          //   "Ecotecnologías": true     
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "3",
           "cardSubtitle": "Un mejor estilo de vida.",
           "contactPhone": "5633201453",
@@ -884,15 +1011,24 @@ export class ContactComponent implements OnInit {
           "zone": "Estado de México"
         },
         {
-          "amenities": {
-            "Caseta de vigilancia": true,            
-            "Ecotecnologías": true,     
-            "Áreas Verdes": true,
-            "Cancha": true,
-            "Área Infantil": true,
-            "Pista de Jogging": true,
-            "gymExterior": true,
-          },
+          // "amenities": {
+          //   "Caseta de vigilancia": true,            
+          //   "Ecotecnologías": true,     
+          //   "Áreas Verdes": true,
+          //   "Cancha": true,
+          //   "Área Infantil": true,
+          //   "Pista de Jogging": true,
+          //   "gymExterior": true,
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "2",
           "cardSubtitle": "Departamentos con ubicación privilegiada.",
           "contactPhone": "5633201453",
@@ -914,14 +1050,23 @@ export class ContactComponent implements OnInit {
           "zone": "Estado de México"
         },
         {
-          "amenities": {
-            "Caseta de vigilancia": true,            
-            "Áreas Verdes": true,
-            "Área Infantil": true,
-            "Cancha": true,
-            "Ecotecnologías": true,
-            "Alberca": true,
-          },
+          // "amenities": {
+          //   "Caseta de vigilancia": true,            
+          //   "Áreas Verdes": true,
+          //   "Área Infantil": true,
+          //   "Cancha": true,
+          //   "Ecotecnologías": true,
+          //   "Alberca": true,
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "3",
           "cardSubtitle": "Ubicación privilegiada con vialidades rápidas.",
           "contactPhone": "5633201453",
@@ -943,14 +1088,23 @@ export class ContactComponent implements OnInit {
           "zone": "Coahuila"
         },
         {
-          "amenities": {
-            "Ecotecnologías": true,
-            // "Caseta de vigilancia": true,            
-            // "Áreas Verdes": true,
-            // "Área Infantil": true,
-            // "Cancha": true,
-            // "Alberca": true,
-          },
+          // "amenities": {
+          //   "Ecotecnologías": true,
+          //   // "Caseta de vigilancia": true,            
+          //   // "Áreas Verdes": true,
+          //   // "Área Infantil": true,
+          //   // "Cancha": true,
+          //   // "Alberca": true,
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "3",
           "cardSubtitle": "Ideal para tu familia",
           "contactPhone": "5633201453",
@@ -972,14 +1126,23 @@ export class ContactComponent implements OnInit {
           "zone": "Puebla"
         },
         {
-          "amenities": {
-            // "Ecotecnologías": true,
-            "Caseta de vigilancia": true,            
-            "Áreas Verdes": true,
-            // "Área Infantil": true,
-            // "Cancha": true,
-            // "Alberca": true,
-          },
+          // "amenities": {
+          //   // "Ecotecnologías": true,
+          //   "Caseta de vigilancia": true,            
+          //   "Áreas Verdes": true,
+          //   // "Área Infantil": true,
+          //   // "Cancha": true,
+          //   // "Alberca": true,
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "3",
           "cardSubtitle": "Ubicación cercana a Plaza San Diego",
           "contactPhone": "5633201453",
@@ -1001,15 +1164,24 @@ export class ContactComponent implements OnInit {
           "zone": "Puebla"
         },
         {
-          "amenities": {
-            // "Ecotecnologías": true,
-            // "Área Infantil": true,
-            // "Cancha": true,
-            "Caseta de vigilancia": true,            
-            "Áreas Verdes": true,
-            "Alberca": true,
-            "Palapa": true,
-          },
+          // "amenities": {
+          //   // "Ecotecnologías": true,
+          //   // "Área Infantil": true,
+          //   // "Cancha": true,
+          //   "Caseta de vigilancia": true,            
+          //   "Áreas Verdes": true,
+          //   "Alberca": true,
+          //   "Palapa": true,
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "3",
           "cardSubtitle": "¡Tu casa con alberca!",
           "contactPhone": "5633201453",
@@ -1031,15 +1203,24 @@ export class ContactComponent implements OnInit {
           "zone": "Puebla"
         },
         {
-          "amenities": {
-            // "Ecotecnologías": true,
-            // "Alberca": true,
-            // "Palapa": true,
-            "Caseta de vigilancia": true,            
-            "Área Infantil": true,
-            "Cancha": true,
-            "Áreas Verdes": true,
-          },
+          // "amenities": {
+          //   // "Ecotecnologías": true,
+          //   // "Alberca": true,
+          //   // "Palapa": true,
+          //   "Caseta de vigilancia": true,            
+          //   "Área Infantil": true,
+          //   "Cancha": true,
+          //   "Áreas Verdes": true,
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "2",
           "cardSubtitle": "A 10 Min del nuevo aeropueto (AIFA)",
           "contactPhone": "5574189420",
@@ -1061,15 +1242,24 @@ export class ContactComponent implements OnInit {
           "zone": "Estado de México"
         },
         {
-          "amenities": {
-            "Ecotecnologías": true,
-            "Áreas Verdes": true,
-            "Área Infantil": true
-            // "Alberca": true,
-            // "Palapa": true,
-            // "Caseta de vigilancia": true,            
-            // "Cancha": true,
-          },
+          // "amenities": {
+          //   "Ecotecnologías": true,
+          //   "Áreas Verdes": true,
+          //   "Área Infantil": true
+          //   // "Alberca": true,
+          //   // "Palapa": true,
+          //   // "Caseta de vigilancia": true,            
+          //   // "Cancha": true,
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "3",
           "cardSubtitle": "El hogar que siempre haz querido.",
           "contactPhone": "5633201453",
@@ -1091,15 +1281,24 @@ export class ContactComponent implements OnInit {
           "zone": "Coahuila"
         },
         {
-          "amenities": {
-            "Ecotecnologías": true,
-            "Áreas Verdes": true,
-            "Área Infantil": true,
-            "Alberca": true,
-            "Palapa": true,
-            // "Caseta de vigilancia": true,            
-            // "Cancha": true,
-          },
+          // "amenities": {
+          //   "Ecotecnologías": true,
+          //   "Áreas Verdes": true,
+          //   "Área Infantil": true,
+          //   "Alberca": true,
+          //   "Palapa": true,
+          //   // "Caseta de vigilancia": true,            
+          //   // "Cancha": true,
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "3",
           "cardSubtitle": "Tu casa con el mejor clima y amenidades ",
           "contactPhone": "5633201453",
@@ -1121,16 +1320,25 @@ export class ContactComponent implements OnInit {
           "zone": "Morelos"
         },
         {
-          "amenities": {
-            // "Ecotecnologías": true,
-            "Áreas Verdes": true,
-            "Área Infantil": true,
-            // "Alberca": true,
-            // "Palapa": true,
-            "Caseta de vigilancia": true,            
-            "Cancha": true,
-            "Gimnasio": true,
-          },
+          // "amenities": {
+          //   // "Ecotecnologías": true,
+          //   "Áreas Verdes": true,
+          //   "Área Infantil": true,
+          //   // "Alberca": true,
+          //   // "Palapa": true,
+          //   "Caseta de vigilancia": true,            
+          //   "Cancha": true,
+          //   "Gimnasio": true,
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "2",
           "cardSubtitle": "Departamentos con ubicación privilegiada",
           "contactPhone": "5633201453",
@@ -1152,17 +1360,26 @@ export class ContactComponent implements OnInit {
           "zone": "Oaxaca"
         },
         {
-          "amenities": {
-            // "Ecotecnologías": true,
-            "Áreas Verdes": true,
-            // "Área Infantil": true,
-            "Alberca": true,
-            "Palapa": true,
-            "Caseta de vigilancia": true,            
-            // "Cancha": true,
-            // "Gimnasio": true,
-            "Asadores": true
-          },
+          // "amenities": {
+          //   // "Ecotecnologías": true,
+          //   "Áreas Verdes": true,
+          //   // "Área Infantil": true,
+          //   "Alberca": true,
+          //   "Palapa": true,
+          //   "Caseta de vigilancia": true,            
+          //   // "Cancha": true,
+          //   // "Gimnasio": true,
+          //   "Asadores": true
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "2",
           "cardSubtitle": "Tu vivienda a 25 min. de la playa",
           "contactPhone": "5633201453",
@@ -1184,17 +1401,26 @@ export class ContactComponent implements OnInit {
           "zone": "Quintana Roo"
         },
         {
-          "amenities": {
-            // "Ecotecnologías": true,
-            "Áreas Verdes": true,
-            // "Área Infantil": true,
-            // "Alberca": true,
-            // "Palapa": true,
-            // "Caseta de vigilancia": true,            
-            "Cancha": true,
-            // "Gimnasio": true,
-            // "Asadores": true
-          },
+          // "amenities": {
+          //   // "Ecotecnologías": true,
+          //   "Áreas Verdes": true,
+          //   // "Área Infantil": true,
+          //   // "Alberca": true,
+          //   // "Palapa": true,
+          //   // "Caseta de vigilancia": true,            
+          //   "Cancha": true,
+          //   // "Gimnasio": true,
+          //   // "Asadores": true
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "2",
           "cardSubtitle": "Con vivienda propia estás más seguro",
           "contactPhone": "5633201453",
@@ -1216,22 +1442,31 @@ export class ContactComponent implements OnInit {
           "zone": "Oaxaca"
         },
         {
-          "amenities": {
-            // "Ecotecnologías": true,
-            "Áreas Verdes": true,
-            "Área Infantil": true,
-            "Alberca": true,
-            // "Palapa": true,
-            "Caseta de vigilancia": true,            
-            "Cancha": true,
-            // "Gimnasio": true,
-            // "Asadores": true,
-            "vigilance": true,
-            "Gym exterio": true,
-            "Gym exterior": true,
+          // "amenities": {
+          //   // "Ecotecnologías": true,
+          //   "Áreas Verdes": true,
+          //   "Área Infantil": true,
+          //   "Alberca": true,
+          //   // "Palapa": true,
+          //   "Caseta de vigilancia": true,            
+          //   "Cancha": true,
+          //   // "Gimnasio": true,
+          //   // "Asadores": true,
+          //   "vigilance": true,
+          //   "Gym exterio": true,
+          //   "Gym exterior": true,
 
 
-          },
+          // },
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
           "bedrooms": "3",
           "cardSubtitle": "Tu vivienda con un mejor estilo de vida",
           "contactPhone": "5633201453",
@@ -1253,20 +1488,30 @@ export class ContactComponent implements OnInit {
           "zone": "Aguascalientes"
         },
         {
-          "amenities": {
-            // "Ecotecnologías": true,
-            // "Palapa": true,
-            // "Gimnasio": true,
-            // "Asadores": true,
-            // "Alberca": true,
-            // "Caseta de vigilancia": true,            
-            // "vigilance": false,
-            // "Gym exterio": true,
-            // "Gym exterior": true,
-            "Áreas Verdes": true,
-            "Área Infantil": true,
-            "Cancha": true,
-          },
+          // "amenities": {
+          //   // "Ecotecnologías": true,
+          //   // "Palapa": true,
+          //   // "Gimnasio": true,
+          //   // "Asadores": true,
+          //   // "Alberca": true,
+          //   // "Caseta de vigilancia": true,            
+          //   // "vigilance": false,
+          //   // "Gym exterio": true,
+          //   // "Gym exterior": true,
+          //   "Áreas Verdes": true,
+          //   "Área Infantil": true,
+          //   "Cancha": true,
+          // },
+
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
 
           "bedrooms": "2",
           "cardSubtitle": "Tu vivienda con múltiples servicios",
@@ -1289,20 +1534,30 @@ export class ContactComponent implements OnInit {
           "zone": "Aguascalientes"
         },
         {
-          "amenities": {
-            // "Ecotecnologías": true,
-            // "Palapa": true,
-            // "Gimnasio": true,
-            // "Asadores": true,
-            // "Alberca": true,
-            // "Caseta de vigilancia": true,            
-            // "vigilance": false,
-            // "Gym exterio": true,
-            // "Gym exterior": true,
-            "Áreas Verdes": true,
-            "Área Infantil": true,
-            "Cancha": true,
-          },
+          // "amenities": {
+          //   // "Ecotecnologías": true,
+          //   // "Palapa": true,
+          //   // "Gimnasio": true,
+          //   // "Asadores": true,
+          //   // "Alberca": true,
+          //   // "Caseta de vigilancia": true,            
+          //   // "vigilance": false,
+          //   // "Gym exterio": true,
+          //   // "Gym exterior": true,
+          //   "Áreas Verdes": true,
+          //   "Área Infantil": true,
+          //   "Cancha": true,
+          // },
+
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
 
           "bedrooms": "2",
           "cardSubtitle": " Excelente oportunidad de tener tu casa propia",
@@ -1325,21 +1580,31 @@ export class ContactComponent implements OnInit {
           "zone": "Aguascalientes"
         },
         {
-          "amenities": {
-            // "Ecotecnologías": true,
-            // "Palapa": true,
-            // "Gimnasio": true,
-            // "Asadores": true,
-            "Alberca": true,
-            "Caseta de vigilancia": true,            
-            "vigilance": true,
-            "Gym exterio": true,
-            "Gym exterior": true,
-            "Áreas Verdes": true,
-            "Área Infantil": true,
-            "Cancha": true,
-            "Asadores": true,
-          },
+          // "amenities": {
+          //   // "Ecotecnologías": true,
+          //   // "Palapa": true,
+          //   // "Gimnasio": true,
+          //   // "Asadores": true,
+          //   "Alberca": true,
+          //   "Caseta de vigilancia": true,            
+          //   "vigilance": true,
+          //   "Gym exterio": true,
+          //   "Gym exterior": true,
+          //   "Áreas Verdes": true,
+          //   "Área Infantil": true,
+          //   "Cancha": true,
+          //   "Asadores": true,
+          // },
+
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
 
           "bedrooms": "3",
           "cardSubtitle": "Tu vivienda con un mejor estilo de vida.",
@@ -1364,35 +1629,45 @@ export class ContactComponent implements OnInit {
 
         ///CUMBRE TULIPANES 
         {
-          "amenities": {
-            // "Ecotecnologías": true,
-            "Palapa": true,
-            // "Gimnasio": true,
-            // "Asadores": true,
-            "Alberca": true,
-            // "Caseta de vigilancia": true,            
-            // "vigilance": true,
-            // "Gym exterio": true,
-            // "Gym exterior": true,
-            "Áreas Verdes": true,
-            // "Área Infantil": true,
-            // "Cancha": true,
-            "Asadores": true,
+          // "amenities": {
+          //   // "Ecotecnologías": true,
+          //   "Palapa": true,
+          //   // "Gimnasio": true,
+          //   // "Asadores": true,
+          //   "Alberca": true,
+          //   // "Caseta de vigilancia": true,            
+          //   // "vigilance": true,
+          //   // "Gym exterio": true,
+          //   // "Gym exterior": true,
+          //   "Áreas Verdes": true,
+          //   // "Área Infantil": true,
+          //   // "Cancha": true,
+          //   "Asadores": true,
 
-            // "aquaZone": false,
-            // "courts": false,
-            // "gymExterior": false,
-            // "palapa": true,
-            // "steakhouse": false,
-            // "coffeBar": false,
-            // "Áreas verdes": true,
-            // "petZone": false,
-            // "gym": false,
-            // "childArea": true,
-            // "loungeBar": true,
-            // "playroom": false,
-            // "joggin": false
-          },
+          //   // "aquaZone": false,
+          //   // "courts": false,
+          //   // "gymExterior": false,
+          //   // "palapa": true,
+          //   // "steakhouse": false,
+          //   // "coffeBar": false,
+          //   // "Áreas verdes": true,
+          //   // "petZone": false,
+          //   // "gym": false,
+          //   // "childArea": true,
+          //   // "loungeBar": true,
+          //   // "playroom": false,
+          //   // "joggin": false
+          // },
+
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
 
           "bedrooms": "3",
           "cardSubtitle": "Un mejor estilo de vida.",
@@ -1417,35 +1692,45 @@ export class ContactComponent implements OnInit {
 
         ///RESIDENCIAL ARROYO 
         {
-          "amenities": {
-            // "Ecotecnologías": true,
-            "Palapa": true,
-            // "Gimnasio": true,
-            // "Asadores": true,
-            "Alberca": true,
-            "Caseta de vigilancia": true,            
-            // "vigilance": true,
-            // "Gym exterio": true,
-            // "Gym exterior": true,
-            "Áreas Verdes": true,
-            // "Área Infantil": true,
-            // "Cancha": true,
-            "Asadores": true,
+          // "amenities": {
+          //   // "Ecotecnologías": true,
+          //   "Palapa": true,
+          //   // "Gimnasio": true,
+          //   // "Asadores": true,
+          //   "Alberca": true,
+          //   "Caseta de vigilancia": true,            
+          //   // "vigilance": true,
+          //   // "Gym exterio": true,
+          //   // "Gym exterior": true,
+          //   "Áreas Verdes": true,
+          //   // "Área Infantil": true,
+          //   // "Cancha": true,
+          //   "Asadores": true,
 
-            // "aquaZone": false,
-            // "courts": false,
-            // "gymExterior": false,
-            // "palapa": true,
-            // "steakhouse": false,
-            // "coffeBar": false,
-            // "Áreas verdes": true,
-            // "petZone": false,
-            // "gym": false,
-            // "childArea": true,
-            // "loungeBar": true,
-            // "playroom": false,
-            // "joggin": false
-          },
+          //   // "aquaZone": false,
+          //   // "courts": false,
+          //   // "gymExterior": false,
+          //   // "palapa": true,
+          //   // "steakhouse": false,
+          //   // "coffeBar": false,
+          //   // "Áreas verdes": true,
+          //   // "petZone": false,
+          //   // "gym": false,
+          //   // "childArea": true,
+          //   // "loungeBar": true,
+          //   // "playroom": false,
+          //   // "joggin": false
+          // },
+
+          "amenities": [
+            "Áreas verdes",
+            "Pista de Jogging",
+            "Cafetería",
+            "Cancha",
+            "Gimnasio",
+            "Vigilancia",
+            "childArea"
+          ],
 
           "bedrooms": "2",
           "cardSubtitle": "Un mejor estilo de vida.",
@@ -1472,7 +1757,7 @@ export class ContactComponent implements OnInit {
     }
     
 
-    this.fireService.manuallyUpload(sendObject).then( (resp)=>{
+    this.fireService.addItemToCollection(sendObject).then( (resp)=>{
     // this.fireService.updateCollection(objectUpdate).then( (resp)=>{
       console.log('resp', resp);   
     }).catch( (error) =>{

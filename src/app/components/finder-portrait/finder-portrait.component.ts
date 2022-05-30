@@ -39,7 +39,7 @@ export class FinderPortraitComponent implements OnInit {
       return
     }
 
-    this.fireService.getDataByGroups('data-complete').subscribe( (resp:any) => {
+    this.fireService.getDataComplete('data-complete').subscribe( (resp:any) => {
       this.arrayData = resp[0].data;
       // this.bindService.bindingCompleteData(this.arrayData);
 

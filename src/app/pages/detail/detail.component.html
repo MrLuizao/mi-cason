@@ -44,72 +44,12 @@
                           <p class="fw-normal mb-0">{{modalArray.description | titlecase}}</p>
                         </div>
                       </div>
+
                       <div class="col-12 pt-5 ps-sm-7">
                         <p class="text-900 me-3">Amenidades:</p>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="alberca">
-                            <span>Alberca</span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngFor="let amenitie of amenities">
+                            <span>{{amenitie}}</span>
                           </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="quazona">
-                            <span>Aquazona</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="asadores">
-                            <span>Asadores</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="cafeteria">
-                            <span>Cafetería</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="cancha">
-                            <span>Cancha</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="gimnasio">
-                            <span>Gimnasio</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="gymexterior">
-                            <span>Gym exterior</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="ludoteca">
-                            <span>Lúdoteca</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="palapa">
-                            <span>Palapa</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="petZone">
-                            <span>Pet zone</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="jogging">
-                            <span>Pista de Jogging</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="vigilancia">
-                            <span>Vigilancia</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="lounge">
-                            <span>Zona Lounge</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="infantil">
-                            <span>Área infantil</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="areasVerde">
-                            <span>Áreas verdes</span>
-                          </span>                              
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="ciclovia">
-                            <span>Ciclovías</span>
-                          </span>   
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="zonaPet">
-                            <span>Zona Pet</span>
-                          </span>   
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="terraza">
-                            <span>Terraza</span>
-                          </span>   
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="kitchen">
-                            <span>Cocina Integral</span>
-                          </span>   
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="bedroom">
-                            <span>Recámara con Terraza</span>
-                          </span>   
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="laundry">
-                            <span>Área de Lavado</span>
-                          </span>   
-
                       </div>
                     </div>
                     <div class="position-relative z-index-2 col-12 col-xl-10 col-lg-12 d-grid mt-4 mb-5" (click)="gtagEvent()">
@@ -154,82 +94,9 @@
                       </div>
                       <div class="col-12 pt-5 ps-sm-7">
                         <p class="text-900 me-3">Amenidades:</p>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="alberca">
-                            <span>Alberca</span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngFor="let amenitie of amenities">
+                            <span>{{amenitie}}</span>
                           </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="quazona">
-                            <span>Aquazona</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="asadores">
-                            <span>Asadores</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="cafeteria">
-                            <span>Cafetería</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="cancha">
-                            <span>Cancha</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="gimnasio">
-                            <span>Gimnasio</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="gymexterior">
-                            <span>Gym exterior</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="ludoteca">
-                            <span>Lúdoteca</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="palapa">
-                            <span>Palapa</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="petZone">
-                            <span>Pet zone</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="jogging">
-                            <span>Pista de Jogging</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="vigilancia">
-                            <span>Vigilancia</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="lounge">
-                            <span>Zona Lounge</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="infantil">
-                            <span>Área infantil</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="areasVerde">
-                            <span>Áreas verdes</span>
-                          </span>      
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="ciclovia">
-                            <span>Ciclovías</span>
-                          </span>   
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="zonaPet">
-                            <span>Zona Pet</span>
-                          </span>   
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="terraza">
-                            <span>Terraza</span>
-                          </span>   
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="kitchen">
-                            <span>Cocina Integral</span>
-                          </span>   
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="bedroom">
-                            <span>Recámara con Terraza</span>
-                          </span>   
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="laundry">
-                            <span>Área de Lavado</span>
-                          </span> 
-
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="cctv">
-                            <span>CCTV</span>
-                          </span> 
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="comercial">
-                            <span>Area comercial</span>
-                          </span> 
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="salon">
-                            <span>Salón de fiesta</span>
-                          </span> 
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="eco">
-                            <span>Ecotecnologías</span>
-                          </span> 
                       </div>
                     </div>
 
@@ -272,72 +139,12 @@
                           <p class="fw-normal mb-0">{{modalArray.title}}</p>
                         </div>
                       </div>
+
                       <div class="col-12 pt-5 ps-sm-7">
                         <p class="text-900 me-3">Amenidades:</p>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="alberca">
-                            <span>Alberca</span>
+                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngFor="let amenitie of amenities">
+                            <span>{{amenitie}}</span>
                           </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="quazona">
-                            <span>Aquazona</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="asadores">
-                            <span>Asadores</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="cafeteria">
-                            <span>Cafetería</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="cancha">
-                            <span>Cancha</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="gimnasio">
-                            <span>Gimnasio</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="gymexterior">
-                            <span>Gym exterior</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="ludoteca">
-                            <span>Lúdoteca</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="palapa">
-                            <span>Palapa</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="petZone">
-                            <span>Pet zone</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="jogging">
-                            <span>Pista de Jogging</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="vigilancia">
-                            <span>Vigilancia</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="lounge">
-                            <span>Zona Lounge</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="infantil">
-                            <span>Área infantil</span>
-                          </span>
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="areasVerde">
-                            <span>Áreas verdes</span>
-                          </span>                          
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="ciclovia">
-                            <span>Ciclovías</span>
-                          </span>   
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="zonaPet">
-                            <span>Zona Pet</span>
-                          </span>   
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="terraza">
-                            <span>Terraza</span>
-                          </span>   
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="kitchen">
-                            <span>Cocina Integral</span>
-                          </span>   
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="bedroom">
-                            <span>Recámara con Terraza</span>
-                          </span>   
-                          <span class="badge bg-primary ms-3 me-1 p-2 mb-3" *ngIf="laundry">
-                            <span>Área de Lavado</span>
-                          </span> 
-                           
                       </div>
                     </div>
 

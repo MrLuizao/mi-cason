@@ -44,6 +44,11 @@ import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditi
 import { ArcoRightsComponent } from './pages/arco-rights/arco-rights.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { BlogDetailComponent } from './pages/blog-detail/blog-detail.component';
+import { ConfirmAlertComponent } from './pages/Dialogs/confirm-alert/confirm-alert.component';
+import { MatButtonModule } from '@angular/material/button';
+import { UploadsComponent } from './pages/uploads/uploads.component';
+import { MatChipsModule } from '@angular/material/chips'; 
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -77,7 +82,9 @@ import { BlogDetailComponent } from './pages/blog-detail/blog-detail.component';
     TermsConditionsComponent,
     ArcoRightsComponent,
     BlogComponent,
-    BlogDetailComponent
+    BlogDetailComponent,
+    ConfirmAlertComponent,
+    UploadsComponent,
   ],
   imports: [
     BrowserModule,
@@ -86,6 +93,9 @@ import { BlogDetailComponent } from './pages/blog-detail/blog-detail.component';
     FormsModule,
     NoopAnimationsModule,
     MatDialogModule,
+    MatButtonModule,
+    MatChipsModule,
+    MatListModule,
     MatSnackBarModule,
     PdfViewerModule,
     AngularFireModule.initializeApp(environment.firebase),

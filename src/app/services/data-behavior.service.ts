@@ -18,6 +18,9 @@ export class DataBehaviorService {
   detailBlog = new BehaviorSubject<{}>({});
   public $getDetailBlog= this.detailBlog.asObservable();
 
+  objectUpdate = new BehaviorSubject<any>([]);
+  public $getobjectUpdate = this.objectUpdate.asObservable();
+
 
   constructor() { }
 
@@ -35,5 +38,9 @@ export class DataBehaviorService {
 
   setItemBlog(data:any){
     this.detailBlog.next(data);
+  }
+
+  setUpdateObject(object:any){
+    this.objectUpdate.next(object)
   }
 }

@@ -1,0 +1,97 @@
+<main class="main" id="top">
+    <app-nav-bar></app-nav-bar>
+    
+    <section class="top-space" >
+        <div class="container mt-6">
+            <form #form="ngForm" (ngSubmit)="updateDataForm(form)" class="row g-4" style="text-align: center;">
+                <div class="col-lg-6">
+                    <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid item-center">
+                            <input [(ngModel)]="formModel.name" type="text" name="name" required placeholder="Nombre del desarrollo">
+                        </div>
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid item-center mt-4">
+                            <input [(ngModel)]="formModel.ubication" type="text" name="ubication" required placeholder="Ciudad, Municipio o Alcaldía">
+                        </div>
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid item-center mt-4">
+                            <input [(ngModel)]="formModel.zone" type="text" name="zone" required placeholder="Estado">
+                        </div>
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid item-center mt-4">
+                            <input [(ngModel)]="formModel.costPrev" type="text" name="costPrev" required placeholder="Precio anterior">
+                        </div>
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid item-center mt-4">
+                            <input [(ngModel)]="formModel.costNew" type="number" name="costNew" required placeholder="Precio actual">
+                        </div>
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid item-center mt-4">
+                            <input [(ngModel)]="formModel.mtsInmueble" type="text" name="mtsInmueble" required placeholder="Tamaño del Inmueble (mts²)">
+                        </div>
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid item-center mt-4">
+                            <input [(ngModel)]="formModel.mtsGround" type="text" name="mtsGround" required placeholder="Tamaño de construcción (mts²)">
+                        </div>
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid item-center mt-4">
+                            <input [(ngModel)]="formModel.bedrooms" type="text" name="bedrooms" required placeholder="Número de habitaciones">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid item-center ">
+                            <input [(ngModel)]="formModel.title" type="text" name="title" required placeholder="Descripción principal">
+                        </div>
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid item-center mt-4">
+                            <input [(ngModel)]="formModel.description" type="text" name="description" required placeholder="Descripción secundaria">
+                        </div>
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid item-center mt-4">
+                            <input [(ngModel)]="formModel.cardSubtitle" type="text" name="cardSubtitle" required placeholder="Texto descriptivo (breve)">
+                        </div>
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid item-center mt-4">
+                            <input [(ngModel)]="formModel.contactPhone" type="text" name="contactPhone" required placeholder="Teléfono de contacto">
+                        </div>
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid item-center mt-4">
+                            <input [(ngModel)]="formModel.image" type="text" name="image" required placeholder="URL de imágen de la fachada">
+                        </div>
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid item-center mt-4">
+                            <input [(ngModel)]="formModel.image2" type="text" name="image2" required placeholder="URL de imágen del interior (1)">
+                        </div>
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid item-center mt-4">
+                            <input [(ngModel)]="formModel.image3" type="text" name="image3" required placeholder="URL de imágen del interior (2)">
+                        </div>
+                        <div class="col-12 col-xl-12 col-lg-12 d-grid item-center mt-4">
+                            <input [(ngModel)]="formModel.image4" type="text" name="image4" required placeholder="URL de imágen del interior (3)">
+                        </div>
+                    </div>
+                </div>
+
+                
+                <mat-selection-list #amenitiesList >
+                    <div class="col-lg-6" style="display: inline-block;">
+                        <mat-list-option class="initial" value="Alberca">Alberca</mat-list-option>
+                        <mat-list-option class="initial" value="Palapa">Palapa</mat-list-option>
+                        <mat-list-option class="initial" value="Asadores">Asadores</mat-list-option>
+                        <mat-list-option class="initial" value="Canchas">Canchas</mat-list-option>
+                        <mat-list-option class="initial" value="Vigilancia">Vigilancia</mat-list-option>
+                        <mat-list-option class="initial" value="Gym Exterior">Gym Exterior</mat-list-option>
+                        <mat-list-option class="initial" value="Pet-Zone">Pet-Zone</mat-list-option>
+                    </div>
+                    <div class="col-lg-6" style="display: inline-block;">
+                        <mat-list-option class="initial" value="Gimnasio">Gimnasio</mat-list-option>
+                        <mat-list-option class="initial" value="Área Infantil">Área Infantil</mat-list-option>
+                        <mat-list-option class="initial" value="Lounge Bar">Lounge Bar</mat-list-option>
+                        <mat-list-option class="initial" value="Área de Juegos">Área de Juegos</mat-list-option>
+                        <mat-list-option class="initial" value="Áreas Verdes">Áreas Verdes</mat-list-option>
+                        <mat-list-option class="initial" value="Pista de Joggin">Pista de Joggin</mat-list-option>
+                        <mat-list-option class="initial" value="Ecotecnologías">Ecotecnologías</mat-list-option>
+                    </div>
+                </mat-selection-list>
+
+                <div class="col-12 col-xl-12 col-lg-12 d-grid mt-6 item-center">
+                    <button class="btn btn-secondary" type="submit">Guardar</button>
+                </div>  
+            </form>
+        </div>
+    </section>
+
+
+
+    <app-footer></app-footer>  
+</main>

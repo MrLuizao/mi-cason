@@ -1,0 +1,14 @@
+<div class="row h-100" style="padding: 2em;">
+    <h1 class="display-3 text-primary fw-bold">
+      ¿Quieres guardar los cambios?
+    </h1>
+    <h3 >
+      Al aceptar se actualizara la información en la base de datos AUTOMÁTICAMENTE
+    </h3>
+</div>
+<div style="padding: 1em;">
+    <mat-dialog-actions align="end">
+        <button mat-button mat-dialog-close>CANCELAR</button>
+        <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="confirmUpdateData()">CONFIRMAR</button>
+    </mat-dialog-actions>
+</div>

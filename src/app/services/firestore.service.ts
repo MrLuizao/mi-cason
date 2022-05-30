@@ -9,10 +9,8 @@ export class FirestoreService {
 
   constructor( private firestore: AngularFirestore ) { }
 
-  getDataByGroups(path: any){
-
+  getDataComplete(path: any){
     return this.firestore.collection(path).valueChanges();
-
   }
 
   createDataContactForm( dataForm: ContactFormModel){
@@ -23,17 +21,13 @@ export class FirestoreService {
 
   }
 
-  manuallyUpload( object: any){
-
-    const OBJECT_UPLOAD = {...object};  
-    
-    return this.firestore.collection('data-complete').add( OBJECT_UPLOAD )
-
+  addItemToCollection( newObject: any){
+    return this.firestore.collection('data-complete').doc('7gkMf4t4XQYEbDqHqjDS').set( newObject )
   }
 
   singleManuallyUpdate(){
     // const OBJECT_UPLOAD = {...object};  
-    return this.firestore.collection('data-complete').doc('cvHXRhQZoiNa0kcnaDNL').update(
+    return this.firestore.collection('data-complete').doc('7gkMf4t4XQYEbDqHqjDS').update(
       
         {
           "amenities": {

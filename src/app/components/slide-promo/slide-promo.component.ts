@@ -37,7 +37,7 @@ export class SlidePromoComponent implements OnInit {
       this.isMobile = true;
     }
     
-    this.fireService.getDataByGroups('data-complete').subscribe( (resp:any) => {    
+    this.fireService.getDataComplete('data-complete').subscribe( (resp:any) => {    
       this.listArray = resp[0].data;
       console.log('this.listArray:', this.listArray);
     });

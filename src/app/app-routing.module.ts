@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { PrivacyNoticeComponent } from './pages/privacy-notice/privacy-notice.component';
 import { ResultsComponent } from './pages/results/results.component';
 import { TermsConditionsComponent } from './pages/terms-conditions/terms-conditions.component';
+import { UploadsComponent } from './pages/uploads/uploads.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -21,6 +22,8 @@ const routes: Routes = [
 
   { path: 'blog', component: BlogComponent},
   { path: 'blog-detail', component: BlogDetailComponent},
+
+  { path: 'uploads', component: UploadsComponent},
 
   { path: '**', pathMatch: 'full', redirectTo: 'home'}
 

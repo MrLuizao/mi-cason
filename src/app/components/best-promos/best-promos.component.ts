@@ -17,7 +17,7 @@ export class BestPromosComponent implements OnInit {
                 private route: Router ) { }
 
   ngOnInit(): void {
-    this.fireService.getDataByGroups('data-complete').subscribe( (resp:any) => {
+    this.fireService.getDataComplete('data-complete').subscribe( (resp:any) => {
       this.completeArray = resp[0].data;
     })
   }
