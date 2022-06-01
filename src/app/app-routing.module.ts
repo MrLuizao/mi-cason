@@ -14,6 +14,7 @@ import { UploadsComponent } from './pages/uploads/uploads.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'detail', component: DetailComponent},
+  
   { path: 'contact', component: ContactComponent},
   { path: 'results', component: ResultsComponent},
   { path: 'privacy-notice', component: PrivacyNoticeComponent},

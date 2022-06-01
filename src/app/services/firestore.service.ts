@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { ContactFormModel } from '../models/contact-form.model';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -48,6 +49,11 @@ export class FirestoreService {
         }
       
     )
+  }
+
+  consultById(id: any){
+    // return this.firestore.collection('data-complete').where("author", "==", user.uid).get()
+    return this.firestore.collection('data-complete').doc('7gkMf4t4XQYEbDqHqjDS').valueChanges(); 
   }
 
 }

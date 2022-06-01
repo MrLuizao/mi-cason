@@ -1,7 +1,7 @@
 import { Platform } from '@angular/cdk/platform';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { Router } from '@angular/router';
+import { NavigationExtras, Router } from '@angular/router';
 import { DataBehaviorService } from 'src/app/services/data-behavior.service';
 import { FirestoreService } from 'src/app/services/firestore.service';
 import { SeoService } from 'src/app/services/seo.service';
@@ -47,7 +47,17 @@ export class SlidePromoComponent implements OnInit {
     // }, 3000);
   }
 
-  tapToDescription(args: any){    
+  tapToDescription(args: any){  
+
+    let navExtras: NavigationExtras = {
+      queryParams:{ 
+        // desarrollo: args.id.toString()
+        desarrollo: args.id
+      }
+    }
+    this.route.navigate(['/detail'], navExtras)
+    return
+
     this.behaviorSrv.bindingObjectData(args)
     this.route.navigateByUrl('detail')
   }

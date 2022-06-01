@@ -1,6 +1,7 @@
 import { Platform } from '@angular/cdk/platform';
 import { Component, OnInit } from '@angular/core';
-import { DataBehaviorService } from 'src/app/services/data-behavior.service';
+import { ActivatedRoute } from '@angular/router';
+import { FirestoreService } from 'src/app/services/firestore.service';
 import { SeoService } from 'src/app/services/seo.service';
 
 @Component({
@@ -18,8 +19,9 @@ export class DetailComponent implements OnInit {
 
   amenities: any;
 
-  constructor(  private behaviorSrv: DataBehaviorService, 
+  constructor(  public route: ActivatedRoute,
                 public seoService: SeoService,
+                private fireService: FirestoreService,
                 public platform: Platform, ) {window.scrollTo(0,0)}
 
   ngOnInit(): void {
@@ -27,20 +29,34 @@ export class DetailComponent implements OnInit {
       this.isMobile = true;
     }
 
-    this.behaviorSrv.$getObjectSource.subscribe( (resp: any) =>{
-      this.modalArray = resp
-      console.log('modalArray:', this.modalArray);
-      this.message = 'Hola, me gustaría conocer más detalles del desarrollo de'+' '+this.modalArray.name;
-      this.linkWhats = `https://api.whatsapp.com/send?phone=+52${this.modalArray.contactPhone}&text=${this.message}` ;
+    this.route.queryParams.subscribe( params =>{
 
-      this.findAmenities();
-    }).unsubscribe();
+      let idToFind = params.desarrollo;
+      this.fireService.consultById(idToFind).subscribe( (resp: any)=>{
+        let filter = resp.data.filter( (item:any)=> idToFind === item.id);
+        this.modalArray = filter[0];
+        console.log(this.modalArray);
+
+        this.message = 'Hola, me gustaría conocer más detalles del desarrollo de'+' '+this.modalArray.name;
+        this.linkWhats = `https://api.whatsapp.com/send?phone=+52${this.modalArray.contactPhone}&text=${this.message}` ;
+
+        this.findAmenities();
+      })
+    });
+
+    // this.behaviorSrv.$getObjectSource.subscribe( (resp: any) =>{
+    //   this.modalArray = resp
+    //   console.log('modalArray:', this.modalArray);
+    //   this.message = 'Hola, me gustaría conocer más detalles del desarrollo de'+' '+this.modalArray.name;
+    //   this.linkWhats = `https://api.whatsapp.com/send?phone=+52${this.modalArray.contactPhone}&text=${this.message}` ;
+
+    //   this.findAmenities();
+    // }).unsubscribe();
 
   }
 
   findAmenities(){
     this.amenities = this.modalArray.amenities;
-    console.log('amenities', this.amenities);
   }
 
   gtagEvent(){
