@@ -5,7 +5,7 @@ export class RealStateDevModel{
     costNew!: number;
     costPrev!:  string;
     description!: string;
-    id: any;
+    id!: string;
     image!: string;
     image2!:  string;
     image3!:  string;

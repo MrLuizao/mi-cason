@@ -23,7 +23,8 @@ export class UploadsComponent implements OnInit {
   constructor(  private behaviorSrv: DataBehaviorService,
                 public dialog: MatDialog ) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
+
   onChanges(evt: any){
     console.log(evt);
   }
@@ -32,10 +33,8 @@ export class UploadsComponent implements OnInit {
 
     if(form.invalid){
       console.log('invalid form?',form.invalid);
-      // console.log('amenities', this.amenities);
       return
     }
-    this.formModel.id = new Date().getTime();
     this.formModel.maxPrice = this.formModel.costPrev;
     this.formModel.minPrice = this.formModel.costNew.toString();
     
