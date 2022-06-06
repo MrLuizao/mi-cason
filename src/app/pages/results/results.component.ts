@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationExtras, Router } from '@angular/router';
 import { DataBehaviorService } from 'src/app/services/data-behavior.service';
+import { FirestoreService } from 'src/app/services/firestore.service';
 
 @Component({
   selector: 'app-results',
@@ -13,6 +14,7 @@ export class ResultsComponent implements OnInit {
   nameCity: any;
 
   constructor(  private bindService: DataBehaviorService,
+                private fireService: FirestoreService,
                 private route: Router ) { }
 
   ngOnInit(): void {
@@ -23,9 +25,13 @@ export class ResultsComponent implements OnInit {
     })
   }
 
-  tapToDetails(args: any){    
-    this.bindService.bindingObjectData(args)
-    this.route.navigateByUrl('detail')
+  tapToDetails(args: any){   
+    let navExtras: NavigationExtras = {
+      queryParams:{ 
+        desarrollo: args.id
+      }
+    }
+    this.route.navigate(['/detail'], navExtras)
   }
 
 }
