@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationExtras, Router } from '@angular/router';
 import { DataBehaviorService } from 'src/app/services/data-behavior.service';
-import { FirestoreService } from 'src/app/services/firestore.service';
 
 @Component({
   selector: 'app-results',
@@ -14,14 +13,13 @@ export class ResultsComponent implements OnInit {
   nameCity: any;
 
   constructor(  private bindService: DataBehaviorService,
-                private fireService: FirestoreService,
                 private route: Router ) { }
 
   ngOnInit(): void {
     this.bindService.$getFindSource.subscribe( (res:any) =>{
       console.log('$getFindSource',res);
       this.arrayResult = res;
-      this.nameCity = this.arrayResult[0].zone;
+      this.nameCity = this.arrayResult[0].zone;      
     })
   }
 

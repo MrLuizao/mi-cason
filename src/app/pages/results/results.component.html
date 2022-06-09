@@ -1,6 +1,17 @@
 <main class="main" id="top">
     <app-nav-bar></app-nav-bar>
 
+    <section class="py-0" style="margin-top: 6em;" *ngIf="arrayResult.length === 0">
+        <div class="container">
+            <div class="row h-100 g-2 justify-content-center">
+                <div style="text-align: center; padding: 3em;">
+                    <h1 class="text-primary fw-bold">¡No hay resultados disponibles!</h1>
+                    <h3 class="text-primary fw-bold">Intenta con otra opción</h3>
+
+                </div>
+            </div>
+        </div>
+    </section>
     
     <section class="py-0" style="margin-top: 6em;">
         <div class="container">
